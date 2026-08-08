@@ -1,5 +1,30 @@
 # Using the Foundation with an LLM
 
+## Start Here After Upload
+
+Uploading or attaching this Markdown file does **not** activate the Foundation Prompt by itself. An uploaded file is initially available to the LLM as source material.
+
+**Copy only the complete text inside the following box and send it as one normal chat message. The message ends after the optional first-request placeholder. Do not copy the text below the box.**
+
+```text
+Use the attached `USING_THE_FOUNDATION_WITH_AN_LLM.md` as working instructions for this entire conversation.
+
+Read and follow the `Copyable Foundation Prompt` contained in the file. Access the canonical repository at:
+
+https://github.com/YamartiHQ/ai-first-company
+
+Read `PROJECT.md` first. Confirm that you can access the repository, identify the Foundation release, tag, or commit you are using, and then follow the conversation-start instructions from the Foundation Prompt.
+
+If you cannot access the repository or any required file, do not guess. Tell me exactly which additional files I need to upload.
+
+My first request:
+[OPTIONAL — WRITE THE REQUEST HERE OR LEAVE THIS EMPTY]
+```
+
+**End of activation message. Stop copying here.**
+
+If the LLM can access public GitHub repositories, the [Short Start Prompt](#short-start-prompt) below is the simplest entry point and the file does not need to be downloaded. If the LLM cannot access the repository, attach this usage document together with `PROJECT.md`, `ARCHITECTURE.md`, `REFERENCE_DESIGN.md`, and `TECHNICAL_REQUIREMENTS.md`, then send the same activation message.
+
 ## Document Role
 
 This document provides a practical, non-authoritative way to use the AI-First Company Foundation through a general-purpose Large Language Model.

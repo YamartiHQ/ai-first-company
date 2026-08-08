@@ -44,9 +44,10 @@ The Foundation remains the stable knowledge and requirements basis. The LLM acts
 To begin:
 
 1. If the LLM can access public GitHub repositories, copy the [Short Start Prompt](00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md#short-start-prompt) and optionally add the first question.
-2. If it cannot access the repository, upload the [LLM usage document](00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md) together with [`PROJECT.md`](PROJECT.md), [`ARCHITECTURE.md`](01-architecture/ARCHITECTURE.md), [`REFERENCE_DESIGN.md`](02-reference-design/REFERENCE_DESIGN.md), and [`TECHNICAL_REQUIREMENTS.md`](03-technical-requirements/TECHNICAL_REQUIREMENTS.md), then instruct it to follow the **Copyable Foundation Prompt** contained in the usage document.
-3. In a repository-aware local workspace, open this repository and instruct the LLM to follow `00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md`.
-4. Continue the conversation normally. The LLM should preserve the established scope and guide the next relevant step.
+2. If the LLM usage document has been downloaded and attached, send the [activation message shown at the top of the file](00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md#start-here-after-upload). Uploading the file alone does not activate its instructions.
+3. If the LLM cannot access the repository, also upload [`PROJECT.md`](PROJECT.md), [`ARCHITECTURE.md`](01-architecture/ARCHITECTURE.md), [`REFERENCE_DESIGN.md`](02-reference-design/REFERENCE_DESIGN.md), and [`TECHNICAL_REQUIREMENTS.md`](03-technical-requirements/TECHNICAL_REQUIREMENTS.md), then send the same activation message.
+4. In a repository-aware local workspace, open this repository and instruct the LLM to follow `00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md`.
+5. Continue the conversation normally. The LLM should preserve the established scope and guide the next relevant step.
 
 ## Architecture companions
 
