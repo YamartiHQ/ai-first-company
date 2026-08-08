@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880" role="img" aria-labelledby="title desc">
+  <title id="title">Knowledge Lifecycle</title>
+  <desc id="desc">A conditional progression from the External World to Evidence, Working Knowledge, Validated Knowledge, the Company Artifact Test, Company Artifacts, Company Memory, and Archive.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.step{font-size:14px;font-weight:700;letter-spacing:.8px}.node-title{font-size:20px;font-weight:700}.node-copy{font-size:15px;fill:#666666}.label{font-size:14px;font-weight:700;text-anchor:middle;fill:#222222}.test-title{font-size:24px;font-weight:700}.test-copy{font-size:17px;fill:#666666}.footer{font-size:16px;font-weight:600;fill:#222222}.conditional{fill:none;stroke:#383838;stroke-width:2.3;stroke-dasharray:8 6;marker-end:url(#arrow)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.test-copy{fill:#666!important}.conditional{stroke:#383838!important}marker path{fill:#383838!important}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="880" fill="#fff" stroke-width="1.5"/>
+  <text class="title" x="48" y="54">Knowledge Lifecycle</text>
+  <text class="subtitle" x="48" y="84">Information advances only through explicit observation, evaluation, validation, and preservation.</text>
+
+  <rect x="48" y="150" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="74" y="182" fill="#666666">SOURCE</text><text class="node-title" x="168" y="218" text-anchor="middle">External World</text><text class="node-copy" x="74" y="248">Material before intentional</text><text class="node-copy" x="74" y="270">observation and retention</text>
+  <rect x="336" y="150" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="362" y="182" fill="#222222">OBSERVED</text><text class="node-title" x="456" y="218" text-anchor="middle">Evidence</text><text class="node-copy" x="362" y="248">Attributable information</text><text class="node-copy" x="362" y="270">retained for evaluation</text>
+  <rect x="624" y="150" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="650" y="182" fill="#222222">EXPLORED</text><text class="node-title" x="744" y="218" text-anchor="middle">Working Knowledge</text><text class="node-copy" x="650" y="248">Current analysis and</text><text class="node-copy" x="650" y="270">developing understanding</text>
+  <rect x="912" y="150" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="938" y="182" fill="#222222">ACCEPTED</text><text class="node-title" x="1032" y="218" text-anchor="middle">Validated Knowledge</text><text class="node-copy" x="938" y="248">Reliable for a stated</text><text class="node-copy" x="938" y="270">purpose and context</text>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M288 220 H326"/><text class="label" x="307" y="136">observed</text>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M576 220 H614"/><text class="label" x="595" y="136">may contribute</text>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M864 220 H902"/><text class="label" x="883" y="136">validated</text>
+
+  <rect x="48" y="390" width="520" height="280" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="test-title" x="308" y="430" text-anchor="middle">Company Artifact Test</text>
+  <text class="test-copy" x="76" y="466">✓ Lasting company value</text><text class="test-copy" x="76" y="493">✓ Sufficiently validated</text><text class="test-copy" x="76" y="520">✓ Required for future human or AI reliance</text><text class="test-copy" x="76" y="547">✓ Survives technology replacement</text><text class="test-copy" x="76" y="574">✓ Contributes to organizational identity</text>
+  <text class="node-copy" x="76" y="620">Every criterion must be positive.</text>
+  <text class="node-copy" x="76" y="646">Unresolved material remains outside Company Memory.</text>
+
+  <rect x="624" y="390" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="650" y="422" fill="#222222">PRESERVED</text><text class="node-title" x="744" y="458" text-anchor="middle">Company Artifact</text><text class="node-copy" x="650" y="488">Validated knowledge with</text><text class="node-copy" x="650" y="510">lasting company value</text>
+  <rect x="912" y="390" width="240" height="140" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="938" y="422" fill="#222222">CURATED</text><text class="node-title" x="1032" y="458" text-anchor="middle">Company Memory</text><text class="node-copy" x="938" y="488">Collection of intentional</text><text class="node-copy" x="938" y="510">Company Artifacts</text>
+  <rect x="912" y="620" width="240" height="116" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="step" x="938" y="652" fill="#666666">INACTIVE</text><text class="node-title" x="1032" y="686" text-anchor="middle">Archive</text><text class="node-copy" x="938" y="714">Retained under policy</text>
+
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M1032 290 V330 Q1032 350 1012 350 H308 Q288 350 288 370 V390"/><text class="label" x="660" y="338">evaluate for intentional preservation</text>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M568 460 H614"/>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M864 460 H902"/>
+  <path class="conditional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="8 6" marker-end="url(#arrow)" d="M1032 530 V610"/><text class="label" x="1090" y="576">policy permits</text>
+
+  <rect x="48" y="780" width="1104" height="54" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="footer" x="74" y="814">Evidence ≠ Knowledge · Validated Knowledge ≠ Company Artifact · Archive ≠ indefinite retention</text>
+  <text x="1152" y="864" text-anchor="end" font-size="12" fill="#666666">Conditional progression · no stage advances automatically</text>
+</svg>

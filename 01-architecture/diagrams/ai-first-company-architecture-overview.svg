@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">AI-First Company Architecture Overview</title>
+  <desc id="diagram-desc">A selective overview showing Human Accountability across shared organizational understanding, Company Capabilities, Controlled Execution, and Outcomes and Evidence, with evidence-based confidence, accountable authorization, learning, and Founder Continuity.</desc>
+  <metadata><![CDATA[
+    Diagram status: non-authoritative Derived Representation.
+    Architecture source: ARCHITECTURE.md.
+    The four cards are explanatory groupings, not additional Architecture concepts.
+    Evidence informs Operational Confidence but never grants authority.
+    Standing Authorization requires an accountable governance decision.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        fill: #222222;
+      }
+      .title { font-size: 34px; font-weight: 700; letter-spacing: -0.6px; }
+      .subtitle { font-size: 19px; fill: #666666; }
+      .band-title { font-size: 23px; font-weight: 700; }
+      .band-copy { font-size: 18px; fill: #222222; }
+      .band-meta { font-size: 16px; font-weight: 600; fill: #222222; }
+      .section-label { font-size: 16px; font-weight: 700; fill: #666666; letter-spacing: 1.2px; }
+      .input-label { font-size: 16px; font-weight: 600; fill: #666666; }
+      .card-kicker { font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+      .card-title { font-size: 27px; font-weight: 700; letter-spacing: -0.3px; }
+      .card-copy { font-size: 19px; fill: #666666; }
+      .card-item { font-size: 18px; font-weight: 600; }
+      .feedback-label { font-size: 16px; font-weight: 700; text-anchor: middle; fill: #383838; }
+      .trust-title { font-size: 20px; font-weight: 700; }
+      .trust-note { font-size: 16px; fill: #666666; }
+      .trust-sequence { font-size: 16px; font-weight: 700; text-anchor: end; fill: #222222; }
+      .footer-title { font-size: 18px; font-weight: 700; }
+      .footer-copy { font-size: 16px; fill: #222222; }
+      .card { stroke-width: 1.5; }
+      .flow { fill: none; stroke: #383838; stroke-width: 2.7; marker-end: url(#arrow); }
+      .feedback { fill: none; stroke: #383838; stroke-width: 2.7; marker-end: url(#arrow-secondary); }
+      rect { fill: #f7f7f7 !important; stroke: #b2b2b2 !important; }
+      rect[fill="#fff"], rect[fill="#ffffff"] { fill: #ffffff !important; }
+      svg > rect:first-of-type { fill: #ffffff !important; stroke: none !important; }
+      text { fill: #222222 !important; }
+      .subtitle, .card-copy, .band-copy, .trust-note, .footer-copy { fill: #666666 !important; }
+      line { stroke: #dddddd !important; }
+      .flow, .feedback { stroke: #383838 !important; }
+      marker path { fill: #383838 !important; }
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="1040" fill="#ffffff" stroke-width="1.5"/>
+
+  <text class="title" x="48" y="52">AI-First Company Architecture</text>
+  <text class="subtitle" x="48" y="82">One organizational system for durable human–AI collaboration</text>
+
+  <rect x="48" y="112" width="1104" height="104" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="band-title" x="74" y="150" fill="#222222">Human Accountability</text>
+  <text class="band-copy" x="74" y="180">Consequential decisions remain with accountable human authority.</text>
+  <text class="band-meta" x="1126" y="150" text-anchor="end">Decision Mandates · Information Classification</text>
+  <text class="band-meta" x="1126" y="180" text-anchor="end">Standing Authorization · explicit boundaries</text>
+
+  <text class="section-label" x="48" y="255">ORGANIZATIONAL OPERATING MODEL</text>
+  <text class="input-label" x="48" y="286">External World → observation and Evidence</text>
+
+  <rect class="card" x="48" y="310" width="520" height="190" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="card-kicker" x="76" y="344" fill="#222222">UNDERSTAND</text>
+  <text class="card-title" x="308" y="382" text-anchor="middle">Knowledge &amp; State</text>
+  <text class="card-copy" x="76" y="414">Shared organizational understanding for bounded work</text>
+  <line x1="76" y1="438" x2="540" y2="438" stroke="#dddddd"/>
+  <text class="card-item" x="76" y="470">Company Memory · Company State · Working Context</text>
+
+  <rect class="card" x="632" y="310" width="520" height="190" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="card-kicker" x="660" y="344" fill="#222222">ORGANIZE</text>
+  <text class="card-title" x="892" y="382" text-anchor="middle">Company Capabilities</text>
+  <text class="card-copy" x="660" y="414">Stable organizational abilities independent of performers</text>
+  <line x1="660" y1="438" x2="1124" y2="438" stroke="#dddddd"/>
+  <text class="card-item" x="660" y="470">Defined outcomes · explicit boundaries · replaceability</text>
+
+  <rect class="card" x="632" y="566" width="520" height="190" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="card-kicker" x="660" y="600" fill="#222222">ACT</text>
+  <text class="card-title" x="892" y="638" text-anchor="middle">Controlled Execution</text>
+  <text class="card-copy" x="660" y="670">Authorized, admitted, observable organizational work</text>
+  <line x1="660" y1="694" x2="1124" y2="694" stroke="#dddddd"/>
+  <text class="card-item" x="660" y="726">Intent · Work Admission · attributable Outcomes</text>
+
+  <rect class="card" x="48" y="566" width="520" height="190" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="card-kicker" x="76" y="600" fill="#222222">LEARN</text>
+  <text class="card-title" x="308" y="638" text-anchor="middle">Outcomes &amp; Evidence</text>
+  <text class="card-copy" x="76" y="670">Observed results become input to review and learning</text>
+  <line x1="76" y1="694" x2="540" y2="694" stroke="#dddddd"/>
+  <text class="card-item" x="76" y="718">Evidence · Capability History</text>
+  <text class="card-item" x="76" y="744">Improvement opportunities</text>
+
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M568 405 H622"/>
+
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M892 500 V556"/>
+
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M632 661 H578"/>
+
+  <path class="feedback" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M308 566 V510"/>
+  <text class="feedback-label" x="392" y="540">supports learning</text>
+
+  <rect x="48" y="794" width="1104" height="132" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="trust-title" x="74" y="832" fill="#222222">Confidence informs. Governance authorizes.</text>
+  <text class="trust-note" x="74" y="860">Evidence never grants authority automatically.</text>
+
+  <text class="trust-sequence" x="1126" y="886">Evidence → Operational Confidence → accountable governance decision → Standing Authorization</text>
+
+  <rect x="48" y="950" width="1104" height="58" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="footer-title" x="74" y="984" fill="#222222">Founder Continuity</text>
+  <text class="footer-copy" x="252" y="984">Preserves accountable operation, organizational knowledge, authority, and access beyond one individual.</text>
+
+  <text x="1152" y="1031" text-anchor="end" font-size="12" fill="#666666">Selective, non-authoritative overview · ARCHITECTURE.md remains authoritative</text>
+</svg>

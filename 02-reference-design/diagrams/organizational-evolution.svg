@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Organizational Evolution</title>
+  <desc id="desc">A candidate change is exercised in the Sandbox Organization, produces Evaluation Evidence, is evaluated and qualified, and reaches an accountable adoption decision before a qualified change may enter Production.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.kicker{font-size:14px;font-weight:700;letter-spacing:.8px}.node-title{font-size:20px;font-weight:700}.node-copy{font-size:15px;fill:#666666}.label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}.optional-label{font-size:12px;font-weight:700;text-anchor:middle}.input-title{font-size:19px;font-weight:700}.input{font-size:16px;fill:#666666}.principle{font-size:20px;font-weight:700;text-anchor:middle;fill:#222222}.principle-copy{font-size:16px;text-anchor:middle;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.optional{fill:none;stroke:#383838;stroke-width:2.3;stroke-dasharray:7 6;marker-end:url(#arrow-secondary)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}.label-bg{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.input,.principle-copy{fill:#666!important}.flow,.optional{stroke:#383838!important}marker path{fill:#383838!important}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="900" fill="#fff" stroke-width="1.5"/>
+  <text class="title" x="48" y="54">Organizational Evolution</text>
+  <text class="subtitle" x="48" y="84">The organization may learn continuously while changing deliberately.</text>
+
+  <rect x="420" y="125" width="360" height="110" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="448" y="158" fill="#666666">PROPOSED</text><text class="node-title" x="600" y="193" text-anchor="middle">Candidate Change</text><text class="node-copy" x="448" y="219">A bounded change requiring evaluation</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 235 V280"/>
+
+  <rect x="420" y="290" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="448" y="324" fill="#222222">ISOLATED</text><text class="node-title" x="600" y="360" text-anchor="middle">Sandbox Organization</text><text class="node-copy" x="448" y="389">Test changes without Production effects</text>
+  <rect x="48" y="285" width="280" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="input-title" x="188" y="323" text-anchor="middle">Evaluation inputs</text><text class="input" x="76" y="356">Synthetic scenarios</text><text class="input" x="76" y="382">Historical or replay data</text><text class="input" x="76" y="408">Failure and boundary cases</text><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M328 360 H410"/>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 410 V455"/>
+
+  <rect x="420" y="465" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="448" y="499" fill="#222222">EVIDENCED</text><text class="node-title" x="600" y="535" text-anchor="middle">Evaluation &amp; Qualification</text><text class="node-copy" x="448" y="564">Determine capability and bounded limits</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 585 V630"/>
+
+  <rect x="420" y="640" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="448" y="674" fill="#222222">ACCOUNTABLE</text><text class="node-title" x="600" y="710" text-anchor="middle">Adoption Decision</text><text class="node-copy" x="448" y="739">Applicable authority decides whether to adopt</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M780 700 H860"/>
+
+  <rect x="870" y="640" width="282" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="898" y="674" fill="#222222">OPERATIONAL</text><text class="node-title" x="1011" y="710" text-anchor="middle">Production Organization</text><text class="node-copy" x="898" y="739">Operate within adopted boundaries</text>
+  <path class="optional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow-secondary)" d="M1011 640 V350 Q1011 330 991 330 H790"/>
+  <rect class="label-bg" x="790" y="445" width="205" height="58" rx="10" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+  <text class="optional-label" x="892" y="469">optional controlled</text><text class="optional-label" x="892" y="489">Production-derived information</text>
+
+  <rect x="48" y="805" width="1104" height="58" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="principle" x="600" y="832">A qualified change moves to Production — not the Sandbox state.</text><text class="principle-copy" x="600" y="853">Qualification demonstrates capability; it does not create authority.</text>
+  <text x="1152" y="890" text-anchor="end" font-size="12" fill="#666666">Reference Design · controlled organizational change</text>
+</svg>

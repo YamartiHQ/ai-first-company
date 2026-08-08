@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">Capability, Confidence, and Authorization</title>
+  <desc id="desc">A Company Capability remains stable across replaceable implementations. Capability History informs Operational Confidence, which informs but does not create an accountable governance decision for bounded Standing Authorization.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:25px;font-weight:700}.node-title-small{font-size:23px;font-weight:700}.node-copy{font-size:17px;fill:#666666}.item{font-size:17px;font-weight:600}.label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}.principle{font-size:20px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;text-anchor:middle;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.governance{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow-secondary)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.principle-copy{fill:#666!important}line{stroke:#ddd!important}.flow,.governance{stroke:#383838!important}marker path{fill:#383838!important}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="850" fill="#fff" stroke-width="1.5"/>
+  <text class="title" x="48" y="54">Capability, Confidence, and Authorization</text>
+  <text class="subtitle" x="48" y="84">Evidence may justify bounded autonomy. It never creates authority by itself.</text>
+
+  <rect x="48" y="150" width="320" height="220" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="186" fill="#222222">STABLE ORGANIZATIONAL ABILITY</text><text class="node-title" x="208" y="226" text-anchor="middle">Company Capability</text>
+  <text class="node-copy" x="76" y="260">Defined scope and outcomes</text><text class="node-copy" x="76" y="286">independent of its performer</text>
+  <line x1="76" y1="310" x2="340" y2="310" stroke="#dddddd"/><text class="item" x="76" y="342">Confidence belongs here</text>
+
+  <rect x="48" y="430" width="320" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="460" fill="#666666">REPLACEABLE</text><text class="node-title-small" x="208" y="492" text-anchor="middle">Current Implementation</text><text class="node-copy" x="76" y="522">Human · AI · agent · software</text><text class="node-copy" x="76" y="544">Changes require requalification</text><text class="node-copy" x="76" y="566">Performs Company Capability</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M208 420 V380"/>
+
+  <rect x="440" y="150" width="320" height="180" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="468" y="186" fill="#222222">ORGANIZATIONAL EVIDENCE</text><text class="node-title" x="600" y="226" text-anchor="middle">Capability History</text>
+  <text class="node-copy" x="468" y="260">Outcomes · corrections · failures</text><text class="node-copy" x="468" y="286">conditions · implementation versions</text>
+  <rect x="440" y="400" width="320" height="180" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="468" y="436" fill="#222222">EVIDENCE-BASED PROFILE</text><text class="node-title-small" x="600" y="476" text-anchor="middle">Operational Confidence</text>
+  <text class="node-copy" x="468" y="510">Capability-specific · contextual</text><text class="node-copy" x="468" y="534">dynamic · reviewable · reversible</text><text class="node-copy" x="468" y="558">informs governance only</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 330 V390"/><text class="label" x="675" y="366">informs</text>
+
+  <rect x="832" y="150" width="320" height="180" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="860" y="186" fill="#222222">ACCOUNTABLE AUTHORITY</text><text class="node-title" x="992" y="226" text-anchor="middle">Governance Decision</text>
+  <text class="node-copy" x="860" y="260">Applicable Decision Mandate</text><text class="node-copy" x="860" y="286">determines whether to authorize</text>
+  <rect x="832" y="400" width="320" height="180" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="860" y="436" fill="#222222">BOUNDED AND REVOCABLE</text><text class="node-title" x="992" y="476" text-anchor="middle">Standing Authorization</text>
+  <text class="node-copy" x="860" y="510">Permits defined recurring actions</text><text class="node-copy" x="860" y="536">through the Company Capability</text>
+  <path class="governance" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M760 490 H822"/>
+  <path class="governance" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M992 330 V390"/><text class="label" x="1062" y="366" fill="#222222">may grant</text>
+  <path class="governance" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M832 540 H790 Q780 540 780 550 V650 Q780 670 760 670 H48 Q28 670 28 650 V270 Q28 250 38 250 H48"/>
+  <text class="label" x="430" y="692" fill="#222222">authorizes recurring actions through the capability</text>
+
+  <rect x="48" y="730" width="1104" height="70" rx="20" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="principle" x="600" y="762" fill="#222222">Operational Confidence ≠ authority</text><text class="principle-copy" x="600" y="788">Confidence informs an accountable decision; it never grants authorization automatically.</text>
+  <text x="1152" y="834" text-anchor="end" font-size="12" fill="#666666">Selective, non-authoritative Derived Representation</text>
+</svg>

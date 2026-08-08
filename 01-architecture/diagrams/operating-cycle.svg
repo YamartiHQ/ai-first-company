@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Operating Cycle</title>
+  <desc id="desc">Evidence may contribute to Knowledge. Intent Generation transforms Knowledge into explicit Intent. Authorized and admitted Intent enters Controlled Execution, produces an Outcome, and the Outcome is captured as Evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:25px;font-weight:700}.node-copy{font-size:16px;fill:#666666}.label{font-size:16px;font-weight:700;text-anchor:middle;fill:#666666}.note-title{font-size:19px;font-weight:700}.note{font-size:16px;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.feedback{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow-secondary)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.note{fill:#666!important}.flow,.feedback{stroke:#383838!important}marker path{fill:#383838!important}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="780" fill="#fff" stroke-width="1.5"/>
+  <text class="title" x="48" y="54">Operating Cycle</text>
+  <text class="subtitle" x="48" y="84">Individual work completes. Organizational learning continues.</text>
+
+  <rect x="48" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="184" fill="#222222">OBSERVE</text><text class="node-title" x="198" y="222" text-anchor="middle">Evidence</text>
+  <text class="node-copy" x="76" y="252">Attributable observed information</text><text class="node-copy" x="76" y="276">May contribute to Knowledge</text>
+
+  <rect x="450" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="478" y="184" fill="#222222">UNDERSTAND</text><text class="node-title" x="600" y="222" text-anchor="middle">Knowledge</text>
+  <text class="node-copy" x="478" y="255">Understanding relevant to a purpose</text>
+
+  <rect x="852" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="880" y="184" fill="#222222">DEFINE WORK</text><text class="node-title" x="1002" y="222" text-anchor="middle">Intent</text>
+  <text class="node-copy" x="880" y="255">Explicit organizational work</text>
+
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M348 225 H440"/>
+  <text x="796" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#666666">Intent</text>
+  <text x="796" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#666666">Generation</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M750 225 H842"/>
+
+  <rect x="852" y="400" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="880" y="434" fill="#222222">ACT</text><text class="node-title" x="1002" y="472" text-anchor="middle">Controlled Execution</text>
+  <text class="node-copy" x="880" y="505">Authorized and admitted work</text>
+
+  <rect x="450" y="400" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="478" y="434" fill="#222222">RESULT</text><text class="node-title" x="600" y="472" text-anchor="middle">Outcome</text>
+  <text class="node-copy" x="478" y="500">Completed, failed, partial,</text><text class="node-copy" x="478" y="524">or cancelled</text>
+
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M1002 300 V390"/><text class="label" x="1070" y="345">authorization</text><text class="label" x="1070" y="366">+ admission</text>
+  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M852 475 H760"/><text class="label" x="806" y="458">produces</text>
+  <path class="feedback" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M450 475 H190 Q160 475 160 445 V350 Q160 320 190 320 H200 Q220 320 220 310 V300"/>
+  <text class="label" x="292" y="458" fill="#383838">captured as Evidence</text>
+
+  <rect x="48" y="620" width="1104" height="104" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="note-title" x="76" y="658" fill="#222222">Governance remains outside the cycle.</text>
+  <text class="note" x="76" y="689">Intent Generation is not automatic. Intent does not authorize execution. Outcomes do not automatically create new Intent or Company Memory.</text>
+  <text x="1152" y="764" text-anchor="end" font-size="12" fill="#666666">Selective, non-authoritative Derived Representation</text>
+</svg>

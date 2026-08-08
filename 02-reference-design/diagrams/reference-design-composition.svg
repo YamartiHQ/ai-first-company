@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">Reference Design Composition</title>
+  <desc id="desc">The Reference Design contains eight top-level Compositions grouped as Core, Boundary, Environments, and Assurance.</desc>
+  <style><![CDATA[
+    text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.group{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:22px;font-weight:700;text-anchor:middle}.node-copy{font-size:15px;text-anchor:middle;fill:#666666}.note{font-size:17px;font-weight:600;text-anchor:middle;fill:#222222}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy{fill:#666!important}
+  ]]></style>
+  <rect width="1200" height="850" fill="#fff" stroke-width="1.5"/>
+  <text class="title" x="48" y="54">Reference Design Composition</text>
+  <text class="subtitle" x="48" y="84">Eight distinct organizational responsibilities — not eight required products or teams.</text>
+
+  <rect x="48" y="125" width="1104" height="320" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="group" x="76" y="164" fill="#222222">CORE</text>
+  <rect x="76" y="195" width="230" height="180" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="node-title" x="191" y="238" text-anchor="middle">Executive Agent</text><text class="node-copy" x="191" y="270">Operational interface</text><text class="node-copy" x="191" y="292">for human leadership</text>
+  <rect x="350" y="195" width="230" height="180" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="node-title" x="465" y="238" text-anchor="middle">Company Brain</text><text class="node-copy" x="465" y="270">Shared organizational</text><text class="node-copy" x="465" y="292">understanding</text>
+  <rect x="624" y="195" width="230" height="180" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="node-title" x="739" y="238" text-anchor="middle">Capability Agent</text><text class="node-copy" x="739" y="270">Replaceable performer</text><text class="node-copy" x="739" y="292">of a Company Capability</text>
+  <rect x="898" y="195" width="230" height="180" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="node-title" x="1013" y="238" text-anchor="middle">Execution Graph</text><text class="node-title" x="1013" y="264" text-anchor="middle">Layer</text><text class="node-copy" x="1013" y="296">Structured organizational</text><text class="node-copy" x="1013" y="318">execution</text>
+  <text class="note" x="600" y="414">Core Compositions exchange understanding, context, intent, execution information, and outcomes.</text>
+
+  <rect x="48" y="480" width="300" height="225" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="group" x="76" y="519" fill="#222222">BOUNDARY</text><text class="node-title" x="198" y="570" text-anchor="middle">Company Interface Layer</text><text class="node-copy" x="198" y="604">Controlled inbound information</text><text class="node-copy" x="198" y="626">and outbound external action</text>
+
+  <rect x="382" y="480" width="500" height="225" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="group" x="410" y="519" fill="#222222">ENVIRONMENTS</text>
+  <rect x="410" y="548" width="205" height="115" rx="18" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/><text class="node-title" x="512.5" y="590" text-anchor="middle">Sandbox</text><text class="node-copy" x="512.5" y="620">Evaluate candidate change</text>
+  <rect x="649" y="548" width="205" height="115" rx="18" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/><text class="node-title" x="751.5" y="590" text-anchor="middle">Production</text><text class="node-copy" x="751.5" y="620">Operate the organization</text>
+
+  <rect x="916" y="480" width="236" height="225" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="group" x="944" y="519" fill="#222222">ASSURANCE</text><text class="node-title" x="1034" y="570" text-anchor="middle">Evaluation &amp;</text><text class="node-title" x="1034" y="596" text-anchor="middle">Qualification</text><text class="node-copy" x="1034" y="630">Determines what</text><text class="node-copy" x="1034" y="652">the evidence demonstrates</text>
+
+  <rect x="48" y="750" width="1104" height="54" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="note" x="600" y="782">One implementation may support several Compositions while preserving their distinct responsibilities and boundaries.</text>
+  <text x="1152" y="838" text-anchor="end" font-size="12" fill="#666666">Reference Design overview · not a technology architecture</text>
+</svg>
