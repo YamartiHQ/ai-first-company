@@ -1,6 +1,6 @@
 # AI-First Company
 
-![AI-First Company framework overview: Human Accountability governs a cycle from Knowledge and State through Company Capabilities, Controlled Execution, Outcomes and Evidence, and Learning.](00-introduction/diagrams/ai-first-company-framework-overview.png)
+![The AI-First Company framework supports two entry paths: a solo founder building a new company and an established organization transforming existing operations, united by human accountability, organizational knowledge, company capabilities, controlled execution, evidence, and learning.](00-introduction/diagrams/ai-first-company-hero.png)
 
 AI-First Company is a vendor-neutral organizational model for organizations in which humans and AI systems operate within one coherent organizational system.
 
@@ -9,6 +9,10 @@ It addresses a problem that tools alone cannot solve: how knowledge, responsibil
 The project is about organizational design, not a product or software stack. Models, agents, tools, providers, and runtimes are replaceable implementation choices within the boundaries of the organization.
 
 In this repository, the **Foundation** means the complete vendor-neutral body of work formed by the Architecture, Reference Design, and Technical Requirements. It is the basis from which application guidance, examples, and implementations may be derived, not an additional architectural layer or a reference to an earlier project name.
+
+## Framework at a glance
+
+![AI-First Company framework overview: Human Accountability governs a cycle from Knowledge and State through Company Capabilities, Controlled Execution, Outcomes and Evidence, and Learning.](00-introduction/diagrams/ai-first-company-framework-overview.png)
 
 ## Project status and independent reuse
 
@@ -96,7 +100,7 @@ ai-first-company/
 ├── README.md
 ├── PROJECT.md
 ├── 00-introduction/
-│   ├── diagrams/               # Introductory overview SVG source and PNG render
+│   ├── diagrams/               # Introductory hero and framework overview images
 │   ├── THE-CORE-IDEA.md
 │   ├── ORIGIN_AND_RELATED_WORK.md
 │   └── USING_THE_FOUNDATION_WITH_AN_LLM.md
