@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or reference this framework, please cite the preferred citation below."
+title: "AI-First Company"
+authors:
+  - family-names: "Nöthen"
+    given-names: "Andreas"
+version: 1.0.0
+date-released: 2026-08-09
+license: CC-BY-4.0
+url: "https://github.com/YamartiHQ/ai-first-company"
+preferred-citation:
+  type: report
+  title: "AI-First Company"
+  authors:
+    - family-names: "Nöthen"
+      given-names: "Andreas"
+  year: 2026
+  url: "https://github.com/YamartiHQ/ai-first-company"

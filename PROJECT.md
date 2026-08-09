@@ -25,6 +25,8 @@ Authority follows document role, not file order, level of detail, or implementat
 | `02-reference-design/diagrams/` | Non-authoritative visual representations derived from the Reference Design. A diagram cannot override its source text. |
 | [`03-technical-requirements/TECHNICAL_REQUIREMENTS.md`](03-technical-requirements/TECHNICAL_REQUIREMENTS.md) | Technical requirements derived from the Reference Design. It is authoritative for the required technical capabilities, but cannot silently add organizational responsibilities. |
 | [`README.md`](README.md), [`00-introduction/THE-CORE-IDEA.md`](00-introduction/THE-CORE-IDEA.md), [`00-introduction/ORIGIN_AND_RELATED_WORK.md`](00-introduction/ORIGIN_AND_RELATED_WORK.md), and [`00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md`](00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md) | Explanatory entry, context, and application documents. Where they summarize or apply authoritative material, the corresponding authoritative document prevails. |
+| [`CITATION.cff`](CITATION.cff) | Non-authoritative publication metadata for citing a released version. It cannot define, interpret, extend, or modify the Foundation. |
+| `00-introduction/diagrams/` | Non-authoritative visual representations derived from the Core Idea and Architecture. A diagram cannot override its source text or introduce Architecture concepts. |
 | `01-architecture/diagrams/` | Non-authoritative visual derived representations. A diagram cannot override its source text. |
 
 If documents conflict, resolve the conflict according to these roles:
