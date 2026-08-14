@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1320" viewBox="0 0 1200 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Controlled Execution and External Effects</title>
+  <desc id="desc">Authorized Effect, independent Organizational Control Plane enforcement, and Preconditions and Trajectory constrain Controlled Execution. External Interaction may lead to a known External Effect, postcondition verification, and Outcome, or to an Unknown Effect that requires external State verification, Reconciliation, and a Retry Safety Decision. Unknown effects never trigger blind retry.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE.md. Execution, External Interaction, External Effect, and Outcome remain distinct.]]></metadata>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.node-title-small{font-size:20px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.constraint{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.principle{font-size:19px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="1320" fill="#fff"/>
+  <text class="title" x="72" y="54">Controlled Execution and External Effects</text>
+  <text class="subtitle" x="48" y="84">External uncertainty is resolved before retry—not after Outcome</text>
+
+  <rect class="region" x="48" y="124" width="1104" height="218" rx="24"/>
+  <text class="kicker" x="76" y="162">AUTHORIZATION AND INDEPENDENT ENFORCEMENT</text>
+  <rect class="card" x="76" y="190" width="300" height="118" rx="22"/>
+  <text class="node-title" x="226" y="232">Authorized Effect</text><text class="copy" x="226" y="266">Bounded permission for an effect</text><text class="copy" x="226" y="290">under applicable Authority</text>
+  <rect class="card" x="450" y="190" width="300" height="118" rx="22"/>
+  <text class="node-title-small" x="600" y="232">Organizational Control Plane</text><text class="copy" x="600" y="266">Independent admission</text><text class="copy" x="600" y="290">and enforcement</text>
+  <rect class="card" x="824" y="190" width="300" height="118" rx="22"/>
+  <text class="node-title-small" x="974" y="232">Preconditions &amp; Trajectory</text><text class="copy" x="974" y="266">Current validity and combined</text><text class="copy" x="974" y="290">sequence integrity</text>
+  <path class="flow" d="M376 249 H450"/>
+
+  <rect class="card" x="140" y="406" width="360" height="112" rx="22"/>
+  <text class="node-title" x="320" y="450">Controlled Execution</text><text class="copy" x="320" y="484">Admitted authorized work</text>
+  <rect class="card" x="700" y="406" width="360" height="112" rx="22"/>
+  <text class="node-title" x="880" y="450">External Interaction</text><text class="copy" x="880" y="484">Attempted organizational boundary crossing</text>
+  <path class="flow" d="M600 308 V334 Q600 346 588 346 H332 Q320 346 320 364 V406"/>
+  <path class="constraint" d="M974 308 V350 Q974 362 962 362 H412 Q400 362 400 380 V406"/>
+  <path class="flow" d="M500 462 H700"/>
+
+  <rect class="region" x="48" y="574" width="532" height="566" rx="24"/>
+  <text class="kicker" x="76" y="614">KNOWN AND VERIFIED PATH</text>
+  <rect class="card" x="104" y="648" width="420" height="116" rx="22"/>
+  <text class="node-title" x="314" y="692">External Effect</text><text class="copy" x="314" y="728">Known observable external state change</text>
+  <rect class="card" x="104" y="818" width="420" height="116" rx="22"/>
+  <text class="node-title" x="314" y="862">Postcondition Verification</text><text class="copy" x="314" y="898">Was the intended external state established?</text>
+  <rect class="card" x="104" y="988" width="420" height="116" rx="22"/>
+  <text class="node-title" x="314" y="1032">Outcome</text><text class="copy" x="314" y="1068">Observed attributable organizational result</text>
+  <path class="flow" d="M314 764 V818"/><path class="flow" d="M314 934 V988"/>
+
+  <rect class="region" x="620" y="574" width="532" height="566" rx="24"/>
+  <text class="kicker" x="648" y="614">UNCERTAIN PATH</text>
+  <rect class="card" x="676" y="638" width="420" height="100" rx="22"/>
+  <text class="node-title" x="886" y="678">Unknown Effect</text><text class="copy" x="886" y="710">Occurrence or resulting State unresolved</text>
+  <rect class="card" x="676" y="766" width="420" height="100" rx="22"/>
+  <text class="node-title" x="886" y="806">Verify External State</text><text class="copy" x="886" y="838">Read back where possible</text>
+  <rect class="card" x="676" y="894" width="420" height="100" rx="22"/>
+  <text class="node-title" x="886" y="934">Reconciliation</text><text class="copy" x="886" y="966">Establish or preserve explicit uncertainty</text>
+  <rect class="card" x="676" y="1022" width="420" height="100" rx="22"/>
+  <text class="node-title" x="886" y="1062">Retry Safety Decision</text><text class="copy" x="886" y="1092">Retry · compensate · stop — no blind retry</text>
+  <path class="flow" d="M886 738 V766"/><path class="flow" d="M886 866 V894"/><path class="flow" d="M886 994 V1022"/>
+
+  <path class="flow" d="M820 518 V540 Q820 552 808 552 H326 Q314 552 314 570 V648"/>
+  <path class="flow" d="M880 518 V638"/>
+
+  <rect class="region" x="48" y="1182" width="1104" height="100" rx="22"/>
+  <text class="principle" x="600" y="1218">Execution ≠ External Interaction ≠ External Effect ≠ Outcome</text>
+  <text class="principle-copy" x="600" y="1250">Unknown Effect remains explicit until external State is verified and reconciled.</text>
+</svg>

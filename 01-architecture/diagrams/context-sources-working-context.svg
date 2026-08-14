@@ -1,42 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title desc">
   <title id="title">Context Sources and Working Context</title>
-  <desc id="desc">Knowledge Access selects authorized information from Company Memory, Company State, Systems of Record, current activity, and governance to prepare the smallest sufficient Working Context for one activity.</desc>
+  <desc id="desc">Separate governed sources—Company Brain, external information, Performer Memory where permitted, and current Work State—converge through Context Construction. Governance and quality constraints shape construction. The resulting temporary bounded Working Context is delivered to a Performer, may be updated or invalidated by State or Authority change, and is reconstructed at handoff.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE.md. Sources are possible governed inputs, not a serial pipeline.]]></metadata>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
-    <marker id="constraint" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
     <style><![CDATA[
-      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.node-title{font-size:23px;font-weight:700}.node-copy{font-size:17px;fill:#666666}.process{font-size:16px;font-weight:700;text-anchor:middle;fill:#666666}.label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}.note-title{font-size:19px;font-weight:700}.note{font-size:16px;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.constraint{fill:none;stroke:#383838;stroke-width:2.3;stroke-dasharray:5 5;marker-end:url(#constraint)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}.label-bg{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.note{fill:#666!important}line{stroke:#ddd!important}.flow,.constraint{stroke:#383838!important}marker path{fill:#383838!important}
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.focus{fill:#fff;stroke:#555;stroke-width:2}.constraint-card{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.node-title-small{font-size:20px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.constraint{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.principle{font-size:18px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
     ]]></style>
   </defs>
-  <rect width="1200" height="820" fill="#fff" stroke-width="1.5"/>
+  <rect width="1200" height="1100" fill="#fff"/>
   <text class="title" x="48" y="54">Context Sources and Working Context</text>
-  <text class="subtitle" x="48" y="84">The objective is sufficient authorized context — not maximum information.</text>
+  <text class="subtitle" x="48" y="84">Separate governed sources converge into the smallest sufficient context for current work</text>
 
-  <rect x="48" y="150" width="300" height="130" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="198" y="192" text-anchor="middle">Systems of Record</text><text class="node-copy" x="76" y="225">Authoritative sources for</text><text class="node-copy" x="76" y="248">defined information classes</text>
-  <rect x="450" y="150" width="300" height="130" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="600" y="192" text-anchor="middle">Company Memory</text><text class="node-copy" x="478" y="225">Curated durable</text><text class="node-copy" x="478" y="248">Company Artifacts</text>
-  <rect x="852" y="150" width="300" height="130" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="1002" y="192" text-anchor="middle">Company State</text><text class="node-copy" x="880" y="225">Current operational truth</text><text class="node-copy" x="880" y="248">derived from Evidence</text>
+  <text class="kicker" x="48" y="126">POSSIBLE SOURCES — NOT A SERIAL PIPELINE</text>
+  <rect class="card" x="48" y="146" width="252" height="124" rx="22"/>
+  <text class="node-title" x="174" y="188">Company Brain</text><text class="copy" x="174" y="222">Governed organization-owned</text><text class="copy" x="174" y="246">intelligence</text>
+  <rect class="card" x="330" y="146" width="252" height="124" rx="22"/>
+  <text class="node-title" x="456" y="188">External Information</text><text class="copy" x="456" y="222">Claims and Evidence</text><text class="copy" x="456" y="246">never organizational Authority</text>
+  <rect class="card" x="612" y="146" width="252" height="124" rx="22"/>
+  <text class="node-title" x="738" y="188">Performer Memory</text><text class="copy" x="738" y="222">Only where current Memory</text><text class="copy" x="738" y="246">Policy and access permit</text>
+  <rect class="card" x="894" y="146" width="252" height="124" rx="22"/>
+  <text class="node-title" x="1020" y="188">Current Work State</text><text class="copy" x="1020" y="222">Current case status</text><text class="copy" x="1020" y="246">and Provenance</text>
 
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M198 280 V300 Q198 320 218 320 H460 Q480 320 480 340 V355"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 280 V355"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M1002 280 V300 Q1002 320 982 320 H740 Q720 320 720 340 V355"/>
+  <rect class="focus" x="350" y="420" width="500" height="170" rx="24"/>
+  <text class="kicker" x="600" y="458" text-anchor="middle">KNOWLEDGE ACCESS PERFORMS THROUGH</text>
+  <text class="node-title" x="600" y="502">Context Construction</text>
+  <text class="copy" x="600" y="536">Select · retrieve · evaluate · relate</text><text class="copy" x="600" y="562">minimize · deliver</text>
+  <path class="flow" d="M174 270 V318 Q174 330 186 330 H428 Q440 330 440 342 V420"/>
+  <path class="flow" d="M456 270 V318 Q456 330 468 330 H508 Q520 330 520 342 V420"/>
+  <path class="flow" d="M738 270 V318 Q738 330 726 330 H692 Q680 330 680 342 V420"/>
+  <path class="flow" d="M1020 270 V318 Q1020 330 1008 330 H772 Q760 330 760 342 V420"/>
 
-  <rect x="390" y="355" width="420" height="180" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="600" y="398" text-anchor="middle">Knowledge Access</text>
-  <text class="node-copy" x="418" y="428">Uses authorized inputs where relevant</text><text class="node-copy" x="418" y="451">without changing source authority</text>
-  <line x1="418" y1="470" x2="782" y2="470" stroke="#dddddd"/>
-  <text class="process" x="470" y="507">Select</text><text class="process" x="555" y="507">Retrieve</text><text class="process" x="650" y="507">Synthesize</text><text class="process" x="752" y="507">Deliver</text>
+  <rect class="constraint-card" x="48" y="438" width="250" height="168" rx="22"/>
+  <text class="kicker" x="173" y="474" text-anchor="middle">GOVERNANCE &amp; QUALITY</text>
+  <text class="copy" x="173" y="508">Purpose · Scope · Authority</text><text class="copy" x="173" y="532">Classification · Freshness</text><text class="copy" x="173" y="556">Uncertainty · Counter-Evidence</text><text class="copy" x="173" y="580">Applicability · Memory Policy</text>
+  <path class="constraint" d="M298 510 H350"/>
 
-  <rect x="48" y="380" width="270" height="140" rx="20" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="183" y="416" text-anchor="middle">Pull or Push Access</text><text class="node-copy" x="74" y="445">Current activity (Pull)</text><text class="node-copy" x="74" y="468">Relevant Organizational Event</text><text class="node-copy" x="74" y="491">(Push)</text><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M318 445 H380"/>
-  <rect x="882" y="380" width="270" height="140" rx="20" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="1017" y="416" text-anchor="middle">Governance</text><text class="node-copy" x="908" y="445">Classification · mandates</text><text class="node-copy" x="908" y="468">authorization boundaries</text><path class="constraint" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="5 5" marker-end="url(#constraint)" d="M882 445 H820"/>
+  <rect class="card" x="48" y="658" width="280" height="132" rx="22"/>
+  <text class="node-title-small" x="188" y="693">State or Authority</text><text class="node-title-small" x="188" y="718">Change</text><text class="copy" x="188" y="750">Update or invalidate</text><text class="copy" x="188" y="774">affected context</text>
+  <rect class="focus" x="390" y="646" width="420" height="156" rx="24"/>
+  <text class="kicker" x="600" y="684" text-anchor="middle">TEMPORARY · PURPOSE-SPECIFIC · BOUNDED</text>
+  <text class="node-title" x="600" y="730">Working Context</text><text class="copy" x="600" y="764">Sufficient for one authorized activity</text>
+  <rect class="card" x="872" y="658" width="280" height="132" rx="22"/>
+  <text class="node-title" x="1012" y="704">Handoff</text><text class="copy" x="1012" y="740">Reconstruct for the</text><text class="copy" x="1012" y="764">next Performer</text>
+  <path class="flow" d="M600 590 V646"/>
+  <path class="constraint" d="M328 724 H390"/>
+  <path class="constraint" d="M872 724 H810"/>
 
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 535 V580"/>
-  <rect x="390" y="590" width="420" height="150" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="node-title" x="600" y="630" text-anchor="middle">Working Context</text><text class="node-copy" x="418" y="660">Smallest sufficient, temporary context</text><text class="node-copy" x="418" y="684">for the authorized activity-specific work</text><text class="node-copy" x="418" y="708">performed by a human or AI system</text>
+  <rect class="card" x="450" y="864" width="300" height="104" rx="22"/>
+  <text class="node-title" x="600" y="906">Performer</text><text class="copy" x="600" y="940">Receives the current Working Context</text>
+  <path class="flow" d="M600 802 V864"/>
 
-  <text class="note-title" x="48" y="778" fill="#222222">Company Memory ≠ Company State ≠ Working Context</text>
-  <text x="1152" y="804" text-anchor="end" font-size="12" fill="#666666">Knowledge Access prepares context; it does not decide or authorize</text>
+  <rect class="region" x="48" y="1008" width="1104" height="64" rx="20"/>
+  <text class="principle" x="600" y="1037">Past Access ≠ Current Access · Working Context ≠ Company Brain</text>
+  <text class="principle-copy" x="600" y="1061">Handoff reconstructs appropriate context; it does not transfer the predecessor context wholesale.</text>
 </svg>

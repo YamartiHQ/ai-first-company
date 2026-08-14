@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1280" viewBox="0 0 1200 1280" role="img" aria-labelledby="title desc">
   <title id="title">Organizational Evolution</title>
-  <desc id="desc">A candidate change is exercised in the Sandbox Organization, produces Evaluation Evidence, is evaluated and qualified, and reaches an accountable adoption decision before a qualified change may enter Production.</desc>
+  <desc id="desc">Organizational Learning and Implementation Evolution are distinct governed paths. Learning connects Experience, Organizational Reflection, a Learning Candidate, Evidence and Validation, governed Adoption, and appropriate organizational intelligence or practice. Implementation Evolution connects a Candidate Implementation Change, Sandbox Organization, Evaluation and Assurance, Capability Qualification, governed Adoption, and Production Organization. Production Experience may flow to Experience and Organizational Learning; Production Evidence may flow separately to Evaluation and Assurance; optional controlled Production-derived information may flow separately to Sandbox.</desc>
+  <metadata><![CDATA[Non-authoritative Reference Design overview. Source: REFERENCE_DESIGN.md. A qualified change—not Sandbox state—moves to Production. Learning does not automatically change Production. Qualification does not create Authority.]]></metadata>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
-    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
     <style><![CDATA[
-      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.kicker{font-size:14px;font-weight:700;letter-spacing:.8px}.node-title{font-size:20px;font-weight:700}.node-copy{font-size:15px;fill:#666666}.label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}.optional-label{font-size:12px;font-weight:700;text-anchor:middle}.input-title{font-size:19px;font-weight:700}.input{font-size:16px;fill:#666666}.principle{font-size:20px;font-weight:700;text-anchor:middle;fill:#222222}.principle-copy{font-size:16px;text-anchor:middle;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.optional{fill:none;stroke:#383838;stroke-width:2.3;stroke-dasharray:7 6;marker-end:url(#arrow-secondary)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}.label-bg{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.input,.principle-copy{fill:#666!important}.flow,.optional{stroke:#383838!important}marker path{fill:#383838!important}
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.node-title-small{font-size:21px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.optional{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.label{font-size:15px;font-weight:700;fill:#666;text-anchor:middle}.principle{font-size:19px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
     ]]></style>
   </defs>
-  <rect width="1200" height="900" fill="#fff" stroke-width="1.5"/>
+  <rect width="1200" height="1280" fill="#fff"/>
   <text class="title" x="48" y="54">Organizational Evolution</text>
-  <text class="subtitle" x="48" y="84">The organization may learn continuously while changing deliberately.</text>
+  <text class="subtitle" x="48" y="84">The organization may learn continuously while changing deliberately</text>
 
-  <rect x="420" y="125" width="360" height="110" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="448" y="158" fill="#666666">PROPOSED</text><text class="node-title" x="600" y="193" text-anchor="middle">Candidate Change</text><text class="node-copy" x="448" y="219">A bounded change requiring evaluation</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 235 V280"/>
+  <rect class="region" x="48" y="124" width="532" height="916" rx="24"/>
+  <text class="kicker" x="76" y="164">A · ORGANIZATIONAL LEARNING</text>
+  <rect class="card" x="104" y="190" width="420" height="104" rx="22"/>
+  <text class="node-title" x="314" y="232">Experience</text><text class="copy" x="314" y="266">Human, AI, team, system, or Outcome-derived</text>
+  <rect class="card" x="104" y="334" width="420" height="104" rx="22"/>
+  <text class="node-title" x="314" y="376">Organizational Reflection</text><text class="copy" x="314" y="410">Governed examination of Experience</text>
+  <rect class="card" x="104" y="478" width="420" height="104" rx="22"/>
+  <text class="node-title" x="314" y="520">Learning Candidate</text><text class="copy" x="314" y="554">Proposed reusable insight or change</text>
+  <rect class="card" x="104" y="622" width="420" height="104" rx="22"/>
+  <text class="node-title" x="314" y="664">Evidence &amp; Validation</text><text class="copy" x="314" y="698">Support, challenge, or reject the candidate</text>
+  <rect class="card" x="104" y="766" width="420" height="104" rx="22"/>
+  <text class="kicker" x="132" y="800">GOVERNED</text><text class="node-title" x="314" y="828">Adoption</text>
+  <rect class="card" x="104" y="910" width="420" height="104" rx="22"/>
+  <text class="node-title-small" x="314" y="950" style="font-size:19px">Company Brain / Organizational Practice</text><text class="copy" x="314" y="984">Appropriately adopted organizational intelligence</text>
+  <path class="flow" d="M314 294 V334"/><path class="flow" d="M314 438 V478"/><path class="flow" d="M314 582 V622"/><path class="flow" d="M314 726 V766"/><path class="flow" d="M314 870 V910"/>
 
-  <rect x="420" y="290" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="448" y="324" fill="#222222">ISOLATED</text><text class="node-title" x="600" y="360" text-anchor="middle">Sandbox Organization</text><text class="node-copy" x="448" y="389">Test changes without Production effects</text>
-  <rect x="48" y="285" width="280" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="input-title" x="188" y="323" text-anchor="middle">Evaluation inputs</text><text class="input" x="76" y="356">Synthetic scenarios</text><text class="input" x="76" y="382">Historical or replay data</text><text class="input" x="76" y="408">Failure and boundary cases</text><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M328 360 H410"/>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 410 V455"/>
+  <rect class="region" x="620" y="124" width="532" height="916" rx="24"/>
+  <text class="kicker" x="648" y="164">B · IMPLEMENTATION EVOLUTION</text>
+  <rect class="card" x="660" y="190" width="392" height="104" rx="22"/>
+  <text class="node-title-small" x="856" y="220">Candidate Implementation</text><text class="node-title-small" x="856" y="244">Change</text><text class="copy" x="856" y="276">Bounded implementation or configuration change</text>
+  <rect class="card" x="660" y="334" width="392" height="104" rx="22"/>
+  <text class="node-title" x="856" y="376">Sandbox Organization</text><text class="copy" x="856" y="410">Evaluate without Production effects</text>
+  <rect class="card" x="660" y="478" width="392" height="104" rx="22"/>
+  <text class="node-title" x="856" y="520">Evaluation &amp; Assurance</text><text class="copy" x="856" y="554">Determine Evidence and bounded limits</text>
+  <rect class="card" x="660" y="622" width="392" height="104" rx="22"/>
+  <text class="node-title" x="856" y="664">Capability Qualification</text><text class="copy" x="856" y="698">Demonstrated capability in Scope</text>
+  <rect class="card" x="660" y="766" width="392" height="104" rx="22"/>
+  <text class="kicker" x="688" y="800">GOVERNED</text><text class="node-title" x="856" y="828">Adoption</text>
+  <rect class="card" x="660" y="910" width="392" height="104" rx="22"/>
+  <text class="node-title" x="856" y="952">Production Organization</text><text class="copy" x="856" y="986">Operate qualified adopted change</text>
+  <path class="flow" d="M856 294 V334"/><path class="flow" d="M856 438 V478"/><path class="flow" d="M856 582 V622"/><path class="flow" d="M856 726 V766"/><path class="flow" d="M856 870 V910"/>
 
-  <rect x="420" y="465" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="448" y="499" fill="#222222">EVIDENCED</text><text class="node-title" x="600" y="535" text-anchor="middle">Evaluation &amp; Qualification</text><text class="node-copy" x="448" y="564">Determine capability and bounded limits</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M600 585 V630"/>
+  <path class="optional" d="M1052 986 H1108 Q1120 986 1120 974 V398 Q1120 386 1108 386 H1052"/>
+  <text class="label" x="1140" y="686" transform="rotate(-90 1140 686)">optional controlled Production-derived information</text>
+  <path class="flow" d="M1052 938 H1064 Q1076 938 1076 926 V542 Q1076 530 1064 530 H1052"/>
+  <text class="label" x="1096" y="734" transform="rotate(-90 1096 734)">Production Evidence</text>
+  <path class="optional" d="M660 942 H648 Q636 942 636 930 V254 Q636 242 624 242 H524"/>
+  <text class="label" x="616" y="597" transform="rotate(-90 616 597)">Production Experience</text>
 
-  <rect x="420" y="640" width="360" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="448" y="674" fill="#222222">ACCOUNTABLE</text><text class="node-title" x="600" y="710" text-anchor="middle">Adoption Decision</text><text class="node-copy" x="448" y="739">Applicable authority decides whether to adopt</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M780 700 H860"/>
-
-  <rect x="870" y="640" width="282" height="120" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="898" y="674" fill="#222222">OPERATIONAL</text><text class="node-title" x="1011" y="710" text-anchor="middle">Production Organization</text><text class="node-copy" x="898" y="739">Operate within adopted boundaries</text>
-  <path class="optional" fill="none" stroke="#383838" stroke-width="2.3" stroke-dasharray="7 6" marker-end="url(#arrow-secondary)" d="M1011 640 V350 Q1011 330 991 330 H790"/>
-  <rect class="label-bg" x="790" y="445" width="205" height="58" rx="10" fill="#ffffff" stroke="none" stroke-width="1.5"/>
-  <text class="optional-label" x="892" y="469">optional controlled</text><text class="optional-label" x="892" y="489">Production-derived information</text>
-
-  <rect x="48" y="805" width="1104" height="58" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="principle" x="600" y="832">A qualified change moves to Production — not the Sandbox state.</text><text class="principle-copy" x="600" y="853">Qualification demonstrates capability; it does not create authority.</text>
-  <text x="1152" y="890" text-anchor="end" font-size="12" fill="#666666">Reference Design · controlled organizational change</text>
+  <rect class="region" x="48" y="1090" width="1104" height="142" rx="22"/>
+  <text class="principle" x="600" y="1128">A qualified change moves to Production—not the Sandbox state.</text>
+  <text class="principle-copy" x="600" y="1162">Learning does not automatically change Production.</text>
+  <text class="principle-copy" x="600" y="1192">Qualification demonstrates capability; it does not create Authority.</text>
 </svg>

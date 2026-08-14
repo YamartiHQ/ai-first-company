@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2860" viewBox="0 0 1200 2860" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Technical Realization and Traceability</title>
+  <desc id="diagram-desc">A selective, non-authoritative Technical Requirements diagram. It shows responsibility-driven derivation from Reference Composition to implementation choice; repository traceability through inventory, matrix, implementation map, component requirements, cross-technology obligations, and concrete verification; conditional applicability, Shared Implementation, and Verification Decomposition; and progressive realization bounded by explicit coverage, restrictions, residual risk, Evidence, and full-conformance criteria.</desc>
+  <metadata><![CDATA[
+    Diagram status: selective, non-authoritative visual explanation.
+    Technical source: TECHNICAL_REQUIREMENTS.md, especially From Reference Design to Technology, Technical Component Inventory, Reference Composition × Technology Matrix, Implementation Map, Technology Requirements, Cross-Technology Requirements, Completeness and Traceability, and Minimum Technical Realization.
+    Reference source: REFERENCE_DESIGN.md. Repository authority source: PROJECT.md.
+    Counts represented: 10 Reference Compositions, 25 technical component types, 25 stable TR IDs, and 21 Cross-Technology Requirements.
+    The diagram defines no product selection, vendor recommendation, conformance profile, certification, maturity level, or implementation-specific universal test suite.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}
+      .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+      .subtitle{font-size:19px;fill:#666666}
+      .region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}
+      .card{fill:#ffffff;stroke:#b2b2b2;stroke-width:1.5}
+      .focus{fill:#ffffff;stroke:#555555;stroke-width:2}
+      .system{fill:#f1f1f1;stroke:#777777;stroke-width:1.8}
+      .kicker{font-size:15px;font-weight:700;letter-spacing:1px}
+      .kicker-center{font-size:15px;font-weight:700;letter-spacing:1px;text-anchor:middle}
+      .node-title{font-size:21px;font-weight:700;text-anchor:middle}
+      .node-title-small{font-size:17px;font-weight:700;text-anchor:middle}
+      .copy{font-size:15px;fill:#666666;text-anchor:middle}
+      .copy-small{font-size:13px;fill:#666666;text-anchor:middle}
+      .label{font-size:14px;font-weight:700;fill:#666666;text-anchor:middle}
+      .principle{font-size:18px;font-weight:700;text-anchor:middle}
+      .principle-small{font-size:15px;font-weight:700;text-anchor:middle}
+      .flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="2860" fill="#ffffff"/>
+  <text class="title" x="48" y="54">Technical Realization and Traceability</text>
+  <text class="subtitle" x="48" y="84">From organizational responsibility to explicit, evidence-based technical coverage</text>
+
+  <!-- Region 1: Responsibility-driven derivation -->
+  <rect class="region" x="48" y="112" width="1104" height="808" rx="24"/>
+  <text class="kicker" x="76" y="148">1 · RESPONSIBILITY-DRIVEN DERIVATION</text>
+
+  <rect class="card" x="270" y="175" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="207">Reference Composition</text>
+  <text class="copy" x="600" y="233">10 Reference Compositions</text>
+
+  <rect class="card" x="270" y="285" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="317">Reference Responsibility</text>
+  <text class="copy" x="600" y="343">Organizational responsibility—not a product</text>
+
+  <rect class="card" x="270" y="395" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="427">Required Technical Function</text>
+  <text class="copy" x="600" y="453">Technology follows the responsibility that requires it</text>
+
+  <rect class="focus" x="270" y="505" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="537">Technical Component</text>
+  <text class="copy" x="600" y="563">25 technical component types</text>
+
+  <rect class="focus" x="270" y="615" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="647">Technical Requirement</text>
+  <text class="copy" x="600" y="673">25 stable TR IDs · one complete requirement class per component type</text>
+
+  <rect class="card" x="270" y="725" width="660" height="78" rx="20"/>
+  <text class="node-title" x="600" y="757">Implementation Choice</text>
+  <text class="copy" x="600" y="783">Products, services, open source, custom implementation, or combinations</text>
+
+  <path class="flow" d="M600 253 V285"/>
+  <path class="flow" d="M600 363 V395"/>
+  <path class="flow" d="M600 473 V505"/>
+  <path class="flow" d="M600 583 V615"/>
+  <path class="flow" d="M600 693 V725"/>
+  <text class="label" x="804" y="603">one-to-one: 25 component types ↔ 25 stable TR IDs</text>
+
+  <text class="principle-small" x="600" y="846">One responsibility may require several components. One component may support several responsibilities.</text>
+  <text class="copy" x="600" y="876">Every technically relevant Reference responsibility is covered; all other layer relations are many-to-many.</text>
+  <text class="copy" x="600" y="900">Technical component type ≠ vendor product · Technical Requirement ≠ implementation</text>
+
+  <!-- Region 2: Repository traceability -->
+  <rect class="region" x="48" y="950" width="1104" height="690" rx="24"/>
+  <text class="kicker" x="76" y="986">2 · REPOSITORY TRACEABILITY</text>
+
+  <rect class="card" x="190" y="1015" width="820" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1054">Reference Design</text>
+
+  <rect class="card" x="190" y="1103" width="820" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1130">Technical Component Inventory</text>
+  <text class="copy-small" x="600" y="1152">Which technical component types may be required</text>
+
+  <rect class="card" x="190" y="1191" width="820" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1218">Composition × Technology Matrix</text>
+  <text class="copy-small" x="600" y="1240">Which Compositions create each requirement</text>
+
+  <rect class="card" x="190" y="1279" width="820" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1306">Implementation Map</text>
+  <text class="copy-small" x="600" y="1328">Why each Composition requires the technology</text>
+
+  <rect class="focus" x="190" y="1367" width="820" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1394">Technology Requirements · 25 stable TR IDs</text>
+  <text class="copy-small" x="600" y="1416">Complete component-level criteria for each technical component type</text>
+
+  <rect class="system" x="160" y="1455" width="880" height="64" rx="18"/>
+  <text class="node-title-small" x="600" y="1482">Applicable Cross-Technology Requirements · 21 XTRs</text>
+  <text class="copy-small" x="600" y="1504">End-to-end obligations across components, interfaces, workflows, and enforcement boundaries</text>
+
+  <rect class="focus" x="160" y="1543" width="880" height="70" rx="18"/>
+  <text class="node-title-small" x="600" y="1571">Concrete Technology Selection and System-Level Verification</text>
+  <text class="copy-small" x="600" y="1595">How chosen implementations satisfy every applicable criterion and cross-system obligation</text>
+
+  <path class="flow" d="M600 1079 V1103"/>
+  <path class="flow" d="M600 1167 V1191"/>
+  <path class="flow" d="M600 1255 V1279"/>
+  <path class="flow" d="M600 1343 V1367"/>
+  <path class="flow" d="M600 1431 V1455"/>
+  <path class="flow" d="M600 1519 V1543"/>
+
+  <!-- Region 3: Applicability, sharing, and verification -->
+  <rect class="region" x="48" y="1670" width="1104" height="540" rx="24"/>
+  <text class="kicker" x="76" y="1706">3 · APPLICABILITY, SHARING, AND VERIFICATION</text>
+
+  <rect class="card" x="64" y="1735" width="344" height="440" rx="22"/>
+  <text class="kicker-center" x="236" y="1773">CONDITIONAL APPLICABILITY</text>
+  <rect class="system" x="82" y="1795" width="308" height="55" rx="16"/>
+  <text class="node-title-small" x="236" y="1829">Condition stated</text>
+  <rect class="system" x="82" y="1885" width="308" height="55" rx="16"/>
+  <text class="node-title-small" x="236" y="1910">Condition evaluated</text>
+  <text class="copy-small" x="236" y="1931">for the selected Scope</text>
+  <rect class="system" x="82" y="1975" width="308" height="62" rx="16"/>
+  <text class="node-title-small" x="236" y="2001">Criterion required</text>
+  <text class="copy-small" x="236" y="2023">when the condition is true</text>
+  <path class="flow" d="M236 1850 V1885"/>
+  <path class="flow" d="M236 1940 V1975"/>
+  <text class="principle-small" x="236" y="2090">Omission is not a</text>
+  <text class="principle-small" x="236" y="2112">non-applicability decision.</text>
+  <text class="copy-small" x="236" y="2142">Non-applicability requires explicit,</text>
+  <text class="copy-small" x="236" y="2160">reviewable justification.</text>
+
+  <rect class="card" x="428" y="1735" width="344" height="440" rx="22"/>
+  <text class="kicker-center" x="600" y="1773">SHARED IMPLEMENTATION</text>
+  <rect class="system" x="446" y="1815" width="308" height="70" rx="16"/>
+  <text class="node-title-small" x="600" y="1844">One concrete system</text>
+  <text class="copy-small" x="600" y="1866">one product or combined implementation</text>
+  <rect class="system" x="446" y="1950" width="308" height="70" rx="16"/>
+  <text class="node-title-small" x="600" y="1979">Several complete TR sets</text>
+  <text class="copy-small" x="600" y="2001">each applicable criterion still applies</text>
+  <path class="flow" d="M600 1885 V1950"/>
+  <text class="principle-small" x="600" y="2090">Fewer products do not mean</text>
+  <text class="principle-small" x="600" y="2112">fewer obligations.</text>
+  <text class="copy-small" x="600" y="2142">Shared implementation reduces product count,</text>
+  <text class="copy-small" x="600" y="2160">not requirement coverage.</text>
+
+  <rect class="card" x="792" y="1735" width="344" height="440" rx="22"/>
+  <text class="kicker-center" x="964" y="1773">VERIFICATION DECOMPOSITION</text>
+  <rect class="system" x="810" y="1794" width="308" height="42" rx="14"/>
+  <text class="node-title-small" x="964" y="1821">Requirement criterion</text>
+  <rect class="system" x="810" y="1860" width="308" height="42" rx="14"/>
+  <text class="node-title-small" x="964" y="1887">Concrete component or control</text>
+  <rect class="system" x="810" y="1926" width="308" height="42" rx="14"/>
+  <text class="node-title-small" x="964" y="1953">Evidence source and method</text>
+  <rect class="system" x="810" y="1992" width="308" height="42" rx="14"/>
+  <text class="node-title-small" x="964" y="2019">Acceptance condition</text>
+  <rect class="system" x="810" y="2058" width="308" height="42" rx="14"/>
+  <text class="node-title-small" x="964" y="2085">Result, limitations, residual risk</text>
+  <path class="flow" d="M964 1836 V1860"/>
+  <path class="flow" d="M964 1902 V1926"/>
+  <path class="flow" d="M964 1968 V1992"/>
+  <path class="flow" d="M964 2034 V2058"/>
+  <text class="principle-small" x="964" y="2134">Presence, deployment, or one</text>
+  <text class="principle-small" x="964" y="2156">functional test is insufficient.</text>
+
+  <!-- Region 4: Progressive realization and conformance boundary -->
+  <rect class="region" x="48" y="2240" width="1104" height="580" rx="24"/>
+  <text class="kicker" x="76" y="2276">4 · PROGRESSIVE REALIZATION AND CONFORMANCE BOUNDARY</text>
+
+  <rect class="card" x="60" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="135" y="2360">Bounded</text>
+  <text class="node-title-small" x="135" y="2382">Capability Scope</text>
+  <rect class="card" x="246" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="321" y="2348">Covered</text>
+  <text class="node-title-small" x="321" y="2370">responsibilities</text>
+  <text class="node-title-small" x="321" y="2392">and criteria</text>
+  <rect class="card" x="432" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="507" y="2348">Explicit</text>
+  <text class="node-title-small" x="507" y="2370">uncovered or</text>
+  <text class="node-title-small" x="507" y="2392">deferred elements</text>
+  <rect class="card" x="618" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="693" y="2360">Operational</text>
+  <text class="node-title-small" x="693" y="2382">restrictions</text>
+  <rect class="card" x="804" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="879" y="2358">Residual risks</text>
+  <text class="node-title-small" x="879" y="2380">and limitations</text>
+  <rect class="card" x="990" y="2320" width="150" height="100" rx="18"/>
+  <text class="node-title-small" x="1065" y="2360">Evidence-based</text>
+  <text class="node-title-small" x="1065" y="2382">expansion</text>
+
+  <path class="flow" d="M210 2370 H246"/>
+  <path class="flow" d="M396 2370 H432"/>
+  <path class="flow" d="M582 2370 H618"/>
+  <path class="flow" d="M768 2370 H804"/>
+  <path class="flow" d="M954 2370 H990"/>
+
+  <rect class="focus" x="80" y="2470" width="1040" height="300" rx="24"/>
+  <text class="principle" x="600" y="2522">Complete model. Start small. Grow with confidence.</text>
+  <text class="principle-small" x="600" y="2568">Progressive realization is permitted.</text>
+  <text class="copy" x="600" y="2598">Full conformance requires verified coverage of every applicable mandatory TR criterion</text>
+  <text class="copy" x="600" y="2622">and every applicable XTR obligation.</text>
+
+  <text class="principle-small" x="600" y="2662">Implementation ≠ Evidence ≠ acceptance</text>
+  <text class="copy" x="600" y="2688">Matrix coverage is not complete conformance. Partial implementation must not claim full Reference Design conformance.</text>
+  <text class="copy" x="600" y="2714">Consequence-dependent acceptance conditions, uncovered responsibilities, restrictions, and residual risk remain explicit.</text>
+  <text class="principle-small" x="600" y="2750">No Minimal, Regulated, Full, or other conformance profile is defined by v2.</text>
+</svg>

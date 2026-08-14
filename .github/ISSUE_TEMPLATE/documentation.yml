@@ -1,0 +1,66 @@
+name: Documentation improvement
+description: Report an explanatory, accessibility, or navigation problem that does not silently change normative meaning.
+title: "[Documentation]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for unclear explanations, accessibility problems, navigation problems, or non-normative documentation improvements. Architecture changes require prior alignment and must not be presented as explanatory edits.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file and section
+      description: Provide the repository path and exact heading or location.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Documentation category
+      options:
+        - Unclear explanation
+        - Accessibility problem
+        - Navigation problem
+        - Other non-normative documentation improvement
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Meaning of the proposal
+      description: Distinguish explanatory clarification from a proposed Architecture change.
+      options:
+        - Explanatory clarification only
+        - Proposed Architecture change requiring prior Discussion or Issue alignment
+        - Uncertain and requires authority-layer review
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain what is unclear, inaccessible, difficult to navigate, or otherwise deficient.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: Describe the smallest useful improvement and any meaning that must remain unchanged.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Describe links, rendering, terminology, accessibility, or other checks that should be performed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Existing reports
+      options:
+        - label: I searched existing Issues and any available Discussions for this topic.
+          required: true

@@ -1,34 +1,41 @@
 # The Core Idea
 
-An AI-First Company is an organization in which humans and AI systems operate within one coherent organizational system.
+An AI-First Company is one coherent organizational system in which Human and AI Performers contribute through shared organizational semantics, explicit boundaries, and governed operation.
 
-That does not mean adding AI tools to otherwise unchanged work. It means designing knowledge, responsibility, authority, execution, and learning so that AI can contribute within explicit boundaries while humans retain accountability.
+That does not mean adding AI tools to otherwise unchanged work. It means designing identity, intelligence, capabilities, coordination, responsibility, authority, accountability, execution, learning, assurance, and continuity so different Performers can contribute without creating separate organizational realities.
 
-At a high level, the organization connects shared understanding, organizational capabilities, controlled execution, evidence, and deliberate evolution:
+The model is complete within its defined Scope, but a concrete realization need not implement everything simultaneously. One bounded real organizational need is the normal starting point. A minimal realization may combine responsibilities and implementations while preserving their distinct meanings and boundaries; deferred or uncovered responsibilities remain explicit rather than silently disappearing. Expansion follows Evidence, consequence, risk, scale, and operational need, and progressive realization does not by itself establish complete conformance.
+
+At a high level:
 
 ```text
-Organizational Knowledge and State
-              ↓
-      Company Capabilities
-              ↓
-      Controlled Execution
-              ↓
-       Outcomes and Evidence
-              ↓
-       Learning and Evaluation
-              ↓
-        Deliberate Change
+Organizational Identity
+        ↓
+Company Brain / Organizational Intelligence
+        ↕
+Company Capabilities
+        ↓
+Coordination and Work
+        ↓
+Decisions and Controlled Execution
+        ↓
+Outcomes
+      ↙   ↘
+Learning  Assurance
+      ↘   ↙
+Future Operation
+        ↺
 ```
 
-Authority and human accountability constrain this flow rather than appearing as automatic steps within it.
+Responsibility, Authority, Accountability, Information Governance, operational integrity, and continuity constrain this flow across Performer types.
 
 ## One organization, not separate worlds
 
-Humans and AI systems need compatible organizational knowledge and current state. If each person, model, or tool acts from a private version of the organization, work becomes inconsistent and difficult to govern.
+Human and AI Performers need compatible organizational intelligence and current State. If each person, model, Group, or tool acts from a private version of the organization, work becomes inconsistent and difficult to govern.
 
-Coherence does not require every participant to see everything. Each activity should receive the smallest sufficient context, subject to its information and authority boundaries.
+Coherence does not require every Performer to see everything or receive the same context. Different Performers may need different authorized Working Contexts, but those contexts must remain grounded in compatible Company State, Provenance, and Governance.
 
-Different participants may therefore see different authorized views, but they must not operate from conflicting organizational realities.
+<sub>**Explore the model:** [Organizational Intelligence and Company Brain](../01-architecture/ARCHITECTURE.md#organizational-intelligence-and-company-brain) · [Knowledge Access and Context Construction](../01-architecture/ARCHITECTURE.md#knowledge-access-and-context-construction)</sub>
 
 ## Stable responsibilities, replaceable implementations
 
@@ -36,72 +43,146 @@ An organization should define what it must be able to do before deciding who or 
 
 > **The capability belongs to the organization. Its current performer does not.**
 
-A capability may be performed by a person, an AI system, software, or a combination of them. Those implementations will change. The organizational capability, its purpose, its boundaries, and the evidence about its performance should remain understandable across those changes.
+A Company Capability may be realized through a Capability Implementation involving Human or AI Performers, Organizational Groups, processes, systems, tools, or collaborative combinations. Implementations will change. The Capability, its Purpose, its boundaries, and the Evidence about its performance should remain understandable across those changes.
 
-This keeps a model replacement, tool migration, or staffing change from silently redefining the organization.
+This keeps a model replacement, provider change, tool migration, or staffing change from silently redefining the organization.
 
-## Knowledge belongs to the organization
+<sub>**Explore the model:** [Company Capabilities](../01-architecture/ARCHITECTURE.md#company-capabilities) · [Company Execution Environment](../01-architecture/ARCHITECTURE.md#company-execution-environment)</sub>
 
-Important organizational knowledge must not live only in individual conversations, models, people, or tools. Those sources can contribute information, but none of them is the organization’s memory.
+## Organizational intelligence belongs to the organization
 
-Organizational memory is curated. Material is observed, evaluated, validated for a stated context, and intentionally preserved when it has lasting company value. Sources, evidence, decisions, provenance, and applicable review conditions remain connected to what the organization accepts.
+Important organizational intelligence must not live only in individual conversations, models, people, or tools.
 
-Shared understanding is therefore different from shared storage. Putting information in one place does not make it reliable, current, authoritative, or useful.
+The **Company Brain** is the organization-owned intelligence layer. It connects relevant authoritative and retained information while preserving their different meanings and governance.
 
-Different information may remain authoritative in different Systems of Record. The organization preserves their meaning, relationships, authority, and provenance while preparing the relevant Working Context for each authorized activity.
+```text
+Company Brain ≠ Company Memory ≠ Company State ≠ Performer Memory
+```
+
+- **Company State** is what the organization currently considers true for operation.
+- **Company Memory** is historically relevant information intentionally retained by the organization.
+- **Performer Memory** is longer-lived performer-local experience governed by current Memory Policy and access.
+
+Information does not follow one universal promotion path. According to its meaning and governance, information may be represented as a Source Claim, Evidence, Company State Fact, Validated Knowledge, Decision Record, Organizational Practice, Company Artifact, or Company Memory.
+
+Shared intelligence is different from shared storage. Putting information in one place does not make it reliable, current, authoritative, appropriately accessible, or organizationally adopted.
+
+<sub>**Explore the model:** [Organizational Intelligence and Company Brain](../01-architecture/ARCHITECTURE.md#organizational-intelligence-and-company-brain) · [Knowledge Representation and Provenance](../01-architecture/ARCHITECTURE.md#knowledge-representation-and-provenance)</sub>
 
 ## Capability is not authority
 
-A person or AI system may be technically able to perform an action without being organizationally authorized to do it.
+A Performer may be technically able to perform an action without being organizationally qualified or authorized to do it.
 
-Authority comes from governance. Consequential decisions remain assigned to accountable humans through explicit boundaries. AI systems may prepare, analyze, recommend, monitor, and execute authorized work, but their technical access or apparent competence does not create permission.
+```text
+technical ability ≠ Capability Qualification
+Qualification ≠ Operational Confidence ≠ Authority
+Responsibility ≠ Authority ≠ Accountability
+```
 
-Confidence follows the same rule. Evidence that a capability performs well may justify a governance decision to reduce repetitive supervision within bounded conditions. It does not automatically grant authority, and it can also justify narrower authorization or greater supervision.
+Decision Authority and Accountability are explicit and bounded independently of Performer type. Applicable law, contracts, safety requirements, or company governance may require human participation in particular cases; the Architecture itself does not impose one universal performer type.
 
 ## Work remains controlled and visible
 
-Intent should enter execution only after the applicable authority and admission boundaries have been satisfied.
+Organizational work remains attributable and bounded from decision or intended action through externally observable result:
 
-During execution, the organization should be able to understand what is happening, which context and authorization apply, and who or what performed the work.
+```text
+Decision / Action Intent
+        ↓
+Authorized Effect
+        ↓
+Organizational Control Plane
+        ↓
+Controlled Execution
+        ↓
+External Interaction
+        ↓
+External Effect
+        ↓
+Outcome
+```
 
-Outcomes remain attributable and become evidence for later review and learning. External actions pass through controlled boundaries rather than occurring merely because a system holds a credential.
+Instructions ≠ Controls. External content ≠ Authority. Execution ≠ External Effect. External Effect ≠ Outcome.
 
-Failure and uncertainty must stay visible and bounded. A failure must not silently expand authority, erase execution state, or turn an uncertain external effect into an assumed success.
+If an External Effect is unknown, safe operation may require verifying external State and reconciling the result before deciding whether retry is appropriate. Technical credentials or tool access do not create organizational permission.
 
-Safe behavior may include stopping, waiting, restricting, gathering additional evidence, escalating, preserving state, or recovering where the situation requires it.
+<sub>**Explore the model:** [Company Capabilities](../01-architecture/ARCHITECTURE.md#company-capabilities) · [Controlled Execution](../01-architecture/ARCHITECTURE.md#controlled-execution) · [Decision Authority, Accountability and Attention](../01-architecture/ARCHITECTURE.md#decision-authority-accountability-and-attention)</sub>
 
 ## Trust grows from evidence
 
-Organizational trust is not a permanent property of a person, model, or tool. It is confidence in a defined capability under defined conditions, supported by evidence.
+Organizational trust is not a permanent property of a person, model, Group, or tool. It is confidence in a defined Capability or implementation under defined conditions, supported by Evidence.
 
-The organization observes outcomes, retains relevant evidence, and evaluates performance in context.
+```text
+Evaluation
+   → Capability Qualification
+   → bounded Authority
+   → Production
+   → Continuous Assurance
+   → Operational Confidence
+   → Authority review
+```
 
-Accountable governance can then decide whether to keep, narrow, expand, or revoke an authorization. This makes increased autonomy progressive, bounded, and reversible.
+Qualification establishes an initial evidence basis. Continuous Assurance determines whether trust remains justified during operation. Operational Confidence informs Authority review but never grants Authority automatically.
+
+## Autonomy is bounded and reversible
+
+Autonomy is specific to a Capability, Scope, conditions, controls, and current Authority. It remains enforceable, observable, and reversible.
+
+Positive Evidence may support deliberate expansion. Material Negative Evidence must be able to trigger rapid review, contraction, suspension, containment, or requalification.
+
+The objective is not maximum automation. It is justified operation within boundaries the organization can understand and change.
+
+<sub>**Explore the model:** [Operational Confidence and Continuous Assurance](../01-architecture/ARCHITECTURE.md#operational-confidence-and-continuous-assurance) · [Standing Authorization and Controlled Autonomy](../01-architecture/ARCHITECTURE.md#standing-authorization-and-controlled-autonomy)</sub>
 
 ## Learn continuously, change deliberately
 
-An AI-First Company can continuously observe its operation and environment without continuously modifying itself.
+An AI-First Company can continuously learn from operation without continuously modifying itself.
 
-Evidence can reveal a need to improve knowledge, context, policy, process, human guidance, or an implementation. A proposed change is still evaluated, authorized, tested where appropriate, and adopted through controlled evolution.
+```text
+Experience
+   → Organizational Reflection
+   → Organizational Learning Candidate
+   → Evidence and Validation
+   → governed Adoption
+   → Company Brain / Organizational Practice
+   → future Performers
+```
+
+Performer learning ≠ Organizational Learning. Learning Candidate ≠ adopted learning. Memory consolidation ≠ learning adoption.
+
+An LLM, person, team, or operational system may identify useful Experience. The organization has learned only when the candidate has passed the appropriate evaluation and adoption governance.
 
 > **The organization may learn continuously while changing deliberately.**
 
+<sub>**Explore the model:** [Organizational Learning](../01-architecture/ARCHITECTURE.md#organizational-learning)</sub>
+
+## Coordination does not require hierarchy
+
+Hierarchy may be used, but it is an implementation choice rather than an Architecture primitive.
+
+Attention may route according to required Capability, expertise, Authority, Information Access, and availability. Routing Attention does not grant Authority or access, and collaboration does not aggregate them automatically.
+
+> **Less hierarchy requires clearer governance, not less governance.**
+
+<sub>**Explore the model:** [Organizational Coordination and Collaboration](../01-architecture/ARCHITECTURE.md#organizational-coordination-and-collaboration) · [Attention Routing](../01-architecture/ARCHITECTURE.md#attention-routing)</sub>
+
 ## Start small, evolve deliberately
 
-The model applies to an organization beginning with one founder as well as to an established organization moving toward an AI-first target architecture.
+Architectural completeness does not require a large organization, separate teams, or one technical system for every responsibility.
 
-Complete architectural responsibility does not require a large organization, separate teams, or one technical system for every responsibility. A solo founder may initially hold several responsibilities and Decision Mandates, while compact artifacts and implementations may realize multiple requirements as long as their distinctions, boundaries, authority, and accountability remain explicit.
+A minimal realization may use few Performers, shared Capability Implementations, compact governance artifacts, and multiple responsibilities per Actor. Responsibility, Authority, Accountability, Information Access, and Provenance must nevertheless remain explicit.
 
-An existing organization may establish the target architecture progressively, including capability by capability alongside current structures. Existing organizational truth, authority, and accountability remain in force until each transition is explicitly validated and adopted.
+An existing organization may establish the target architecture progressively, including Capability by Capability alongside current structures. Current organizational truth, Authority, and Accountability remain in force until each transition is governed, qualified, reconciled, and adopted.
 
-![Two paths for starting small and evolving deliberately: a compact new organization and a capability-by-capability transition for an existing organization.](../01-architecture/diagrams/start-small-evolve-deliberately.png)
+![A minimal organizational realization evolving deliberately as risk, scale, specialization, and operational need justify change.](../01-architecture/diagrams/start-small-evolve-deliberately.png)
 
-*A compact realization can preserve the complete architectural distinctions without requiring unnecessary organizational or technical complexity.*
+*A compact realization can preserve complete architectural distinctions without unnecessary organizational or technical complexity.*
 
-A founder can begin with one real Company Capability and follow it from an expected result, explicit Intent, and authority through bounded execution to an observed Outcome, Evidence, and review. The [LLM usage document](USING_THE_FOUNDATION_WITH_AN_LLM.md) provides a repository-grounded prompt and a compact starting loop for applying the Foundation this way through a general-purpose LLM.
+Begin with one real organizational need and follow it through Company Capability, implementation and Performer Assignment, explicit governance, Context Construction, bounded execution, Outcome, Learning, and Assurance. The [LLM usage document](USING_AI_FIRST_COMPANY_WITH_AN_LLM.md) provides one optional repository-grounded interaction method.
+
+<sub>**Continue into realization:** [Proportional Realization](../02-reference-design/REFERENCE_DESIGN.md#proportional-realization) · [Minimum Technical Realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#10-minimum-technical-realization)</sub>
 
 ## Continue to the Architecture
 
 The [AI-First Company Architecture](../01-architecture/ARCHITECTURE.md) defines the concepts, responsibilities, boundaries, and relationships that make this organizational model precise.
 
-For optional context on the project's origin, its relationship to established fields of work, and its development through human–AI collaboration, see [Origin, Related Work, and Contribution](ORIGIN_AND_RELATED_WORK.md).
+For optional context on the project's origin, related fields, and development through Human–AI collaboration, see [Origin, Related Work, and Contribution](ORIGIN_AND_RELATED_WORK.md).

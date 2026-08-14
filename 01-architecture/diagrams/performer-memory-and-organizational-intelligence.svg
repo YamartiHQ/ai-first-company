@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1160" viewBox="0 0 1200 1160" role="img" aria-labelledby="title desc">
+  <title id="title">Performer Memory and Organizational Intelligence</title>
+  <desc id="desc">Working Memory is temporary performer-local state. Memory Policy and Governance condition any retention into separate Performer Memory. Experience may enter Organizational Learning, but only governed adoption creates organization-owned intelligence in the Company Brain. Continuity uses current organization-owned intelligence, a newly constructed authorized Working Context, and sufficient authorized configuration to rehydrate a fresh or replacement Performer without inheriting stale memory, access, Authority, Qualification, or confidence.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE.md. Working Memory, Performer Memory, Organizational Learning, Company Brain, and Performer Rehydration remain distinct.]]></metadata>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.gate{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.node-title-small{font-size:20px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.conditional{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.note{font-size:16px;font-weight:600;text-anchor:middle}.principle{font-size:18px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="1160" fill="#fff"/>
+  <text class="title" x="48" y="54">Performer Memory and Organizational Intelligence</text>
+  <text class="subtitle" x="48" y="84">Local state, organizational learning, and continuity remain distinct governed paths</text>
+
+  <rect class="region" x="48" y="124" width="1104" height="300" rx="24"/>
+  <text class="kicker" x="76" y="162">1 · PERFORMER-LOCAL STATE</text>
+  <rect class="card" x="76" y="194" width="300" height="142" rx="22"/>
+  <text class="node-title" x="226" y="238">Working Memory</text><text class="copy" x="226" y="274">Temporary state for current work</text><text class="copy" x="226" y="300">within the current Performer</text>
+  <rect class="gate" x="450" y="182" width="300" height="166" rx="22"/>
+  <text class="kicker" x="600" y="218" text-anchor="middle">RETENTION GATE</text>
+  <text class="node-title-small" x="600" y="258">Memory Policy &amp; Governance</text><text class="copy" x="600" y="294">Purpose · Scope · Authority</text><text class="copy" x="600" y="320">Classification · lifecycle · access</text>
+  <rect class="card" x="824" y="194" width="300" height="142" rx="22"/>
+  <text class="node-title" x="974" y="238">Performer Memory</text><text class="copy" x="974" y="274">Separate governed retention</text><text class="copy" x="974" y="300">replaceable and inspectable</text>
+  <path class="conditional" d="M376 265 H450"/><path class="conditional" d="M750 265 H824"/>
+  <text class="note" x="600" y="388">No automatic memory promotion · no Shadow Truth · no Shadow Access</text>
+
+  <rect class="region" x="48" y="460" width="1104" height="286" rx="24"/>
+  <text class="kicker" x="76" y="498">2 · ORGANIZATIONAL LEARNING — SEPARATE FROM RETENTION</text>
+  <rect class="card" x="76" y="530" width="300" height="142" rx="22"/>
+  <text class="node-title" x="226" y="574">Experience &amp; Reflection</text><text class="copy" x="226" y="610">Experience may inform governed</text><text class="copy" x="226" y="636">Organizational Reflection</text>
+  <rect class="card" x="450" y="530" width="300" height="142" rx="22"/>
+  <text class="node-title" x="600" y="574">Candidate &amp; Adoption</text><text class="copy" x="600" y="610">Evidence informs; it does not decide</text><text class="copy" x="600" y="636">Adoption requires applicable Authority</text>
+  <rect class="card" x="824" y="530" width="300" height="142" rx="22"/>
+  <text class="node-title" x="974" y="574">Company Brain</text><text class="copy" x="974" y="610">Receives adopted</text><text class="copy" x="974" y="636">organizational intelligence</text>
+  <path class="flow" d="M376 601 H450"/><path class="flow" d="M750 601 H824"/>
+  <path class="conditional" d="M974 336 V430 Q974 442 962 442 H40 Q28 442 28 454 V589 Q28 601 40 601 H76"/>
+  <text class="note" x="600" y="712">Performer Memory may inform work only under current governance; it never bypasses adoption.</text>
+
+  <rect class="region" x="48" y="782" width="1104" height="246" rx="24"/>
+  <text class="kicker" x="76" y="820">3 · CONTINUITY AND REHYDRATION</text>
+  <rect class="card" x="76" y="852" width="300" height="132" rx="22"/>
+  <text class="node-title" x="226" y="896">Company Brain</text><text class="copy" x="226" y="932">Current organization-owned</text><text class="copy" x="226" y="958">intelligence</text>
+  <rect class="card" x="450" y="852" width="300" height="132" rx="22"/>
+  <text class="node-title" x="600" y="896">Context Construction</text><text class="copy" x="600" y="932">New authorized</text><text class="copy" x="600" y="958">Working Context</text>
+  <rect class="card" x="824" y="852" width="300" height="132" rx="22"/>
+  <text class="node-title" x="974" y="896">Performer Rehydration</text><text class="copy" x="974" y="924">Fresh or replacement Performer</text><text class="copy" x="974" y="947">also requires sufficient</text><text class="copy" x="974" y="970">authorized configuration</text>
+  <path class="flow" d="M376 918 H450"/><path class="flow" d="M750 918 H824"/>
+
+  <rect class="region" x="48" y="1066" width="1104" height="66" rx="20"/>
+  <text class="principle" x="600" y="1095">Working Memory ≠ Performer Memory ≠ Company Brain · Past Access ≠ Current Access</text>
+  <text class="principle-copy" x="600" y="1119">No blind predecessor-memory transfer or inherited stale Authority, Qualification, or confidence.</text>
+</svg>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1840" viewBox="0 0 1200 1840" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Operational Organization</title>
+  <desc id="diagram-desc">A selective, non-authoritative map of principal relationships among the ten AI-First Company Reference Design Compositions. Actors and Organizational Needs interact through the Executive Agent or other authorized paths. Coordination and organization-owned intelligence connect to structured work, Capability Agents, externally enforced control, attributable external interaction, Production operation, Sandbox evaluation, Evaluation and Assurance, and governed Organizational Learning. The map is neither a hierarchy nor a mandatory technical call path.</desc>
+  <metadata><![CDATA[
+    Diagram status: non-authoritative Reference Design representation.
+    Source: REFERENCE_DESIGN.md, especially Composition Overview, The Operational Organization, Composition Relationships, and Operational Flows.
+    The diagram is selective rather than exhaustive and shows principal relationships rather than hierarchy or a mandatory call path.
+    Relationships transfer neither Responsibility, Authority, Accountability, nor Information Access automatically.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}
+      .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+      .subtitle{font-size:19px;fill:#666666}
+      .region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}
+      .card{fill:#ffffff;stroke:#b2b2b2;stroke-width:1.5}
+      .focus{fill:#ffffff;stroke:#555555;stroke-width:2}
+      .kicker{font-size:15px;font-weight:700;letter-spacing:1px}
+      .kicker-lower{font-size:14px;font-weight:700;letter-spacing:.8px;text-anchor:middle}
+      .node-title{font-size:23px;font-weight:700;text-anchor:middle}
+      .node-title-small{font-size:20px;font-weight:700;text-anchor:middle}
+      .copy{font-size:16px;fill:#666666;text-anchor:middle}
+      .region-copy{font-size:16px;font-weight:600;fill:#555555;text-anchor:end}
+      .container-title{font-size:18px;font-weight:700;letter-spacing:1px}
+      .container-context{font-size:13px;font-weight:700;letter-spacing:.7px;text-anchor:end}
+      .container-detail{font-weight:600;letter-spacing:0;fill:#555555}
+      .output{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.2}
+      .output-title{font-size:14px;font-weight:700;letter-spacing:.8px;text-anchor:middle}
+      .label{font-size:14px;font-weight:700;fill:#666666;text-anchor:middle}
+      .label-small{font-size:13px;font-weight:700;fill:#666666;text-anchor:middle}
+      .principle{font-size:18px;font-weight:700;text-anchor:middle}
+      .principle-copy{font-size:15px;fill:#666666;text-anchor:middle}
+      .flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="1840" fill="#ffffff"/>
+  <text class="title" x="48" y="54">Operational Organization</text>
+  <text class="subtitle" x="48" y="84">How the ten Reference Compositions connect during organizational operation</text>
+
+  <rect class="region" x="48" y="112" width="1104" height="76" rx="20"/>
+  <text class="principle" x="600" y="143">Principal relationships, not hierarchy or a mandatory technical call path</text>
+  <text class="principle-copy" x="600" y="169">Other authorized paths remain valid; relationships transfer no Authority, Accountability, or Information Access.</text>
+
+  <rect class="card" x="360" y="220" width="480" height="100" rx="22"/>
+  <text class="kicker" x="388" y="254">ORGANIZATIONAL ENTRY</text>
+  <text class="node-title" x="600" y="289">Actors / Organizational Needs</text>
+
+  <rect class="region" x="88" y="370" width="1064" height="1020" rx="26"/>
+  <text class="container-title" x="108" y="410">PRODUCTION ORGANIZATION</text>
+  <text class="container-context" x="1124" y="410">CURRENT OPERATIONAL REALITY<tspan class="container-detail"> · Real work · Outcomes · Evidence · Experience</tspan></text>
+
+  <text class="kicker" x="310" y="460" style="text-anchor:middle">COORDINATION</text>
+  <rect class="focus" x="120" y="480" width="380" height="110" rx="22"/>
+  <text class="node-title" x="310" y="523">Executive Agent</text>
+  <text class="copy" x="310" y="557">Actor-specific understanding and coordination</text>
+
+  <text class="kicker" x="890" y="460" style="text-anchor:middle">ORGANIZATION-OWNED INTELLIGENCE</text>
+  <rect class="card" x="700" y="480" width="380" height="110" rx="22"/>
+  <text class="node-title" x="890" y="523">Company Brain</text>
+  <text class="copy" x="890" y="557">Governed organizational intelligence</text>
+
+  <rect class="card" x="120" y="680" width="380" height="120" rx="22"/>
+  <text class="node-title" x="310" y="729">Execution Graph Layer</text>
+  <text class="copy" x="310" y="763">Explicit structured organizational work</text>
+
+  <rect class="card" x="700" y="680" width="380" height="120" rx="22"/>
+  <text class="node-title" x="890" y="729">Organizational Learning</text>
+  <text class="copy" x="890" y="760">Reflection · candidates · governed adoption</text>
+  <text class="copy" x="890" y="783">No automatic change to operation</text>
+
+  <text class="kicker" x="600" y="858" style="text-anchor:middle">CAPABILITY REALIZATION</text>
+  <rect class="card" x="340" y="880" width="520" height="120" rx="22"/>
+  <text class="node-title" x="600" y="929">Capability Agent</text>
+  <text class="copy" x="600" y="963">Qualified agent-based Capability Implementation</text>
+
+  <text class="kicker" x="340" y="1058">CONTROLLED EXECUTION</text>
+  <rect class="card" x="340" y="1070" width="520" height="120" rx="22"/>
+  <text class="node-title" x="600" y="1119">Organizational Control Plane</text>
+  <text class="copy" x="600" y="1150">Performer-independent enforcement of</text>
+  <text class="copy" x="600" y="1174">Authority, Policy, Scope, and Effects</text>
+
+  <rect class="card" x="340" y="1240" width="520" height="120" rx="22"/>
+  <text class="node-title" x="600" y="1289">Company Interface Layer</text>
+  <text class="copy" x="600" y="1323">Attributable permitted inbound and outbound interaction</text>
+
+  <rect class="output" x="880" y="1240" width="240" height="110" rx="18"/>
+  <text class="output-title" x="1000" y="1279">PRODUCTION OPERATION</text>
+  <text class="copy" x="1000" y="1310">Outcomes · Evidence</text>
+  <text class="copy" x="1000" y="1333">Experience</text>
+
+  <path class="flow" d="M420 320 V480"/>
+  <path class="flow" d="M470 480 V320"/>
+  <text class="label" x="540" y="352">interaction</text>
+
+  <path class="flow" d="M360 270 H74 Q62 270 62 282 V728 Q62 740 74 740 H120"/>
+  <text class="label-small" x="38" y="512" transform="rotate(-90 38 512)">other authorized path</text>
+
+  <path class="flow" d="M500 510 H700"/>
+  <path class="flow" d="M700 570 H500"/>
+  <text class="label-small" x="600" y="498">attributable interaction</text>
+  <text class="label-small" x="600" y="544">organization-owned</text>
+  <text class="label-small" x="600" y="560">intelligence</text>
+
+  <path class="flow" d="M240 590 V680"/>
+  <path class="flow" d="M380 680 V590"/>
+  <text class="label-small" x="310" y="636">coordination</text>
+  <text class="label-small" x="310" y="658">structured work</text>
+
+  <path class="flow" d="M820 590 V680"/>
+  <path class="flow" d="M960 680 V590"/>
+  <text class="label-small" x="890" y="636">governed intelligence</text>
+  <text class="label-small" x="890" y="658">adopted intelligence</text>
+
+  <path class="flow" d="M390 800 V880"/>
+  <path class="flow" d="M450 880 V800"/>
+  <text class="label-small" x="545" y="823">capability-oriented work</text>
+
+  <path class="flow" d="M180 800 V1118 Q180 1130 192 1130 H340"/>
+  <text class="label-small" x="205" y="930" style="text-anchor:start">
+    <tspan x="205">explicit work</tspan>
+    <tspan x="205" dy="18">and trajectory</tspan>
+  </text>
+
+  <path class="flow" d="M600 1000 V1070"/>
+  <text class="label-small" x="705" y="1041">intended work and effects</text>
+  <path class="flow" d="M600 1190 V1240"/>
+  <text class="label-small" x="718" y="1221">permitted effects</text>
+
+  <path class="flow" d="M1040 1240 V800"/>
+  <text class="label" x="970" y="1035">Experience</text>
+
+  <rect class="card" x="380" y="1420" width="440" height="100" rx="22"/>
+  <text class="kicker" x="408" y="1454">EXTERNAL ENVIRONMENT</text>
+  <text class="node-title" x="600" y="1491">External World</text>
+  <path class="flow" d="M560 1360 V1420"/>
+  <path class="flow" d="M640 1420 V1360"/>
+  <text class="label-small" x="470" y="1384">outbound interaction</text>
+  <text class="label-small" x="730" y="1384">attributable input</text>
+
+  <rect class="card" x="60" y="1600" width="400" height="130" rx="22"/>
+  <text class="kicker-lower" x="260" y="1636">ISOLATED CANDIDATE EVALUATION</text>
+  <text class="node-title-small" x="260" y="1675">Sandbox Organization</text>
+  <text class="copy" x="260" y="1707">No Production effects or state transfer</text>
+
+  <rect class="card" x="740" y="1600" width="400" height="130" rx="22"/>
+  <text class="kicker-lower" x="940" y="1636">QUALIFICATION &amp; CONTINUOUS ASSURANCE</text>
+  <text class="node-title-small" x="940" y="1675">Evaluation &amp; Assurance</text>
+  <text class="copy" x="940" y="1707">Evidence · confidence · governed response</text>
+
+  <path class="flow" d="M900 1350 V1556 Q900 1568 888 1568 H272 Q260 1568 260 1580 V1600"/>
+  <text class="label-small" x="260" y="1532">
+    <tspan x="260">optional controlled</tspan>
+    <tspan x="260" dy="18">derived information</tspan>
+  </text>
+
+  <path class="flow" d="M460 1642 H740"/>
+  <path class="flow" d="M740 1692 H460"/>
+  <text class="label-small" x="600" y="1630">candidate Evidence</text>
+  <text class="label-small" x="600" y="1718">evaluation scope and findings</text>
+
+  <path class="flow" d="M950 1350 V1600"/>
+  <path class="flow" d="M1010 1600 V1350"/>
+  <text class="label-small" x="970" y="1482" transform="rotate(-90 970 1482)">Production Evidence</text>
+  <text class="label-small" x="1042" y="1468" style="text-anchor:start">Operational Confidence</text>
+  <text class="label-small" x="1042" y="1488" style="text-anchor:start">applicable Authority</text>
+  <text class="label-small" x="1042" y="1508" style="text-anchor:start">response</text>
+
+  <rect class="region" x="48" y="1760" width="1104" height="60" rx="20"/>
+  <text class="principle" x="600" y="1787">Connected operation does not collapse distinct responsibilities.</text>
+  <text class="principle-copy" x="600" y="1810">Learning requires governed adoption. Evidence informs confidence and review; it does not create Authority.</text>
+</svg>

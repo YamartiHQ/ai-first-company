@@ -9,19 +9,21 @@
 5. [Composition Overview](#5-composition-overview)
 6. [The Operational Organization](#6-the-operational-organization)
 7. [Executive Agent](#7-executive-agent)
-8. [Company Brain](#8-company-brain)
-9. [Capability Agent](#9-capability-agent)
-10. [Execution Graph Layer](#10-execution-graph-layer)
-11. [Company Interface Layer](#11-company-interface-layer)
-12. [Sandbox Organization](#12-sandbox-organization)
-13. [Production Organization](#13-production-organization)
-14. [Evaluation & Qualification](#14-evaluation--qualification)
-15. [Composition Relationships](#15-composition-relationships)
-16. [Operational Flows](#16-operational-flows)
-17. [Organizational Evolution](#17-organizational-evolution)
-18. [Architecture Traceability](#18-architecture-traceability)
-19. [Failure Modes](#19-failure-modes)
-20. [Future Evolution](#20-future-evolution)
+8. [Execution Graph Layer](#8-execution-graph-layer)
+9. [Company Brain](#9-company-brain)
+10. [Organizational Learning](#10-organizational-learning)
+11. [Capability Agent](#11-capability-agent)
+12. [Organizational Control Plane](#12-organizational-control-plane)
+13. [Company Interface Layer](#13-company-interface-layer)
+14. [Sandbox Organization](#14-sandbox-organization)
+15. [Production Organization](#15-production-organization)
+16. [Evaluation & Assurance](#16-evaluation--assurance)
+17. [Composition Relationships](#17-composition-relationships)
+18. [Operational Flows](#18-operational-flows)
+19. [Organizational Evolution](#19-organizational-evolution)
+20. [Architecture Traceability](#20-architecture-traceability)
+21. [Failure Modes](#21-failure-modes)
+22. [Future Evolution](#22-future-evolution)
 
 ## 1. Purpose
 
@@ -55,17 +57,13 @@ Reference Design
 Technical Requirements
 ```
 
-Each layer answers a different question:
-
 | Layer | Question |
 |---|---|
 | **Architecture** | What is an AI-First Company? |
 | **Reference Design** | How can the Architecture be composed into an organizational design? |
 | **Technical Requirements** | What technology is required to realize that design? |
 
-The Reference Design therefore remains organizational rather than technological.
-
-Concrete databases, models, runtimes, protocols, frameworks, and infrastructure belong to the Technical Requirements.
+The Reference Design remains organizational rather than technological. Concrete databases, models, runtimes, protocols, frameworks, and infrastructure belong to the Technical Requirements.
 
 ---
 
@@ -73,41 +71,23 @@ Concrete databases, models, runtimes, protocols, frameworks, and infrastructure 
 
 An AI-First Company can be understood, for a moment, through the analogy of a living system.
 
-A living system perceives its environment, maintains an understanding of its current condition, remembers relevant experience, coordinates capabilities, acts, observes the results, and learns.
-
-An AI-First Company requires many of the same organizational functions:
+It requires connected organizational functions that perceive, understand, remember, coordinate, act, observe, learn, assure, and recover. These functions exchange information, context, intent, evidence, and outcomes; they do not form one mandatory linear lifecycle.
 
 ```text
-Perceive
-   ↓
-Understand
-   ↓
-Remember
-   ↓
-Coordinate
-   ↓
-Act
-   ↓
-Observe
-   ↓
-Learn
+Perceive ─ Understand ─ Remember ─ Coordinate ─ Act
+    ↖              connected functions              ↘
+Recover ───────── Assure ─ Learn ─ Observe ──────────┘
 ```
 
-Information moves through the organization somewhat like signals through a nervous system: observations enter, context and intent move between organizational functions, actions reach the outside world, and outcomes return as new information.
+The analogy is intentionally limited. The Reference Design does not reproduce human biology or model an organization as a human being.
 
-The analogy is intentionally limited.
-
-The Reference Design does not attempt to reproduce human biology or model an organization as a human being. It uses the comparison only to make one characteristic intuitive:
-
-> **An AI-First Company is a connected organizational system whose parts continuously exchange information, context, intent, and outcomes.**
+> **An AI-First Company is a connected organizational system whose parts continuously exchange information, context, intent, evidence, and outcomes.**
 
 From this point forward, the Reference uses organizational rather than biological terminology.
 
 ---
 
 ## 4. Reference Principles
-
-The Reference Design follows a small set of principles.
 
 ### Architecture Grounded
 
@@ -119,497 +99,508 @@ The Reference presents one complete organizational design rather than a catalogu
 
 ### Proportional Realization
 
-Completeness of organizational responsibility does not require a separate person, team, process, or system for every Composition. A solo founder or small organization may realize several Compositions through shared people, artifacts, and implementations while preserving their distinct responsibilities and boundaries.
+Completeness does not require a separate person, team, process, or system for every Composition. A minimal realization may use few Performers, shared implementations, compact artifacts, and multiple responsibilities per Actor where the distinctions and boundaries remain explicit.
+
+Proportional realization and consequence-dependent operation use an explicit, governed, context-appropriate Consequence Assessment rather than an unstated assumption. No universal risk taxonomy or scoring model is required.
 
 ### Capability before Implementation
 
 Organizational capabilities remain stable while their performers and implementations may change.
 
-### Human Leadership
+### Performer Neutrality
 
-AI may understand, prepare, coordinate, recommend, and execute within organizational boundaries. Human accountability and applicable decision authority remain intact.
+Responsibilities may be realized by Humans, AI Performers, software systems, Organizational Groups, or combinations. Applicable law, contract, regulation, safety, or company governance may require human participation in a concrete organization, but the Reference Design does not impose it universally.
 
-### Shared Organizational Understanding
+### Explicit Governance
 
-Humans and AI should operate from compatible organizational knowledge and current state rather than isolated conversations or private representations.
+Responsibility, Authority, and Accountability remain explicit and distinct. Participation, technical ability, and information access do not silently transfer any of them.
 
-### Replaceability
+### Shared Organizational Intelligence
 
-Agents, models, providers, runtimes, interfaces, and other implementation choices remain replaceable without redefining the organization.
+Actors should operate from compatible organizational intelligence and current State rather than isolated conversations or private representations.
 
-### Observable Execution
+### Bounded Context
 
-Organizational work remains understandable, attributable, reviewable, and recoverable where required.
+Work receives the smallest sufficient Working Context for its Purpose, Scope, Authority, and information boundaries.
 
-### Evidence-Based Trust
+### Controlled Effects
 
-Operational trust is earned through evidence and remains specific to the capability and conditions for which it was established.
+Decisions, execution, external interactions, effects, and outcomes remain distinguishable. Consequential effects pass through independently enforceable organizational controls.
 
-### Deliberate Evolution
+### Continuous Assurance
 
-> **The organization may learn continuously while changing deliberately.**
+Operational trust is continuously supported or challenged by current Evidence and remains specific to capability, scope, and conditions.
+
+### Organizational Learning
+
+Relevant Experience becomes reusable organizational intelligence only through reflection, evidence, and governed adoption.
+
+### Controlled Autonomy
+
+Bounded action without case-by-case approval remains enforceable, observable, reversible, and subject to Attention routing.
+
+### Recoverability and Continuity
+
+The organization prepares to contain disruption, preserve meaning, recover sufficient operation, and rehydrate replacement Performers without silently restoring stale trust or Authority.
+
+### Replaceability, Observable Execution, and Deliberate Evolution
+
+Implementations remain replaceable; work remains attributable and reviewable; and the organization may learn continuously while changing deliberately.
 
 ---
 
 ## 5. Composition Overview
 
-The Architecture is built from **Concepts**.
+The Architecture is built from **Concepts**. The Reference Design is built from **Compositions**. A Composition combines Architecture Concepts into a distinct operational responsibility.
 
-The Reference Design is built from **Compositions**.
-
-A Composition combines Architecture Concepts into a distinct operational responsibility.
-
-The Reference Design contains eight top-level Compositions:
+The Reference Design contains ten top-level Compositions:
 
 ```text
-AI-FIRST COMPANY REFERENCE DESIGN
+COORDINATION                  INTELLIGENCE
+├── Executive Agent          ├── Company Brain
+└── Execution Graph Layer    └── Organizational Learning
 
-Core
-├── Executive Agent
-├── Company Brain
-├── Capability Agent
-└── Execution Graph Layer
+CAPABILITY                    CONTROL
+└── Capability Agent         ├── Organizational Control Plane
+                             └── Company Interface Layer
 
-Boundary
-└── Company Interface Layer
-
-Environments
-├── Sandbox Organization
+ENVIRONMENTS                 ASSURANCE
+├── Sandbox Organization     └── Evaluation & Assurance
 └── Production Organization
-
-Assurance
-└── Evaluation & Qualification
 ```
 
-![The eight Reference Design Compositions grouped as Core, Boundary, Environments, and Assurance.](diagrams/reference-design-composition.png)
+![The ten Reference Design Compositions grouped by organizational responsibility.](diagrams/reference-design-composition.png)
 
 *The Compositions define distinct organizational responsibilities rather than required products, teams, or technical services.*
 
-No Composition represents a particular technology.
+The term **Agent** describes a logical implementation pattern. It does not require a single model, runtime, process, or agent instance. One implementation may support several Compositions where it preserves their complete responsibilities and boundaries.
 
-The term **Agent** in a Composition describes a logical implementation responsibility. It does not require a single model, runtime, process, or agent instance and may be realized through a coordinated multi-agent system.
-
-These Compositions define distinct organizational responsibilities, not a required organization chart or minimum number of implementations. One implementation may support several Compositions where it preserves their boundaries and satisfies their complete requirements.
-
-The complete Reference Design may also be realized progressively. A new organization may begin with a compact realization, while an existing organization may establish Compositions capability by capability alongside current structures. This Reference Design defines the target composition rather than a transition procedure. Until an explicit, validated transition occurs, existing sources, authority, and accountability retain their established status and boundaries.
-
-Together, they form the organizational design that the Technical Requirements will later make technically realizable.
+The design may be realized progressively. Existing sources, Authority, and Accountability retain their established status until an explicit, validated transition occurs.
 
 ---
 
 ## 6. The Operational Organization
 
-The central relationships of the operational organization can be represented as:
-
 ```text
-                   Human Leadership
-                          ⇅
-                   Executive Agent
-                          ⇅
-                    Company Brain
-                          ⇅
-               Execution Graph Layer
-                          ⇅
-                  Capability Agents
-                          ⇅
-               Company Interface Layer
-                          ⇅
-                    External World
+Actors / Organizational Needs
+              ↕
+        Executive Agent ←→ Company Brain
+              ↕              ↕
+      Attention / Coordination
+              ↓
+      Execution Graph Layer ←→ Capability Agents
+              ↓                       ↓
+          Organizational Control Plane
+              ↓
+          Company Interface Layer
+              ↕
+          External World
+
+Experience → Organizational Learning → Company Brain
+Production → Evaluation & Assurance → Operational Confidence / Authority Review
 ```
 
-This is not a hierarchy.
+This is neither a hierarchy nor a mandatory sequence of technical calls. It shows principal relationships while allowing other direct, authorized interaction paths.
 
-It is not a mandatory sequence of technical calls.
+The Executive Agent provides the primary actor-specific organizational command center and coordination surface. The Company Brain provides organization-owned intelligence. Execution Graphs structure work. Capability Agents provide agent-based Capability Implementations. The Control Plane enforces execution boundaries. The Interface Layer realizes permitted external interaction. Sandbox evaluates candidate change, Production operates real work, Organizational Learning governs reusable learning, and Evaluation & Assurance qualifies candidates and continuously assesses operation.
 
-It represents the principal organizational relationships through which understanding, context, intent, execution, evidence, and outcomes move.
+Responsibility, Authority, and Accountability do not collapse into the performer that happens to coordinate an activity.
 
-The Executive Agent provides human leadership with the primary operational interface to the organization.
+![The operational organization connects all ten Reference Design Compositions across Production, learning, assurance, Sandbox, and the External World.](diagrams/operational-organization.png)
 
-The Company Brain provides shared organizational understanding.
-
-Execution Graphs structure organizational work.
-
-Capability Agents provide replaceable implementations of Company Capabilities.
-
-The Company Interface Layer provides the controlled boundary to the External World.
-
-Information and activity may travel in either direction, and not every activity involves every Composition.
-
----
-
-### Organizational Evolution
-
-The operational organization is complemented by a separate mechanism for evaluating change:
-
-```text
-                Candidate Change
-                       │
-                       ▼
-             Sandbox Organization
-                       │
-                       ▼
-          Evaluation & Qualification
-                       │
-                       ▼
-             Accountable Adoption
-                       │
-                       ▼
-            Production Organization
-
-Production Organization
-        ┈┈┈┈┈┈┈┈┈┈► Sandbox Organization
-        optional controlled
-        Production-derived information
-```
-
-Production exists to operate the organization.
-
-Sandbox exists to evaluate change.
-
-Evaluation & Qualification determines what the resulting evidence demonstrates.
-
-The accountable organizational mechanisms determine whether a qualified change is adopted.
-
-> **What moves from Sandbox to Production is a qualified change—not the Sandbox state.**
+*The Compositions connect without collapsing organizational intelligence, coordination, control, environments, learning, assurance, Authority, or Accountability.*
 
 ---
 
 ## 7. Executive Agent
 
-> **The Executive Agent is the primary operational interface to an AI-First Company.**
+> **The Executive Agent is the primary actor-specific organizational command center: the principal Human–AI surface for seeing, understanding, reviewing, coordinating, deciding, and initiating authorized action across internal operation and governed external relationships.**
 
-The Executive Agent enables human leadership to understand, operate, and evolve the organization through one coherent organizational interface.
+It is the principal Human–AI and Human–Organization interface and the primary human-facing point for understanding and operating the company. It provides an eye into internal operation and toward governed external systems and relationships. It is a command surface supporting observation and authorized action—not merely a dashboard, monitoring interface, conversational assistant, universal manager, or universal decision-maker.
 
-It provides a perspective across the organization as a whole without becoming the owner of organizational knowledge, state, capabilities, or authority.
+The Executive Agent is primary but neither mandatory nor exclusive. Organizational activity need not originate in or transit through it; other authorized specialist and machine-oriented interfaces remain valid. It is not the Company Brain, an organizational-intelligence owner, a System of Record, an Authority or Accountability owner, the Organizational Control Plane, the Company Interface Layer, a mandatory universal router, or a universal execution choke point.
 
-Its responsibility consists of four closely related functions.
+![The Executive Agent provides an actor-specific command center for governed organizational observation, coordination, review, and action initiation.](diagrams/executive-agent-command-center.png)
+
+*The command surface provides authorized views and action initiation without owning organization-owned intelligence, source authority, Accountability, or enforcement.*
+
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#knowledge-access-and-context-construction) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#61-executive-agent)</sub>
 
 ### 7.1 Organization Understanding
 
-The Executive Agent uses the Company Brain to establish an operational understanding of the organization.
+The Executive Agent provides an actor-specific, source-grounded operating picture assembled from current organization-owned information. It may relate Company State, organizational intelligence, Work Items and Execution Graphs, Decisions and current Authority State, Outcomes and Evidence, Attention Requirements and Events, Assurance and Operational Confidence, and relevant internal or governed external systems.
 
-It interprets relevant Company State, Company Memory, ongoing work, pending decisions, available capabilities, material events, uncertainty, and matters requiring attention.
+Different Actors may receive different authorized views of the same organization; the Executive Agent must not manufacture different organizational truths. For material information, the surface preserves or exposes where relevant Provenance, Freshness, applicable Scope, Uncertainty, current status, and the source or responsible System of Record. Private summaries, caches, search results, and conversational interpretations remain derived views rather than a second source of truth.
 
-Its central question is not:
+External operational data may remain authoritative in its responsible System of Record. The Executive Agent may present a live or recently retrieved value, actor-specific filtered projection, derived analysis, report, cached view, or specialist interpretation without copying the raw source into the Company Brain. Each representation retains relevant source authority, Provenance, Freshness, Scope, Uncertainty, and derived status.
 
-> *What information exists?*
+The command surface makes material operating and responsibility state understandable. Where relevant, it distinguishes observing, analyzing, proposing, awaiting a Decision, executing, paused, degraded, recovering, or incident operation; identifies whether a Human Performer, AI Performer, Group Performer, or organizational mechanism is expected to act next; and exposes limitations, missing information, inability to proceed, or changes of mode and responsibility. These are views of existing Work, State, Event, Attention, execution, and incident semantics—not a new authoritative state machine.
 
-It is:
+### 7.2 Context Orchestration
 
-> **What does the current organizational situation mean?**
+The Executive Agent may orchestrate Context Construction:
 
-Organization Understanding is interpretive. The underlying organizational information remains owned and governed by its respective Architecture Concepts and authoritative sources.
+```text
+Company Brain
++ External Information
++ Performer Memory where permitted
++ current Work State
+        ↓
+Context Construction
+        ↓
+Working Context
+```
 
-### 7.2 Context Builder
+Context Construction evaluates Purpose, Scope, Authority, Classification, Freshness, Applicability, Uncertainty, and Counter-Evidence. It delivers the smallest sufficient purpose-specific context while keeping missing, conflicting, or uncertain information visible.
 
-The Context Builder obtains the Working Context required for the current activity by orchestrating governed Knowledge Access through the Company Brain.
+Working Context is temporary and bounded. It is not part of the Company Brain and does not create permanent access.
 
-It is the Executive Agent's use of the Architecture's Knowledge Access capability, not a separate context-preparation capability or competing information path. Knowledge Access remains responsible for selecting, retrieving, synthesizing, and delivering the smallest sufficient Working Context.
+One logical Executive Agent Composition may provide multiple isolated actor-specific sessions, views, and Working Contexts. What an Actor may see, analyze, propose, decide, approve, configure, initiate, pause, or otherwise control derives from current Actor identity, Assignments, Capability Qualification, Information Access, Decision Mandates, Authority, Policy, Company State, Operational Confidence, and Work Admission as applicable.
 
-Its objective is not to maximize available context.
+Practical role labels such as chief executive, administrator, employee, or temporary worker may serve as assignment or access templates; the label itself creates no Information Access, Authority, Qualification, or Decision Mandate. Organizational Authority, Information Access, and technical administration remain distinct even when one person holds several in a minimal organization. Hiding a control may improve clarity, but UI visibility is never the enforcement boundary.
 
-It assembles the:
+Isolation applies across search, summaries, caches, Working Context, Working Memory, Performer Memory, conversation state, embedded applications, credentials, and tool access where applicable. Actor-specific views must not leak information or action access across those boundaries.
 
-> **smallest sufficient organizational context.**
+Actor-specific sessions may participate in bounded shared collaboration for Work, projects, Company Capabilities, Organizational Groups, Decisions and reviews, incidents, Attention, and handovers. Humans, Executive Agent sessions, Capability Agents, other AI Performers, Group Performers, and authorized specialist interfaces may contribute without merging their identities, access, memory, Qualification, Authority, Responsibility, or Accountability. Each contribution remains attributable to its actual Actor or Performer, each participant receives only its permitted Working Context, and shared infrastructure preserves the distinction among an Actor, that Actor's Executive Agent session, another AI Performer, and an Organizational Group.
 
-A customer activity, for example, may require recent communication, contractual commitments, relevant decisions, current state, unresolved work, and applicable policies without requiring the customer's entire history.
+Private conversation, analysis, drafts, and provisional suggestions remain private and non-authoritative until deliberately transferred. An attributable transfer may share a Contribution with governed Work, submit a Decision Proposal, create or update Work, raise Attention, record an Event or Outcome, or submit Experience or a Learning Candidate. It preserves relevant Provenance, Information Classification, access, and the content's existing status; entry into shared collaboration does not silently make it a Decision, Evidence, Company State, accepted Knowledge, or Authority. Actions initiated from shared collaboration follow the same governed path as private initiation.
 
-Material uncertainty, conflicting authoritative information, and missing information remain visible rather than being resolved implicitly.
+### 7.3 Capability Coordination and Decision Support
 
-The Context Builder therefore turns broad organizational understanding into bounded, purpose-specific Working Context.
+The Executive Agent identifies required Company Capabilities, coordinates work, and may prepare Decision Proposals and Decision Basis. Performer Assignment, Decision Authority, Work Admission, and Controlled Execution remain separate responsibilities.
 
-### 7.3 Capability Coordination
+An actor-specific interaction may provide no visibility, read-only visibility, analysis without execution, preparation of a proposal or Decision Proposal, execution after an additional Decision or approval, direct bounded execution under valid Standing Authorization, separately governed technical administration, or emergency action with explicit attribution, restriction, and review. These are implementation patterns built from existing governance, not a fixed Architecture taxonomy.
 
-The Executive Agent coordinates organizational capabilities rather than attempting to perform all organizational work itself.
+For a material action, the Executive Agent produces an attributable Action Intent and follows the existing organizational path:
 
-Its primary question is:
+```text
+Actor
+  → Executive Agent interaction
+  → attributable Action Intent
+  → applicable Decision where required
+  → applicable Authority and Policy
+  → Work Admission
+  → Organizational Control Plane
+  → Company Interface Layer where applicable
+  → External Interaction where applicable
+  → External Effect where applicable
+  → Outcome
+```
 
-> **Which Company Capability is required?**
+The Executive Agent presents controls but grants no permission. Embedded interfaces, provider credentials, technical accounts, and technical reachability create neither Information Access nor organizational Authority. Material action remains subject to per-action enforcement; Decisions occur where required; and Controlled Execution and external-effect governance remain outside the Executive Agent. Outcomes and Evidence return to organization-owned governed records.
 
-The current performer of that capability is a separate and replaceable concern.
+Before consequential action, the command surface can present an understandable preview of intended action, target and Scope, responsible Performer, applicable Authority or missing Decision, information and credentials to be used, expected effect, material Uncertainty or risk, reversibility or Compensation, and relevant Recovery path. Authorized Actors can follow material work through proposal, Decision, admission, execution, waiting, restriction, failure, completion, Compensation, Recovery, and review using the existing lifecycle records.
 
-Capability Coordination identifies and relates the Company Capabilities required for the organizational objective. It does not select a performer merely from technical availability. When an Execution Graph is used, the Execution Graph Layer resolves each capability step to a performer that is qualified and authorized for that step. Work that does not require an Execution Graph remains subject to the equivalent Controlled Execution, qualification, and authorization boundaries.
+### 7.4 Attention Routing
 
-The Executive Agent may coordinate one or several capabilities depending on the organizational objective. Their execution remains subject to the authority, information, and execution boundaries defined by the Architecture.
+In this Reference Design, the Executive Agent may act as a central coordination point for Attention Requirements:
 
-### 7.4 Organizational Interaction
+```text
+Attention Requirement
+        ↓
+Executive Agent
+        ↓
+evaluate required Capability / Expertise / Authority /
+Information Access / Availability
+        ↓
+appropriate Actor / Organizational Group / Performer
+```
 
-The Executive Agent presents the organization through interaction modes appropriate to the activity and participant.
+This is an opinionated Reference choice, not an Architecture requirement that every organization use one router.
 
-These may include:
+The Executive Agent provides a prioritized Attention workspace rather than an undifferentiated notification stream. It can expose urgency, Impact, age, Uncertainty, required Capability, intended recipient, and unresolved status, and support actor-authorized acknowledgement, transfer, restriction, or deferral without deleting the underlying Event or Attention Requirement.
 
-- conversation;
-- dashboards;
-- notifications;
-- reports;
-- visual exploration; and
-- voice or other interaction modes.
+If no appropriate authorized, qualified, informed, and available recipient exists, Attention remains unresolved and attributable. The surface supports Safe Failure—wait, restrict, pause, gather information, retain the requirement, or use an authorized alternative path—without manufacturing Authority from Urgency.
 
-No individual interaction mode defines the Executive Agent.
+An incident-oriented workspace can assemble a shared operating picture, explicit responsibilities, current actions and communications, a timeline, Decisions, affected systems, and Recovery conditions. Continuity and handover views show what changed, what remains open, which Decisions were made, what is waiting, and what requires Attention. Material incident information, Decisions, Events, Outcomes, and learning reside in organization-owned records rather than only in a private conversation.
 
-A routine organizational state may require only a concise status view. A consequential decision may require an interactive explanation of evidence, alternatives, uncertainty, and expected consequences.
+> **Routing ≠ Authority**
+> **Attention ≠ hierarchical escalation**
+> **Participation ≠ Decision Authority**
 
-Interaction follows organizational need rather than forcing every activity into a conversation.
+### 7.5 Organizational Interaction and Boundary
 
-### 7.5 Boundary
+Interaction may use conversation, dashboards, notifications, reports, visual exploration, voice, or specialist interfaces. Humans, AI Performers, Organizational Groups, and other authorized interfaces may interact directly where appropriate.
 
-The Executive Agent is the **primary**, not exclusive, operational interface.
+The Executive Agent may compose or embed governed specialist interfaces and interactive applications supplied by internal or external systems. Embedded modules receive only bounded information and action access; their identity, provider, material configuration, and version remain observable where relevant; and compromise or failure has a bounded blast radius.
 
-Humans may interact directly with Capability Agents or other authorized organizational views where appropriate.
+> **Embedded applications and specialist interfaces may expose information and controls through the Executive Agent, but presentation, technical reachability, or provider credentials create neither Information Access nor Authority. Every material action remains attributable and subject to applicable Authority, Work Admission, organizational controls, and external-effect governance.**
 
-Its unique responsibility is to make the organization as a whole operationally accessible to human leadership.
+Actions initiated through an embedded UI follow the same controls as other actions. Isolation covers data, session state, caches, summaries, search, memory, credentials, and tool access where applicable. Loss of rich UI need not eliminate the underlying authorized Capability: specialist or degraded interfaces may provide continuity.
+
+> **The Executive Agent may be accessed through multiple authorized local or remote command surfaces. A client, host, embedded application, rendering mechanism, or UI protocol does not inherit organizational trust, Information Access, or Authority merely by presenting the Executive Agent.**
+
+One logical Composition may use organization-operated, embedded, local, remote, mobile, voice, high-security, read-only, proposal-only, approval-capable, bounded-execution, or degraded surfaces without creating different organizational truths. A remote or externally operated host receives only actor-, Purpose-, Scope-, and session-appropriate information. Restricted information is filtered before disclosure rather than sent in full and hidden by the client; access to presentation data grants no access to underlying Company Brain information, Company State, Systems of Record, tools, or credentials.
+
+Organization-controlled enforcement re-evaluates material actions regardless of the initiating surface. Session compromise, revocation, expiry, device loss, and host failure have a bounded blast radius. Continuity through another surface does not silently inherit the former surface's memory, credentials, or session state, so remote access can remain limited rather than all-or-nothing.
+
+> **Executive Agent ≠ Authority owner ≠ Company Brain ≠ universal manager**
+
+The Executive Agent is primary, not mandatory or exclusive.
+
+### 7.6 State, Memory, Skills, and Learning
+
+The Executive Agent command surface is reconstructible from organization-owned intelligence, current organizational State, governed configuration, and explicitly permitted memory. It does not own the company information it presents.
+
+> **The Executive Agent presents and acts upon organization-owned intelligence and current organizational State; it does not become an independent System of Record or a second Company Brain.**
+
+As an AI Performer, it may use bounded Working Context, governed Performer Memory, versioned Skills, tools and integrations, identifiable configuration, Capability Qualification, and Operational Confidence. Conversation history is not automatically organizational truth; private drafts remain distinguishable from organizational records; and material work is transferable into governed Work, Decision, Event, Outcome, or other appropriate records.
+
+> **As an AI Performer, the Executive Agent may use bounded Working Context, governed Performer Memory, and versioned Skills. Reusable knowledge, procedures, and capability improvements become organizational assets only through the normal Reflection, Learning Candidate, governed Adoption, evaluation, qualification, and deployment paths.**
+
+It must not silently modify its Skills, Authority, Qualification, or governing procedures. Replacement and Recovery do not depend on unrestricted predecessor memory; personal preferences and interaction continuity remain bounded by Purpose, Scope, access, and Memory Policy. AI Performers generally need not use the visual human interface and may use existing machine-oriented mechanisms while preserving the same organizational semantics.
+
+### 7.7 Resilience and Bounded Centrality
+
+The Executive Agent's centrality is intentional interface centrality, not uncontrolled architectural concentration. Its health, configuration, version, and material dependencies are observable; material dependencies appear in a Dependency Record where appropriate. Compromise or malfunction has a bounded blast radius because Authority enforcement, Work Admission, containment, external-effect controls, Company State, and Systems of Record remain outside the command surface.
+
+Alternative authorized specialist interfaces and Attention paths support safe degradation. When the Executive Agent is unavailable or unreliable, the organization can wait, restrict, transfer, pause, or use an alternate interface according to consequence. Recovery or replacement reconstructs the Composition from organization-owned State and governed configuration and may require evaluation, requalification, or revised Operational Confidence after material change. Organizational continuity does not require every operation to traverse the Executive Agent.
 
 ---
 
-## 8. Company Brain
+## 8. Execution Graph Layer
 
-> **The Company Brain is the shared organizational working representation of an AI-First Company.**
+> **The Execution Graph Layer describes organizational execution, not private reasoning.**
 
-The Company Brain enables humans and AI to work from a shared organizational understanding.
+Work may originate from Organizational Intent, Organizational Obligation, Organizational Event, Decision, Incident, or Attention Requirement.
 
-It brings relevant organizational representations together while preserving their distinct meaning, authority, lifecycle, and source.
+```text
+source of organizational need
+        ↓
+Work Item
+        ↓
+Execution Graph where useful
+        ↓
+required Company Capability
+        ↓
+Performer Assignment
+        ↓
+Working Context
+        ↓
+Decision / Controlled Execution
+        ↓
+Outcome
+```
 
-These may include:
+![The Execution Graph Layer makes bounded organizational work, capability needs, dependencies, waiting states, trajectory, controlled execution, and Outcomes explicit.](diagrams/execution-graph-layer.png)
 
-- Company Memory;
-- Company State;
-- Working Context;
-- organizational relationships;
-- capability information;
-- decisions and mandates; and
-- governed Knowledge Access.
+*Execution Graphs describe observable organizational execution where useful; they do not model private reasoning or independently grant Authority or enforcement.*
 
-> **The Company Brain unifies access to organizational understanding while preserving the distinct meaning and authority of its underlying Architecture Concepts.**
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#operating-cycle) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#62-execution-graph-layer)</sub>
 
-### 8.1 Shared Organizational Understanding
+### 8.1 Capability before Performer
 
-The purpose of the Company Brain is not shared storage.
+Graphs remain capability-oriented rather than performer-oriented. A performer may be Human, AI Performer, software system, Organizational Group, or combination. Replacing it does not require redefining the organizational work.
 
-It is **shared organizational understanding**.
+### 8.2 Waiting, Decisions, and Attention
 
-Humans and Capability Agents do not require identical interfaces or representations. They do, however, need to operate from compatible organizational facts, decisions, state, relationships, and boundaries.
+A graph may explicitly wait for a required Decision, required Approval, Attention Requirement, additional Evidence, external response, precondition, uncertainty resolution, completion of other work, or defined time. Human approval may be one concrete case but is not the default.
 
-This allows different participants to interact with the same organization without creating parallel organizational realities.
+The graph can contain a decision point without acquiring Authority to make that Decision. Attention routing may be represented as an explicit execution state.
 
-### 8.2 Memory, State, and Context
+### 8.3 Observable and Reproducible Execution
 
-Three distinctions are particularly important:
+Execution preserves sufficient information to reconstruct relevant work structure, versions, conditions, context, participants, Decisions, external interactions, failures, recovery actions, and Outcomes. Reproducibility means reconstructability, not identical results.
 
-**Company Memory** preserves what the company has intentionally decided to remember.
+### 8.4 Trajectory Integrity
 
-**Company State** represents what is currently true.
+The Execution Graph and Organizational Control Plane jointly evaluate combined effects across sequential and parallel actions, Human, AI, and Group Performers, delegation and nested execution, retries and repeated calls, multiple tools and external systems, destinations and environments, cumulative financial/resource/data-egress/access/external-effect thresholds, and one or explicitly related Work Items.
 
-**Working Context** contains what is required for a particular activity.
+The governed Work, relationship, risk, Policy, or declared trajectory determines the applicable horizon; no universal time window is required. Preventive enforcement is used where feasible for foreseeable material harm, continuous or concurrent evaluation is used where appropriate during execution, and retrospective evaluation supports Assurance, Incident review, Reflection, and Learning. Uncertain cumulative effect routes to Attention or Safe Failure according to consequence.
 
-The Company Brain makes these representations usable together without treating them as interchangeable.
-
-### 8.3 Sources and Authority
-
-The Company Brain does not need to become the authoritative source for every piece of organizational information.
-
-Different information classes may remain authoritative in different Systems of Record.
-
-The Company Brain can make relevant information available for organizational understanding while preserving its source, authority, and provenance.
-
-Known source and provenance do not by themselves establish that information is reliable or benign. Material integrity, trust, and uncertainty conditions remain visible, and instruction-like content within organizational information remains information rather than becoming Intent, authority, or policy.
-
-This distinction allows the organization to gain a unified working representation without creating a second competing operational truth.
-
-### 8.4 Curation rather than Accumulation
-
-The Company Brain is not an unlimited accumulation of every message, document, transcript, observation, and execution trace.
-
-Raw information may remain in appropriate Systems of Record, evidence stores, archives, or evaluation datasets.
-
-Only information that passes the applicable knowledge lifecycle becomes durable organizational knowledge.
-
-This allows extensive source material to remain available without forcing every retained item into active Company Memory.
-
-> **The Company Brain exists to create shared organizational understanding, not shared storage.**
+> **Individual action validity ≠ trajectory validity**
 
 ---
 
-## 9. Capability Agent
+## 9. Company Brain
 
-> **A Capability Agent is a replaceable agent-based implementation of one or more Company Capabilities.**
+> **The Company Brain is the organization-owned intelligence substrate of this Reference Design.**
 
-A Capability Agent performs organizational work within defined Company Capabilities and the organizational boundaries applicable to that work.
+It makes organizational intelligence usable together while preserving distinct meaning, Authority, lifecycle, information boundaries, and provenance. Relevant intelligence may include Company State, Source Claims, Evidence, Validated Knowledge, Company Memory, Organizational Practices, Decision Records, Decision Basis, capability information, organizational relationships, and authoritative sources or references.
 
-The Company Capability remains stable while its current operational implementation may evolve.
+### 9.1 Shared Organizational Understanding
 
-### 9.1 Capability Alignment
+The Company Brain creates shared organizational understanding, not shared storage. Different Actors may use different interfaces while operating from compatible facts, Decisions, State, relationships, and boundaries.
 
-A Capability Agent derives its organizational responsibility from the Company Capability it implements, not from everything its underlying model or runtime is technically capable of doing.
+It is not a transaction bus or mandatory intermediary for external action. Raw external data may remain in its responsible System of Record; caches, dashboards, summaries, indexes, visualizations, and specialist interpretations remain Derived Representations unless explicitly governed otherwise. Current external values may contribute to Company State where governed, while durable organizational meaning enters Company Memory, Validated Knowledge, Organizational Practice, Decision Records, or other organization-owned records only through their applicable governance.
 
-The relevant question is:
+### 9.2 Distinctions and Sources
 
-> **Which Company Capability is this agent implementing?**
+Company Memory preserves historically relevant information intentionally retained. Company State represents what the organization currently considers true. Working Context contains what one activity requires. Performer Memory is local performer state. These are not interchangeable.
 
-not:
+Different Systems of Record may remain authoritative for bounded information classes. Known provenance does not itself establish reliability, truth, or permission. Instruction-like content remains information rather than Authority.
 
-> *What can this agent technically do?*
+### 9.3 Curation and Access
 
-This keeps organizational responsibility stable while AI capabilities continue to change.
+Raw information may remain in Systems of Record, evidence stores, archives, or evaluation datasets. Information becomes Validated Knowledge, Company Memory, Organizational Practice, or another durable form only through its applicable governance—not through one universal linear lifecycle.
 
-### 9.2 Working Context
+The Company Brain is not a universal full-access layer. Knowledge Access and Context Construction preserve Purpose, Scope, Classification, source, uncertainty, and access boundaries.
 
-A Capability Agent receives the Working Context required for its current activity.
+> **Company Brain ≠ Actor ≠ Authority ≠ one database ≠ universal full-access layer**
 
-It does not require unrestricted access to the Company Brain or every information source available to the organization.
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#organizational-intelligence-and-company-brain) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#63-company-brain)</sub>
 
-Information access remains purpose-specific and subject to the applicable organizational boundaries.
+---
 
-The Capability Agent treats retrieved content, messages, documents, and tool results as information within Working Context. Content contained in those sources cannot grant additional tools, information access, delegation, or authority.
+## 10. Organizational Learning
 
-### 9.3 Performer Replaceability
+> **Organizational Learning converts relevant organizational Experience into governed reusable organizational intelligence.**
 
-A Company Capability is not inherently tied to a particular AI agent.
+```text
+Experience
+    ↓
+Organizational Reflection
+    ↓
+Organizational Learning Candidate
+    ↓
+Evidence / Validation
+    ↓
+applicable Adoption Authority
+    ↓
+Validated Knowledge / Organizational Practice / Capability Improvement /
+Policy review / Identity review / no adoption
+```
 
-Depending on the capability and context, organizational work may be performed by:
+Experience may arise from Humans, AI Performers, teams, software systems, work, interaction, observation, or Outcomes. Final Reflection is one form of reflection lifecycle, not a mandatory universal endpoint.
 
-- a Capability Agent;
-- a human;
-- another software system; or
-- a combination of participants.
+Organizational Learning also governs retirement or forgetting where retained intelligence is no longer applicable and supports Performer Rehydration from current authorized organizational intelligence.
 
-This allows the organizational capability to survive changes in people, agents, models, runtimes, and technology.
+> **Performer learning ≠ Organizational Learning**
+> **Learning Candidate ≠ adopted learning**
+> **Memory consolidation ≠ learning adoption**
+> **Operational Authority ≠ learning adoption Authority**
+
+Experience does not directly self-modify Production behavior. Performer Memory does not become organizational learning automatically. Material learning passes through this Composition.
+
+Assurance mechanism failure, disagreement, drift, blind spots, or invalid Evidence may become attributable Experience or Evidence, generate an Organizational Event and Attention Requirement, and enter Organizational Reflection. Reflection may produce a Learning Candidate, but no assurance-originated finding automatically changes Production, Authority, Policy, Qualification, or accepted Knowledge. Adopted improvement continues through normal evaluation, governance, qualification, and deployment.
+
+Sandbox may provide Evidence about an implementation change; it is not the home of Organizational Learning. No Production Skill modifies itself without governed adoption.
+
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#organizational-learning) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#64-organizational-learning)</sub>
+
+---
+
+## 11. Capability Agent
+
+> **A Capability Agent is an agent-based Capability Implementation pattern in this Reference Design.**
+
+A Company Capability is not a Capability Agent. The capability remains stable while its current implementation and Performer may change.
+
+### 11.1 Capability Alignment and Context
+
+A Capability Agent derives responsibility from the Company Capability it implements, not from everything its model or runtime can technically do. It receives bounded Working Context rather than unrestricted access to the Company Brain. Retrieved content cannot grant tools, access, delegation, or Authority.
+
+### 11.2 Performer Replaceability
+
+Work may be performed by a Human, AI Performer, software system, Organizational Group, or combination. Replacement remains subject to qualification and assignment.
 
 > **The capability belongs to the organization. Its current performer does not.**
 
-### 9.4 Qualification
+### 11.3 Performer State
 
-A replacement Capability Agent does not automatically inherit the trust established by its predecessor.
+The implementation explicitly governs:
 
-Changes to the underlying model, instructions, runtime, tools, context strategy, or other material implementation characteristics may change operational behavior.
+- **Performer Configuration** — material configuration affecting behavior;
+- **Execution Identity** — the attributable identity used while acting;
+- **Working Memory** — temporary state for current work;
+- **Performer Memory** — retained local state influencing later work; and
+- **Memory Policy** — rules governing write, retention, retrieval, transformation, and deletion.
 
-A new implementation can therefore be evaluated against the same Company Capability and relevant organizational scenarios before receiving equivalent operational scope.
+> **Working Memory ≠ Performer Memory ≠ Company Brain**
 
-> **Company Capabilities remain stable while their operational implementations can evolve.**
+Performer Memory remains local performer state. It does not become organizational truth automatically, must not create Shadow Access or Shadow Truth, and remains subject to current Purpose, Scope, Access, and Memory Policy. A materially changed Performer Configuration may invalidate prior Capability Qualification.
 
-### 9.5 Delegated and Adversarial Operation
+Governance follows actual behavior-affecting function rather than implementation labels. Retained caches, indexes, retrieval weighting, selected examples, personalization, or comparable mechanisms that materially influence later behavior are governed as applicable Performer Memory or Performer Configuration; temporary caches without retained behavior-affecting information may remain ordinary implementation state. Cross-Performer, cross-Work, or organizational reuse does not become Organizational Learning or a Production Skill without the applicable Reflection, Learning Candidate, Adoption, Evaluation, Qualification, authorization, configuration, and deployment path, and material change may require review of Operational Confidence.
 
-A Capability Agent may be implemented through multiple coordinated agents or other delegated technical participants. Each delegation remains attributable to the originating execution and must preserve its Company Capability, Working Context, information, action, resource, and authorization boundaries.
-
-Combining the individually permitted access or actions of several participants must not create a broader consequential capability or Outcome than the originating execution is authorized to produce. Onward delegation requires an explicit boundary and cannot expand authority.
-
-Capability Agents may encounter manipulated inputs, compromised dependencies, adversarial instructions, or misleading tool results. Their implementation must therefore rely on externally enforceable organizational boundaries rather than model compliance alone.
-
----
-
-## 10. Execution Graph Layer
-
-> **The Execution Graph Layer translates Intent into reproducible, observable, and controlled execution.**
-
-Execution Graphs make organizational work explicit.
-
-They describe how an objective progresses through capabilities, decisions, waiting states, interactions, and outcomes without permanently binding the organizational process to individual performers or technologies.
-
-### 10.1 Organizational Execution
-
-An Execution Graph may contain:
-
-- Company Capabilities;
-- human activities;
-- Capability Agent activities;
-- decision points;
-- approval gates;
-- waiting states;
-- external interactions;
-- parallel work;
-- recovery paths; and
-- outcomes.
-
-It describes the organizational execution path, not the private reasoning process of an individual participant.
-
-### 10.2 Capability before Performer
-
-Execution Graphs depend primarily on Company Capabilities rather than named performers.
+### 11.4 Experience and Learning
 
 ```text
-Intent
+Capability Agent operation
         ↓
-Execution Graph
+Experience
         ↓
-Required Company Capability
+Organizational Reflection
         ↓
-Qualified and Authorized Performer
-        ↓
-Outcome
+Organizational Learning Candidate
 ```
 
-The performer may be a Capability Agent, a human, another system, or an appropriate combination.
+Experience cannot directly self-modify Production behavior, and Performer Memory cannot bypass Organizational Learning.
 
-The Executive Agent may identify the required Company Capability. The Execution Graph Layer resolves the performer for a graph step from the implementations that remain qualified and authorized within the applicable context. This keeps capability coordination separate from performer resolution.
+A specialized Capability Agent may monitor or analyze an external operational domain and produce relevant filtered reports, Source Claims, Evidence, Events, Attention Requirements, Experience, Work or Decision Proposals, Learning Candidates, or Outcomes as applicable. It neither makes all source data Company Brain content nor turns relevance or interpretation into truth, Evidence, Company State, or adopted learning automatically. Material outputs retain source links; repeated summaries or relays do not multiply independent Evidence; and specialist Skills follow normal governed Skills and Organizational Learning paths.
 
-This allows the graph to remain stable when the implementation of a capability changes.
+### 11.5 Delegated and Adversarial Operation
 
-### 10.3 Waiting and Decisions
+Delegation preserves Company Capability, context, information, action, resource, and authorization boundaries. Combined privileges must not exceed the originating Authorized Effect. Capability Agents rely on externally enforceable controls rather than Performer compliance alone.
 
-Not all organizational work should execute continuously from beginning to end.
-
-An Execution Graph may intentionally wait for:
-
-- human approval;
-- additional evidence;
-- an external response;
-- completion of another activity;
-- resolution of uncertainty;
-- fulfillment of a precondition; or
-- a defined point in time.
-
-Waiting is therefore a valid organizational state rather than an execution failure.
-
-The graph represents where a decision is required. It does not create the authority to make that decision.
-
-### 10.4 Observable Execution
-
-Execution preserves sufficient information to understand how an organizational outcome was reached.
-
-Depending on the activity, this may include:
-
-- originating intent;
-- graph and graph version;
-- participating capabilities and performers;
-- Working Context references;
-- decisions and approvals;
-- external interactions;
-- significant state transitions;
-- failures and recovery actions; and
-- resulting outcomes.
-
-This makes organizational work reviewable and provides evidence for later evaluation.
-
-### 10.5 Reproducibility
-
-Reproducibility does not require every execution to produce an identical result.
-
-Humans, AI systems, external systems, and changing organizational conditions may introduce legitimate variation.
-
-Instead, reproducibility means that the organization can reconstruct the relevant execution structure, conditions, context, participants, decisions, and resulting outcome.
-
-### 10.6 Evolution
-
-Execution Graphs may evolve as organizational processes improve.
-
-Material changes can be exercised in the Sandbox Organization and evaluated before adoption in Production.
-
-The organizational execution model therefore remains stable enough to understand while remaining capable of deliberate evolution.
-
-> **Execution Graphs preserve organizational execution while the performers and technologies beneath them remain replaceable.**
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#company-capabilities) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#65-capability-agent)</sub>
 
 ---
 
-## 11. Company Interface Layer
+## 12. Organizational Control Plane
 
-> **The Company Interface Layer is the controlled organizational boundary between an AI-First Company and the External World.**
+> **The Organizational Control Plane enforces organizational execution boundaries outside the affected Performer.**
 
-The Company Interface Layer enables the organization to receive information from and perform authorized actions in external systems without coupling organizational capabilities directly to individual providers, products, or interfaces.
+Responsibilities include Authority, Policy, Scope, precondition and current Company State enforcement; scoped credentials; tool, action, effect, and trajectory boundaries; containment; and revocation or suspension enforcement.
 
-It separates **what the organization intends to do** from **how an external system makes that interaction technically possible**.
+> **Instructions ≠ Controls**
 
-### 11.1 Inbound Information
+System prompts, Skills, agent instructions, webpages, documents, emails, tool output, and model reasoning do not enforce organizational Authority. The Control Plane must be able to limit or stop execution independently of Performer willingness.
 
-External information enters the organization through controlled interfaces.
+Deterministic enforcement applies where boundaries can be represented through identities, resources, operations, destinations, credentials, thresholds, schemas, and explicit Policy. Semantic, cumulative, contextual, or real-world consequences may not be preventable with deterministic certainty; model-based or heuristic evaluation supplies Evidence or estimation rather than deterministic control. When sufficient preventive control is infeasible, the design exposes residual Uncertainty and uses Consequence Assessment to narrow Scope, Authority, Standing Authorization, or Authorized Effects; require another Decision or heterogeneous evaluation; use read-only or proposal-only operation; route Attention; apply Safe Failure or Controlled Pause; or decline the action. It does not claim equivalent control, while preserving feasible preventive boundaries.
+
+### 12.1 Effect Path
+
+```text
+Decision / Action Intent
+        ↓
+Authorized Effect
+        ↓
+Organizational Control Plane
+        ↓
+Controlled Execution
+        ↓
+Company Interface Layer
+        ↓
+External Interaction
+        ↓
+External Effect
+        ↓
+Verification / Reconciliation / Outcome
+```
+
+The Control Plane asks: **May this Effect occur under these conditions?**
+
+The Company Interface Layer asks: **How is the permitted interaction technically realized?**
+
+The Capability Agent and Execution Graph ask: **What organizational work is being performed?**
+
+Decision, execution, external interaction, external effect, and Outcome remain distinct.
+
+### 12.2 Controlled Autonomy
+
+```text
+Capability Qualification
++ bounded Authority
++ Organizational Control Plane
++ Continuous Assurance
++ Attention routing
+        ↓
+Controlled Autonomy
+```
+
+Authority may be maintained, expanded, contracted, suspended, or revoked. Positive Evidence does not automatically expand Authority. Material Negative Evidence can trigger rapid contraction or suspension. Autonomy remains capability- and scope-specific.
+
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#controlled-execution) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#66-organizational-control-plane)</sub>
+
+---
+
+## 13. Company Interface Layer
+
+> **The Company Interface Layer is the controlled boundary between the organization and the External World.**
+
+It separates what the organization is permitted to do from how an external system technically realizes the interaction.
+
+### 13.1 Inbound Information
 
 ```text
 External World
@@ -618,544 +609,248 @@ Company Interface Layer
       ↓
 Attributable Input
       ↓
-Organizational Processing
+Source Claim / Organizational Event / Evidence / Working Context input
 ```
 
-Incoming information should preserve sufficient source, identity, timestamp, representation, metadata, and provenance for its intended organizational use.
+Arrival does not make input organizational knowledge, Company Memory, Evidence, State, or Authority. External content may be incorrect, manipulated, or adversarial. External content ≠ Authority.
 
-Arrival alone does not make external information accepted organizational knowledge or Company Memory.
-
-External content is treated as potentially incorrect, manipulated, or adversarial according to its source and consequence. Instructions embedded in messages, documents, retrieved content, media, or tool results remain inbound information; they do not create Intent, authorization, policy, or permission to invoke another tool.
-
-### 11.2 Outbound Action
-
-The same boundary applies to actions leaving the organization.
+### 13.2 Outbound Interaction
 
 ```text
-Intent
+Authorized Effect
       ↓
-Controlled Execution
+Organizational Control Plane
       ↓
 Company Interface Layer
       ↓
-External System
+External Interaction
+      ↓
+External Effect
 ```
 
-The Company Interface Layer enables an authorized external action.
+The Interface Layer may possess technical credentials but does not own Authority. Connectors expose only operations, resources, destinations, and flows required for authorized use.
 
-It does not create the authority for that action.
+### 13.3 Systems of Record, Identity, and Provenance
 
-Before a material external effect, the applicable identity, Company Capability, action, destination, Information Classification, and authorization boundary remain technically verifiable. Separately permitted access and actions must not be combined into an unauthorized external Outcome.
+Systems of Record retain bounded authority. External interaction preserves initiating participant, Capability, execution, technical identity, material delegation, external system, and Outcome where relevant. Shared infrastructure must not erase attribution.
 
-### 11.3 Connectors
+### 13.4 Unknown Effects and Failure
 
-Connectors provide replaceable technical relationships with individual external systems.
-
-A connector may support reading, writing, querying, events, commands, synchronization, or combinations of these functions.
-
-Each connector exposes only the operations, resources, destinations, and data flows required for its authorized organizational use. Possession of a broad provider credential must not turn every technically available provider operation into an available organizational action.
-
-The organizational capability remains independent of the connector and provider through which it currently operates.
-
-For example:
+External systems may be unavailable, delayed, inconsistent, compromised, or return an uncertain result.
 
 ```text
-Customer Communication
+Unknown External Effect
         ↓
-Company Interface Layer
+verify external state
         ↓
-Email Connector
+reconcile
         ↓
-Email Provider
+only then decide whether retry is safe
 ```
 
-Changing the connector or provider should not redefine the Customer Communication Capability.
+Retry is not the default. The uncertainty remains visible to execution, assurance, and Attention routing.
 
-### 11.4 Systems of Record
-
-The Company Interface Layer preserves authoritative source boundaries.
-
-Where a system acts as the System of Record for a particular information class, the Company Brain may make relevant information from that system organizationally usable without becoming a competing authoritative source.
-
-This allows unified organizational understanding without creating duplicate organizational truth.
-
-### 11.5 Identity and Provenance
-
-Material external interaction remains attributable.
-
-Where relevant, the organization should be able to relate an interaction to:
-
-- the initiating participant;
-- the Company Capability;
-- the relevant execution;
-- the technical identity used;
-- any material delegation chain;
-- the external system; and
-- the resulting outcome.
-
-Shared technical infrastructure must not erase organizational accountability.
-
-### 11.6 Failure
-
-External systems may become unavailable, delayed, inconsistent, rate-limited, or uncertain.
-
-They may also return manipulated content or behave as a compromised dependency. Their output remains subject to the same source, integrity, authorization, and execution boundaries as other inbound information.
-
-The Company Interface Layer exposes these conditions to organizational execution rather than hiding them.
-
-The appropriate organizational response—wait, retry, use an alternative, escalate, or stop—belongs to controlled execution.
-
-> **External systems are replaceable. The organizational boundary through which the company interacts with them remains controlled.**
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#effects-and-external-interaction) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#67-company-interface-layer)</sub>
 
 ---
 
-## 12. Sandbox Organization
+## 14. Sandbox Organization
 
-> **The Sandbox Organization is an isolated realization of the AI-First Company used to evaluate organizational change without affecting Production.**
+> **The Sandbox Organization isolates evaluation of candidate implementation, configuration, or behavior change from Production effects.**
 
-The Sandbox provides an environment in which candidate changes can be exercised under controlled conditions before they are permitted to affect operational reality.
+It may reproduce only the organizational parts needed for the evaluation and use synthetic, historical, replay, or controlled Production-derived information. Evaluation information retains origin, Classification, minimization, isolation, and provenance.
 
-Its purpose extends beyond software testing.
+Sandbox activity, credentials, State, Company Memory, external actions, traces, and Outcomes remain distinguishable from Production. Candidate change is exercised realistically but within scope.
 
-The Sandbox can evaluate changes to agents, models, execution, context strategies, interfaces, policies, and other material organizational behavior.
-
-### 12.1 Organizational Environment
-
-The Sandbox reproduces the parts of the AI-First Company necessary for the evaluation being performed.
-
-Depending on scope, this may include:
-
-- Company Brain representations;
-- Capability Agents;
-- Execution Graphs;
-- Company Interfaces;
-- organizational state;
-- applicable policies and authority boundaries;
-- external-system simulations; and
-- relevant technical runtime behavior.
-
-Not every evaluation requires a complete replica of Production.
-
-It requires sufficient organizational realism for the question being evaluated.
-
-### 12.2 Isolation
-
-Sandbox activity remains distinguishable from Production activity.
-
-This includes:
-
-- organizational state;
-- Company Memory;
-- credentials;
-- external actions;
-- execution traces;
-- decisions;
-- generated information; and
-- evaluation outcomes.
-
-Experimental or synthetic information must not silently become Production state or knowledge.
-
-### 12.3 Evaluation Data
-
-The Sandbox may operate with:
-
-- synthetic data;
-- predefined scenarios;
-- historical cases;
-- replay data;
-- controlled Production snapshots;
-- anonymized Production-derived data;
-- pseudonymized Production-derived data; or
-- appropriate combinations.
-
-The origin and status of evaluation information remain explicit.
-
-Where Production-derived information is required, its transfer is controlled and purpose-specific.
-
-### 12.4 Candidate Change
-
-The Sandbox may evaluate changes such as:
-
-- a Capability Agent;
-- an AI model;
-- agent instructions;
-- an Execution Graph;
-- a connector;
-- a context strategy;
-- an organizational policy;
-- a runtime; or
-- combinations of these elements.
-
-The Sandbox exercises the candidate.
-
-It does not determine whether the candidate is suitable for Production.
-
-That responsibility belongs to Evaluation & Qualification.
-
-### 12.5 Replay
-
-Where sufficient historical information exists, previous organizational situations may be replayed.
-
-Replay asks:
-
-> **How would this candidate have handled the same organizational situation?**
-
-This enables meaningful comparison between current and candidate implementations without requiring Production to become the experiment.
-
-### 12.6 Production Adoption
-
-Sandbox state is not promoted wholesale into Production.
+The Sandbox does not decide Production suitability; Evaluation & Assurance does. It is not the Organizational Learning system. A Learning Candidate may use Sandbox Evidence, while learning adoption and implementation evolution remain distinct.
 
 > **What moves from Sandbox to Production is a qualified change—not the Sandbox state.**
 
-Synthetic information, experimental Company State, Sandbox Company Memory, and unrelated Sandbox activity remain outside Production.
-
-> **The Sandbox allows the organization to change without requiring Production to become the experiment.**
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#capability-qualification) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#68-sandbox-organization)</sub>
 
 ---
 
-## 13. Production Organization
+## 15. Production Organization
 
-> **The Production Organization is the operational realization of the AI-First Company in which authorized organizational work produces real-world outcomes.**
+> **The Production Organization is the operational realization in which authorized work produces real organizational consequences.**
 
-Production represents the organization's current operational reality.
+Production maintains current operational reality, including Company State, Company Brain, Work Items, Capability Implementations, Execution Graphs, Decisions, authorized interactions, and Outcomes. Production ≠ Sandbox.
 
-Its activities may affect customers, people, systems, products, finances, commitments, and the External World.
+Deployment and technical ability grant no Authority. Production identities, credentials, tools, resources, and combined privileges remain bounded by the Authorized Effect and Control Plane.
 
-### 13.1 Operational Reality
+### 15.1 Continuity and Degraded Operation
 
-Production contains the current forms of:
+Continuity considers Performer, provider, model/runtime, credential, System of Record, Capability Implementation, and knowledge/access dependency failure. The organization may continue, degrade, transfer, pause, or shut down according to consequence.
 
-- Company State;
-- organizational work;
-- Capability implementations;
-- Execution Graphs;
-- applicable decisions and mandates;
-- authorized external interactions; and
-- operational outcomes.
+**Degraded Operation** preserves explicitly reduced capability within validated boundaries. **Controlled Pause** preserves State and prevents unsafe continuation while conditions are restored or reconsidered.
 
-The defining difference between Production and Sandbox is therefore not necessarily technology.
+Authority does not automatically transfer because a Performer or Actor becomes unavailable.
 
-It is **organizational consequence**.
-
-### 13.2 Production Company Brain
-
-Production maintains its own operational Company Brain.
-
-Sandbox does not share that Company Brain as a common mutable organizational state.
-
-Selected information may be transferred under controlled conditions, but Production and Sandbox remain distinct organizational realities.
-
-### 13.3 Authorized Execution
-
-Deployment into Production does not grant authority.
-
-Neither a human nor a Capability Agent gains additional organizational permission merely because it is technically able to perform an action in the Production environment.
+### 15.2 Incident, Containment, and Recovery
 
 ```text
-Technical ability
-        ≠
-Organizational authority
+Incident
+   ↓
+Containment
+   ↓
+Blast Radius Analysis
+   ↓
+Reconciliation
+   ↓
+Recovery / Replacement
+   ↓
+Performer Rehydration
+   ↓
+Evaluation / Requalification where required
+   ↓
+bounded return to operation
 ```
 
-Production preserves the authority, information, and execution boundaries defined by the Architecture.
+Continuity is shared across Production, the Control Plane, Evaluation & Assurance, Company Brain, and Organizational Learning. Containment must not depend solely on affected Performer cooperation.
 
-Production identity, network, process, file, tool, credential, and resource access remain no broader than required for the authorized capability implementation. The combined privileges of coordinated agents or services must not silently exceed the originating authorization boundary.
+Technical restart ≠ organizational Recovery. Recovery does not automatically restore Capability Qualification, Operational Confidence, Information Access, Authority, or suspended or restricted operation. Restoration is limited to what is justified and authorized for bounded return. If applicable governance requires a Decision, the current limited Authority State remains in force until that Decision occurs; positive technical Evidence alone creates no Authority. Incident Experience may later enter Organizational Learning, but incident handling is not learning.
 
-### 13.4 Continuity
-
-Availability and recovery requirements follow organizational need.
-
-Different Company Capabilities may therefore have different continuity requirements.
-
-An AI-First Company does not require every agent, model, or technical component to operate continuously simply because it exists in Production.
-
-Continuity also applies when the primary accountable individual or organizational role becomes temporarily or permanently unavailable. The organization preserves sufficient organizational knowledge, mandate state, access state, and operational context to determine deliberately whether work may continue, continue with reduced scope, wait, pause, escalate, or transfer to another accountable participant.
-
-Continuity of access does not create authority. Technical access and organizational authority remain distinct, and responsibility, Decision Mandates, Standing Authorization, qualification, and Operational Confidence do not transfer automatically.
-
-Founder Continuity is organizational continuity rather than a technical disaster recovery specification.
-
-### 13.5 Failure
-
-Production failures may involve Capability Agents, Execution Graphs, external systems, models, identities, infrastructure, state, or other dependencies.
-
-Failures remain observable and lead to defined recovery, fallback, waiting, escalation, restriction, or safe termination according to organizational consequence.
-
-Failure does not justify silently bypassing authority or information boundaries.
-
-### 13.6 Change
-
-Production changes through deliberate organizational evolution.
-
-Material uncertainty is evaluated outside Production where appropriate before an accepted change affects operational reality.
-
-> **Production operates. Sandbox evaluates change.**
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#company-execution-environment) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#69-production-organization)</sub>
 
 ---
 
-## 14. Evaluation & Qualification
+## 16. Evaluation & Assurance
 
-> **Evaluation & Qualification transforms organizational evidence into operational trust.**
-
-Evaluation & Qualification determines whether a candidate has demonstrated sufficient performance and reliability for a defined organizational scope.
-
-It provides the assurance mechanism between candidate change and accountable Production adoption.
-
-**Qualification** is a Reference Design responsibility derived from the Architecture's Initial Qualification, Requalification and Replay, Evidence, Capability History, and Operational Confidence. It is not an additional Architecture Concept and does not grant authority.
-
-### 14.1 Evaluation
-
-Evaluation examines candidate behavior under defined organizational conditions.
-
-Candidates may include:
-
-- Capability Agents;
-- models;
-- Execution Graphs;
-- context strategies;
-- connectors;
-- policies;
-- technical components; or
-- combinations of these elements.
-
-Evaluation may use synthetic scenarios, historical cases, replay, Production-derived cases, failure scenarios, adversarial scenarios, and purpose-designed capability tests.
-
-Where relevant to the candidate and consequence, adversarial evaluation includes manipulated external content, instruction injection, misleading tool output, knowledge or context poisoning, compromised connectors or dependencies, unauthorized privilege composition, delegation expansion, information exfiltration, resource exhaustion, observability bypass, and attempted Production-boundary escape.
-
-The purpose is not merely to produce a score.
-
-It is to create evidence about operational suitability.
-
-### 14.2 Capability-Based Evaluation
-
-Evaluation is anchored to Company Capabilities.
-
-The relevant question is not:
-
-> *How good is this model?*
-
-It is:
-
-> **How well does this candidate perform this Company Capability under these organizational conditions?**
-
-A candidate may therefore be qualified for one Company Capability while remaining unqualified for another.
-
-### 14.3 Evaluation Evidence
-
-Relevant evidence may include:
-
-- candidate identity and version;
-- Company Capability;
-- scenario or dataset;
-- Working Context;
-- Execution Graph;
-- expected outcome;
-- observed outcome;
-- errors and uncertainty;
-- policy or boundary violations;
-- human assessment; and
-- execution traces.
-
-Evaluation conclusions remain reviewable through the evidence supporting them.
-
-### 14.4 Qualification
-
-Qualification turns sufficient evaluation evidence into an explicit statement about operational suitability.
-
-It answers:
-
-> **For what organizational work, under what conditions, and within what boundaries has this candidate demonstrated sufficient capability?**
-
-Qualification may therefore be limited by:
-
-- Company Capability;
-- information class;
-- risk;
-- operational context;
-- required human oversight;
-- permitted actions;
-- Execution Graph; or
-- other relevant conditions.
-
-Qualification is scoped rather than universal.
-
-### 14.5 Operational Confidence
-
-Operational Confidence represents evidence-based confidence in an implementation performing a defined organizational responsibility under specified conditions.
-
-It can increase through successful operation and additional evidence.
-
-It can decrease through:
-
-- failures;
-- changed conditions;
-- new evidence;
-- regression;
-- implementation changes;
-- dependency changes; or
-- changed organizational risk.
-
-Operational Confidence is contextual and revisable.
-
-### 14.6 Replacement
-
-A replacement implementation does not automatically inherit the qualification or Operational Confidence of its predecessor.
-
-Existing capability definitions, scenarios, known failure cases, and operational evidence provide a reusable basis for evaluating the candidate.
-
-This allows technological replacement without discarding organizational learning.
-
-### 14.7 Qualification and Authority
-
-Three concepts remain distinct:
+> **Evaluation & Assurance covers both pre-Production qualification and continuous Production assurance.**
 
 ```text
-Technical Capability
-        ≠
-Qualification
-        ≠
-Authorization
+Candidate Implementation
+        ↓
+Sandbox Organization
+        ↓
+Evaluation
+        ↓
+Capability Qualification
+        ↓
+possible bounded Authority
+        ↓
+Production Organization
+        ↓
+Continuous Assurance
+        ↓
+Operational Confidence
+        ↓
+Authority Review
 ```
 
-**Technical Capability** describes what a system can potentially do.
+### 16.1 Evaluation and Capability Qualification
 
-**Qualification** describes what it has demonstrated sufficient capability to do under defined conditions.
+Evaluation uses defined capabilities, scenarios, Evidence, expected and observed Outcomes, failures, boundary cases, adversarial cases, and relevant traces. Capability Qualification answers: **What has this implementation demonstrated it can do, in what Scope and conditions?** It neither creates Authority nor transfers automatically to a materially changed implementation.
 
-**Authorization** describes what it is permitted to do.
+### 16.2 Continuous Assurance and Operational Confidence
 
-Increasing technical capability therefore does not silently create increasing organizational authority.
+Continuous Assurance asks whether current Production Evidence still justifies trust. Signals may include leading indicators, concurrent controls, lagging Outcomes, Context Health, Memory Health, Behavioral Drift, Novelty, corrections, retries, incidents, distribution changes, deterministic invariants, sampling, and outcome monitoring.
 
-Authorization may apply to an individual action or may be granted in advance as bounded Standing Authorization for recurring actions. Standing Authorization originates in accountable organizational governance, remains attributable, and applies only to the approved capability, scope, conditions, and explicit boundaries.
+Operational Confidence is current, scoped, and revisable. It is neither Qualification nor Authority.
 
-Standing Authorization is reviewable and revocable and may be narrowed when conditions change. Qualification and Operational Confidence may inform it but do not create it, and a materially changed or replacement implementation does not inherit it automatically.
+> **Qualification ≠ Operational Confidence ≠ Authority**
 
-### 14.8 Production Evidence
+### 16.3 Shadow Evaluation and Assurance Independence
 
-Production can generate valuable evidence through successful outcomes, failures, corrections, escalations, unexpected situations, and changing operational conditions.
+Shadow Evaluation may observe behavior outside the primary execution control path. Evaluation may combine Human evaluation, AI evaluation, deterministic checks, Shadow Evaluation, outcome monitoring, or other suitable mechanisms.
 
-That evidence may improve future evaluation.
+Assurance Independence is assessed as a degree across relevant dependencies, including model or model family, provider, known training-data or method similarity, prompt and rubric design, tools, retrieval sources, context and Evidence, infrastructure and failure modes, evaluator incentives and ownership, human-review dependence, and shared susceptibility to bias, attack, or blind spots. Another model invocation, repeated samples from one evaluator, or multiple models from one family or provider are not automatically independent Evidence. Agreement among correlated evaluators must not be counted as multiple independent confirmations, and an AI judge is Evidence rather than a source of truth.
 
-Production does not thereby become the experimental environment.
+Evaluation may combine deterministic checks and invariants, System-of-Record or observed Outcome Evidence, versioned rubrics, a different model or provider where justified, targeted human sampling, calibration sets, bias or adversarial probes, disagreement detection, abstention or inability-to-evaluate handling, periodic second-method sampling, and evaluator-drift monitoring. Evaluator identity, configuration, protocol history, material dependencies, disagreement, and residual Uncertainty remain auditable where material. Evidential weight reflects dependence and correlation.
 
-Operational experience becomes input to future controlled evaluation.
+No infinite evaluator regress or perfect prediction is required. Evaluators remain subject to identifiable configuration, dependence analysis, observed performance, residual Uncertainty, and consequence-appropriate Assurance; model-based evaluation is not represented as deterministic enforcement or infallible control. Conformance combines justified prevention where feasible with concurrent and retrospective detection and governed response.
 
-### 14.9 Human Judgment
+No fixed number of models, providers, or human reviewers is universal. Limited independence may lead to narrower Qualification, reduced Operational Confidence, stronger restriction, an additional heterogeneous method, targeted human review, or Attention according to consequence. A minimal organization may combine responsibilities, but self-review must not be represented as independent Evidence.
 
-Not every organizational outcome can be evaluated adequately through automated metrics.
+### 16.4 Independent and Appropriate Evaluation
 
-Human judgment may remain necessary where evaluation involves ambiguity, strategy, communication quality, ethical considerations, legal interpretation, novel situations, or other context-sensitive consequences.
+Evaluation must be appropriate to ambiguity, strategy, communication quality, legal interpretation, safety, novelty, and other relevant consequences. Human participation may be required by a concrete domain, but it is not a universal Architecture requirement.
 
-Automation can support qualification without eliminating accountability.
+### 16.5 Authority Response
 
-> **Operational trust is earned through evidence, not assumed from technical capability.**
+Capability Qualification and Operational Confidence inform applicable governance without creating permission. Standing Authorization remains bounded, attributable, reviewable, and revocable. Negative Evidence can rapidly contract, suspend, or revoke Authority; positive Evidence supports review but does not automatically expand it.
+
+Authority Review is not itself an Authority change. If no authorized Decision changes Authority State, the current state and any existing expiry, suspension, restriction, revocation, or other governing condition remain in force. Absence of a new Decision is not implicit approval, renewal, restoration, or expansion.
+
+> **Operational trust is earned and maintained through Evidence, not assumed from technical capability.**
+
+<sub>**Trace this composition:** [Architecture basis](../01-architecture/ARCHITECTURE.md#operational-confidence-and-continuous-assurance) · [Technical realization](../03-technical-requirements/TECHNICAL_REQUIREMENTS.md#610-evaluation--assurance)</sub>
 
 ---
 
-## 15. Composition Relationships
+## 17. Composition Relationships
 
-The eight Compositions form one connected organizational design.
-
-Their relationships enable organizational understanding, context, intent, execution, evidence, and outcomes to move through the company without collapsing distinct responsibilities into one system.
-
-```text
-                   Human Leadership
-                          ⇅
-                   Executive Agent
-                          ⇅
-                    Company Brain
-                          ⇅
-               Execution Graph Layer
-                          ⇅
-                  Capability Agents
-                          ⇅
-               Company Interface Layer
-                          ⇅
-                    External World
-```
-
-The diagram represents principal organizational relationships, not hierarchy or mandatory technical call paths.
-
-All relationships remain subject to applicable Information Classification, authorization, Decision Mandates, and other architectural boundaries.
-
-### 15.1 Primary Relationships
+The ten Compositions form one connected design. Their relationships do not imply hierarchy or mandatory technical call paths.
 
 | Relationship | Purpose |
 |---|---|
-| **Executive Agent ⇄ Company Brain** | Makes shared organizational understanding operationally accessible to human leadership. |
-| **Company Brain ⇄ Execution Graph Layer** | Provides relevant organizational context to execution and receives resulting state, evidence, and knowledge inputs. |
-| **Execution Graph Layer ⇄ Capability Agents** | Connects organizational execution to qualified and authorized performers of required Company Capabilities. |
-| **Capability Agents ⇄ Company Interface Layer** | Enables controlled interaction between organizational capabilities and external systems. |
-| **Company Interface Layer ⇄ External World** | Provides the controlled boundary for inbound information and authorized external action. |
-| **Sandbox ⇄ Evaluation & Qualification** | Exercises candidate change and turns resulting behavior into evaluation evidence. |
-| **Evaluation & Qualification → Production** | Provides qualification results for accountable adoption decisions. |
-| **Production ⇢ Sandbox** | Optionally provides controlled Production-derived information for realistic evaluation. |
+| **Executive Agent ⇄ Company Brain** | Makes organizational intelligence usable for coordination and interaction. |
+| **Executive Agent ⇄ Execution Graph Layer** | Connects organizational need and coordination to structured work. |
+| **Executive Agent ⇄ Actors / Attention routing** | Routes Attention according to capability, expertise, Authority, access, and availability. |
+| **Company Brain ⇄ Organizational Learning** | Supplies governed intelligence to reflection and receives adopted learning. |
+| **Company Brain → Context Construction** | Supplies bounded inputs without becoming Working Context. |
+| **Execution Graph Layer ⇄ Capability Agents** | Connects capability-oriented work to qualified assigned Performers. |
+| **Execution Graph Layer ⇄ Organizational Control Plane** | Connects explicit work and trajectory to enforceable boundaries. |
+| **Capability Agents → Organizational Control Plane** | Subjects intended work and effects to external enforcement. |
+| **Capability Agents ⇄ Organizational Learning** | Contributes Experience and receives adopted organizational intelligence through governance. |
+| **Organizational Control Plane ⇄ Company Interface Layer** | Connects permitted effects to controlled technical interaction. |
+| **Company Interface Layer ⇄ External World** | Provides attributable inbound and outbound boundary crossing. |
+| **Sandbox Organization ⇄ Evaluation & Assurance** | Exercises candidates and produces qualification Evidence. |
+| **Production Organization ⇄ Evaluation & Assurance** | Supplies operational Evidence and receives confidence and Authority responses. |
+| **Production Organization → Organizational Learning** | Supplies Experience for governed reflection and adoption. |
 
-The Production-to-Sandbox relationship is optional. A Sandbox may operate entirely from synthetic, historical, or purpose-built evaluation information.
+Production may optionally provide controlled derived information to Sandbox. Sandbox may instead use synthetic, historical, replay, or purpose-built information.
 
-### 15.2 Human Interaction
+Dashboards, conversations, reports, notifications, and specialist interfaces are organizational views rather than additional Compositions.
 
-The Executive Agent is the primary operational interface for human leadership, not the exclusive human interface to the organization.
-
-Humans may interact directly with Capability Agents, specialist interfaces, dashboards, reports, or other authorized organizational views where appropriate.
-
-Different interaction paths do not create different organizational realities.
-
-They remain grounded in the same organizational state, knowledge, capabilities, authority, and information boundaries.
-
-### 15.3 Organizational Views
-
-Dashboards, conversations, reports, notifications, explorers, and similar representations are interaction modes rather than independent top-level Compositions.
-
-They present the relevant part of the organization in a form appropriate to the participant and activity.
-
-This allows interaction to follow organizational need rather than forcing every activity through one universal interface.
-
-### 15.4 Relationship Principle
-
-A relationship does not transfer responsibility or authority between Compositions.
-
-A Capability Agent receiving information from the Company Brain does not own that knowledge.
-
-An Execution Graph containing a decision point does not gain authority to make that decision.
-
-A Company Interface possessing technical credentials does not gain permission to use them arbitrarily.
-
-An Executive Agent presenting a recommendation does not become the accountable decision-maker.
-
-> **Composition relationships enable organizational cooperation without collapsing organizational boundaries.**
+> **A relationship does not automatically transfer Responsibility, Authority, Accountability, or Information Access.**
 
 ---
 
-## 16. Operational Flows
+## 18. Operational Flows
 
-The Production Organization is the operating AI-First Company.
+The organization is connected rather than centrally routed. Not every activity begins with the Executive Agent or uses an Execution Graph.
 
-Its Compositions work together to perceive relevant events, establish organizational understanding, coordinate work, perform Company Capabilities, interact with the External World, and incorporate resulting outcomes into the organization's current state and knowledge lifecycle.
-
-There is no requirement that every activity begin with the Executive Agent.
-
-The organization is **connected rather than centrally routed**.
-
-Where Evidence supports an organizational proposal, prioritization follows this sequence:
+### 18.1 Work Flow
 
 ```text
-Evidence-supported proposal
+Organizational Need
+  from Intent / Obligation / Event / Decision / Incident / Attention
         ↓
-Proposal Evaluation
+Work Item
         ↓
-Impact + Urgency evaluated independently
+Execution Graph where useful
         ↓
-Response Class
+Capability Need
         ↓
-Applicable Decision Mandate
+Performer Assignment
+        ↓
+Context Construction
+        ↓
+Decision / Controlled Execution
+        ↓
+Outcome
 ```
 
-Impact and Urgency are separate dimensions. Response Class prioritizes organizational attention; it does not create authority. Proposal Evaluation does not authorize execution, and accountable decision-making remains with the applicable Decision Mandate.
+### 18.2 Attention Flow
 
-### 16.1 External Event
+```text
+Attention Requirement
+        ↓
+Impact / Urgency / Uncertainty
+        ↓
+required Capability / Expertise / Authority / Information Access
+        ↓
+appropriate Actor / Organizational Group
+        ↓
+Decision mechanism or additional Work
+```
 
-An external event may initiate organizational evaluation and, where applicable, Intent Generation. It does not directly authorize execution:
+Attention ≠ hierarchical escalation. Routing ≠ Authority.
+
+If no appropriately authorized, qualified, informed, and available recipient exists, the Attention Requirement remains unresolved, attributable, observable, and reviewable. Urgency does not create Authority. The organization waits, restricts, pauses, gathers information, retains the unresolved requirement, or uses an authorized alternative path.
+
+### 18.3 External Event Flow
 
 ```text
 External World
@@ -1164,428 +859,220 @@ Company Interface Layer
       ↓
 Attributable Input
       ↓
-Organizational Event / Evidence
+Source Claim / Organizational Event
       ↓
-Evaluation / Intent Generation where applicable
-      ↓
-Intent
-      ↓
-Applicable authorization confirmed
-      ↓
-Work Admission
-      ↓
-Execution Graph as Controlled Execution
-      ↓
-Required Company Capability
-      ↓
-Qualified and Authorized Performer
-      ↓
+Context / Attention / Work / Assurance as appropriate
+```
+
+Not every Event creates Work. Not every Claim becomes Evidence. Not every observation creates a Decision.
+
+### 18.4 Actor-Initiated Work
+
+```text
+Actor
+  ↓
+Executive Agent, authorized shared interaction, or another authorized interface
+  ↓
+attributable Action Intent / Organizational Need
+  ↓
+Work Item
+  ↓
+Context Construction
+  ↓
+Decision where required
+  ↓
+Authority and Policy / Work Admission
+  ↓
+Organizational Control Plane
+  ↓
+Company Interface Layer and External Interaction where applicable
+  ↓
 Outcome
 ```
 
-The Working Context for that activity is assembled from the organizational information required to perform it.
+The interface initiates and presents the path; it does not grant permission or replace per-action enforcement.
 
-The objective is not to expose everything the company knows.
+Viewing and exploring authorized information—such as filtering, changing a visualization, or drilling into a source—remain subject to access and egress controls but do not by themselves change external State or require Work, a Decision Record, or Company Brain content. Analysis may instead produce a proposal, Decision Proposal, draft configuration, or proposed Work without producing an external effect. Proposal remains distinct from Decision, admission, execution, and Outcome.
 
-It is to provide the **smallest sufficient organizational context**.
+A material external action passes through the complete controlled path. The Company Brain is not a mandatory transaction intermediary: the applicable Decision and Decision Basis, Work, External Interaction, External Effect, Outcome, and Evidence remain in their appropriate organization-owned records, while reusable learning may later enter organization-owned intelligence through Reflection and governed Adoption.
 
-### 16.2 Human Intent
+If an embedded or linked provider interface communicates directly with an external system, it remains read-only or proposal-only unless equivalent organizational controls are demonstrably enforced. Any permitted direct action is attributable, observable, reconciled, and reflected in current organizational State and appropriate records. Retrospective capture does not cure missing prior Authority, Decision, Work Admission, or control; where consequence requires preventive enforcement, a surface that cannot support it does not expose the material action.
 
-Human leadership may initiate work through the Executive Agent:
+### 18.5 Proactive Activity
 
 ```text
-Human Leadership
-      ↓
-Executive Agent
-      ↓
-Organization Understanding
-      ↓
-Context Builder through Knowledge Access
-      ↓
-Working Context
-      ↓
-Intent
-      ↓
-Applicable authorization confirmed
-      ↓
-Work Admission
-      ↓
-Execution Graph as Controlled Execution
-      ↓
-Required Company Capability
-      ↓
-Qualified and Authorized Performer
-      ↓
+Schedule / State Change / External Event / Monitoring
+        ↓
+Organizational Event
+        ↓
+possible Work / Attention / Assurance
+```
+
+Continuous Environmental Intelligence may make relevant change visible through attributable claims, Evidence, and Events. It creates neither truth nor Authority. Proactive operation changes how organizational need becomes visible, not the Authority under which it is performed.
+
+### 18.6 Outcomes
+
+```text
 Outcome
+├──→ Company State
+├──→ Evidence
+├──→ Experience
+└──→ Organizational Event
+
+Experience → Organizational Learning
+Evidence   → Continuous Assurance
 ```
 
-The Executive Agent translates a human request into explicit Intent without bypassing the authorization, admission, execution, and performer boundaries that apply elsewhere.
-
-### 16.3 Proactive Activity
-
-Organizational activity does not require a new human request.
-
-Work may also begin through:
-
-- schedules;
-- external events;
-- state changes;
-- monitored conditions;
-- recurring organizational processes; or
-- other defined triggers.
-
-Proactive activity may include Continuous Environmental Intelligence performed through existing organizational capabilities and the controlled external boundary. It observes relevant external change continuously and proportionately, uses the Company Interface Layer where external information enters, preserves source and attribution, and produces organizational Evidence when an observation is sufficiently significant.
-
-Continuous Environmental Intelligence does not decide, assign authority, execute, or automatically create Intent or priority. Observation, Proposal Evaluation, accountable decision, Intent, and Controlled Execution remain distinct.
-
-Proactive operation changes how work begins, not the authority under which it is performed.
-
-### 16.4 Outcomes
-
-An outcome may affect operational reality, organizational knowledge, or both.
-
-```text
-Execution Outcome
-      │
-      ├──→ Company State
-      │
-      ├──→ Evidence
-      │
-      ├──→ Working Knowledge
-      │
-      └──→ possible validation
-                    ↓
-              Company Artifact
-                    ↓
-               Company Memory
-```
-
-These paths remain distinct.
-
-An operational outcome may change Company State immediately without becoming Company Memory.
-
-Likewise, new information may remain Evidence without becoming accepted organizational knowledge.
-
-### 16.5 Operational Principle
-
-The operational organization does not behave as one large autonomous agent.
-
-It coordinates distinct organizational responsibilities whose current performers and technologies can change while the organizational design remains stable.
-
-> **The organization coordinates capabilities, not personalities or models.**
+Learning and Assurance remain distinct. An Outcome does not automatically become State, Evidence, Memory, or adopted learning.
 
 ---
 
-## 17. Organizational Evolution
+## 19. Organizational Evolution
 
-The Production Organization operates the company.
+Organizational evolution distinguishes learning from implementation change.
 
-Organizational Evolution provides the controlled path through which that organization changes.
-
-It is not a second permanent operational loop.
-
-Change begins when evidence, experience, external conditions, human intent, or technological development creates a meaningful candidate for improvement.
-
-### 17.1 Candidate Change
-
-A candidate change may involve:
-
-- a Capability Agent;
-- an AI model;
-- an Execution Graph;
-- a context strategy;
-- a connector;
-- a policy;
-- a technical component;
-- an organizational process; or
-- a combination of these elements.
-
-Detection of an opportunity does not automatically change the organization.
-
-It creates a candidate for evaluation.
-
-### 17.2 Evaluation Path
+### 19.1 Organizational Learning
 
 ```text
-Candidate Change
-      ↓
+Experience
+    ↓
+Organizational Reflection
+    ↓
+Organizational Learning Candidate
+    ↓
+Evidence / Validation
+    ↓
+governed Adoption
+    ↓
+Validated Knowledge / Organizational Practice / Capability Improvement
+```
+
+### 19.2 Implementation Evolution
+
+```text
+Candidate Implementation Change
+        ↓
 Sandbox Organization
-      ↓
-Evaluation Evidence
-      ↓
-Evaluation & Qualification
-      ↓
-Qualification Result
-      ↓
-Accountable Adoption Decision
-      ↓
+        ↓
+Evaluation & Assurance
+        ↓
+Capability Qualification
+        ↓
+governed Adoption
+        ↓
 Production Organization
 ```
 
-![A candidate change is evaluated in Sandbox, qualified through Evidence, and reaches Production only after an accountable adoption decision.](diagrams/organizational-evolution.png)
+![Organizational Learning and Implementation Evolution remain distinct governed paths.](diagrams/organizational-evolution.png)
 
-*What moves to Production is a qualified change—not the Sandbox state.*
+Production may provide controlled derived information to Sandbox, operational Experience to Organizational Learning, and Evidence to Evaluation & Assurance.
 
-The Sandbox provides the environment in which the candidate is exercised.
-
-Evaluation & Qualification determines what the resulting evidence demonstrates.
-
-Applicable organizational authority determines whether the qualified change is adopted.
-
-### 17.3 Realistic Sandbox Conditions
-
-The Sandbox may combine different forms of evaluation information:
-
-```text
-                Synthetic Data
-                      │
-                      ▼
-Historical ───► Sandbox Organization ◄┈┈┈ Production
- / Replay                                optional controlled
-   Data                                  derived information
-```
-
-Production-derived information is optional.
-
-Where used, it may require selection, classification, minimization, anonymization, pseudonymization, isolation, and provenance.
-
-The goal is sufficient realism for evaluation—not unrestricted replication of Production.
-
-### 17.4 Qualified Change
-
-Successful evaluation does not promote the Sandbox into Production.
-
-> **What moves from Sandbox to Production is a qualified change—not the Sandbox state.**
-
-Qualification may still result in:
-
-- required human approval;
-- narrower authorization;
-- limited rollout;
-- additional observation;
-- increased supervision; or
-- other controls appropriate to the operational consequence.
-
-Qualification demonstrates capability for a defined scope.
-
-It does not create authority.
-
-### 17.5 Continuous Learning, Deliberate Change
-
-The organization may continuously collect operational evidence and observe relevant external conditions without continuously modifying itself.
-
-Learning and changing are distinct organizational activities.
-
-> **The organization may learn continuously while changing deliberately.**
+> **What moves to Production is a qualified change—not the Sandbox state.**
+> **Learning does not automatically change Production.**
+> **Qualification demonstrates capability; it does not create Authority.**
 
 ---
 
-## 18. Architecture Traceability
+## 20. Architecture Traceability
 
-The Reference Design is derived from the AI-First Company Architecture.
+Traceability is many-to-many and explanatory rather than exhaustive. A Composition may combine several Concepts, and a Concept may influence several Compositions. Mapping represents composition and influence, not ownership.
 
-The relationship is many-to-many.
-
-A Reference Composition may combine several Architecture Concepts, while one Architecture Concept may influence several Compositions.
-
-Traceability therefore represents **composition and influence**, not ownership.
-
-| Reference Composition | Principal Architecture Concept Nodes |
+| Reference Composition | Principal v2 Architecture Concept Nodes |
 |---|---|
-| **Executive Agent** | Company State, Company Memory, Working Context, Knowledge Access, Company Capability, Decision Mandate, Intent, Role |
-| **Company Brain** | Company Memory, Company State, Working Context, Knowledge Access, Company Artifact, Decision Record, System of Record, Evidence, Validated Knowledge |
-| **Capability Agent** | Company Capability, Working Context, Information Classification, Decision Mandate, Work Admission, Controlled Execution, Operational Confidence, Standing Authorization |
-| **Execution Graph Layer** | Intent, Company Capability, Work Admission, Controlled Execution, Decision Mandate, Organizational Event, Evidence, Outcome |
-| **Company Interface Layer** | External World, Evidence, Information Classification, System of Record, Data Custody, Organizational Event, Controlled Execution, Outcome, Access Boundary |
-| **Sandbox Organization** | Trust Domain, Company Execution Environment, Company State, Evidence, Operational Confidence, Capability History, Information Classification, Controlled Execution |
-| **Production Organization** | AI-First Company, Company State, Company Memory, Decision Mandate, Company Capability, System of Record, Founder Continuity, Recoverability, Standing Authorization |
-| **Evaluation & Qualification** | Evidence, Company Capability, Operational Confidence, Confidence Profile, Capability History, Capability Improvement, Standing Authorization, Validated Knowledge |
+| **Executive Agent** | Actor, Performer, Attention Requirement, Decision Participation, Context Construction, Working Context, Company Capability, Decision |
+| **Execution Graph Layer** | Work Item, Organizational Intent, Organizational Obligation, Organizational Event, Attention Requirement, Company Capability, Performer Assignment, Decision, Controlled Execution, Outcome |
+| **Company Brain** | Company Brain, Company State, Source Claim, Evidence, Validated Knowledge, Company Memory, Organizational Practice, Decision Record, Decision Basis, System of Record, Provenance |
+| **Organizational Learning** | Experience, Organizational Reflection, Organizational Learning Candidate, Organizational Practice, Performer Rehydration, Evidence |
+| **Capability Agent** | Company Capability, Capability Implementation, Capability Qualification, Performer Assignment, Working Context, Performer Configuration, Performer Memory, Memory Policy, Controlled Execution, Standing Authorization |
+| **Organizational Control Plane** | Organizational Control Plane, Decision Mandate, Standing Authorization, Controlled Autonomy, Controlled Execution, Work Admission, Authorized Effect, Access Boundary, Company State, Information Classification |
+| **Company Interface Layer** | Source Claim, Organizational Event, External Interaction, External Effect, System of Record, Data Custody, Information Classification, Provenance |
+| **Sandbox Organization** | Company Execution Environment, Trust Domain, Capability Qualification, Evidence, Information Classification, Controlled Execution |
+| **Production Organization** | AI-First Company, Company State, Company Brain, Company Capability, Standing Authorization, Organizational Continuity, Recovery, Dependency Record, Controlled Autonomy |
+| **Evaluation & Assurance** | Capability Qualification, Continuous Assurance, Operational Confidence, Shadow Evaluation, Evidence, Outcome, Standing Authorization |
 
-The mapping is explanatory rather than exhaustive.
+### 20.1 Cross-Cutting Responsibilities and Properties
 
-### 18.1 Cross-Cutting Responsibilities and Properties
-
-Some Architecture responsibilities and properties intentionally apply across much or all of the Reference Design. They remain traceable to the Architecture but are not represented as additional Concept Nodes by this section.
-
-These include:
-
-- Human Accountability;
-- Decision Mandates;
-- Information Classification;
-- attribution;
-- authority boundaries;
-- reviewability;
-- Knowledge Independence;
-- Systems of Record;
-- security and privacy;
-- recoverability;
-- replaceability; and
+- Responsibility;
+- Authority;
+- Accountability;
+- Information Governance and Provenance;
+- Context Integrity;
+- Continuous Assurance and Controlled Autonomy;
+- Recoverability and Organizational Continuity;
+- Replaceability and observability; and
 - controlled evolution.
 
-Assigning these Concepts exclusively to one Composition would incorrectly narrow their scope.
+These are not assigned exclusively to one Composition because doing so would incorrectly narrow their scope.
 
-### 18.2 Traceability Rule
+### 20.2 Traceability Rule
 
-A new Reference responsibility must remain explainable through the Architecture.
-
-If it cannot be, it may:
-
-1. belong to the Technical Requirements rather than the Reference Design;
-2. be unnecessary or misplaced; or
-3. reveal a genuine gap requiring separate Architecture review.
+A new Reference responsibility must remain explainable through the Architecture. Otherwise it belongs to another layer, is unnecessary or misplaced, or reveals a genuine Architecture gap requiring separate review.
 
 > **Every Reference responsibility remains traceable to the Architecture.**
 
 ---
 
-## 19. Failure Modes
+## 21. Failure Modes
 
-The Reference Design must remain useful when information, participants, execution, environments, external systems, or evaluation fail.
+The objective is to make failure observable, bounded, recoverable, and attributable.
 
-The objective is not to eliminate failure.
+### 21.1 Intelligence and Context Failure
 
-It is to make failure **observable, bounded, recoverable, and accountable**.
+Failures include stale State, contradictory sources, Shadow Truth, stale Performer Memory, Shadow Access, context poisoning, inappropriate retention, missing Counter-Evidence, and failure to invalidate Working Context after material change. The organization keeps uncertainty visible rather than manufacturing coherence.
 
-### 19.1 Understanding Failure
+### 21.2 Execution and Control Failure
 
-Organizational understanding may become incomplete or incorrect through:
+Failures include operation outside Qualification, Authority aggregation, delegation expansion, admission bypass, trajectory invalidity, Attention routing failure, containment depending on the affected Performer, and individual valid steps combining into an unauthorized effect.
 
-- stale state;
-- missing information;
-- contradictory sources;
-- incorrect summaries;
-- manipulated sources, retrieved content, or tool results;
-- instruction-like content being mistaken for Intent or authority;
-- missing relationships; or
-- unresolved uncertainty.
+### 21.3 Boundary and Effect Failure
 
-The organization must not hide material uncertainty merely to produce a coherent answer.
+Failures include wrong Systems of Record, ambiguous identity, excessive credentials, unauthorized egress, compromised connectors, and Unknown External Effect. Unknown effects require verification and reconciliation before any retry decision.
 
-### 19.2 Execution Failure
+### 21.4 Environment, Continuity, and Recovery Failure
 
-A Capability Agent or Execution Graph may fail, become unavailable, regress, reach an unresolved state, or encounter conditions outside its qualification.
+Sandbox may be unrealistic or affect Production. Production may lose a Performer, provider, runtime, credential, System of Record, implementation, or knowledge dependency. Failures include Blast Radius blindness, rehydration failure, and premature restoration of Qualification, Confidence, or Authority.
 
-Depending on the activity, the organization may:
+### 21.5 Assurance Failure
 
-- wait;
-- retry;
-- restrict;
-- substitute another qualified performer;
-- gather additional evidence;
-- escalate;
-- request human intervention; or
-- terminate safely.
+Evaluation may use inadequate scenarios, biased or leaked data, obsolete conditions, misleading metrics, correlated evaluators, or insufficient independence. Continuous Assurance may miss drift, unhealthy context or memory, novelty, incidents, or changed distributions.
 
-Failure never expands authority.
+### 21.6 Learning Failure
 
-### 19.3 Boundary Failure
+Experience or Performer Memory may be mistaken for organizational truth; a Learning Candidate may auto-adopt; or learning and incident handling may collapse. Organizational Learning requires reflection, evidence, applicable Adoption Authority, and an explicit destination or rejection.
 
-Failures may occur even when individual components behave correctly:
+### 21.7 Cross-Composition Failure
 
-- information reaches an unauthorized participant;
-- the wrong System of Record is used;
-- external identity becomes ambiguous;
-- credentials exceed required scope;
-- delegated or combined privileges exceed the originating authorization;
-- classified information leaves through an unauthorized output or destination;
-- a manipulated connector, tool, or dependency steers otherwise valid execution;
-- an external action has an uncertain result;
-- Sandbox activity affects Production; or
-- technical access is mistaken for organizational authority.
+Examples include correct execution with stale context, a qualified Performer in an incorrect graph, valid Evidence interpreted outside Scope, authorized work using the wrong source, and organizational intelligence crossing the wrong access boundary. No Composition alone guarantees organizational correctness.
 
-These are failures of organizational boundaries rather than necessarily failures of individual components.
-
-### 19.4 Environment Failure
-
-Sandbox may fail because its evaluation conditions are unrealistic or unrepresentative.
-
-Production may fail because capabilities, infrastructure, models, identities, state, or external dependencies become unavailable.
-
-Recovery requirements follow organizational consequence rather than assuming identical availability requirements for every capability.
-
-### 19.5 Evaluation Failure
-
-Evaluation itself may be wrong.
-
-Possible causes include:
-
-- inadequate scenarios;
-- biased data;
-- incorrect expected outcomes;
-- missing failure cases;
-- missing or unrepresentative adversarial cases;
-- misleading metrics;
-- incomplete traces;
-- evaluation leakage; or
-- obsolete qualification conditions.
-
-Qualification and Operational Confidence therefore remain reviewable and revisable.
-
-### 19.6 Cross-Composition Failure
-
-Some of the most consequential failures arise between Compositions:
-
-- correct execution using stale Working Context;
-- a qualified Capability Agent operating through an incorrect Execution Graph;
-- correct processing against the wrong authoritative source;
-- valid Sandbox evidence interpreted beyond its tested scope; or
-- organizational knowledge reaching the wrong authority boundary.
-
-No individual Composition can guarantee organizational correctness alone.
-
-Its relationships and boundaries matter equally.
-
-### 19.7 Safe Failure
-
-Where uncertainty may create material consequences, the preferred behavior is:
+### 21.8 Safe Failure
 
 ```text
 Uncertainty
      ↓
-Preserve state
+Preserve State
      ↓
 Stop / Wait / Restrict
      ↓
-Gather evidence
+Gather Evidence
      ↓
-Escalate where required
+Route Attention where required
 ```
 
-rather than:
-
-```text
-Uncertainty
-     ↓
-Guess
-     ↓
-Continue
-```
+Do not guess and continue.
 
 > **An AI-First Company must be designed not only to act when it knows what to do, but also to behave safely when it does not.**
 
 ---
 
-## 20. Future Evolution
+## 22. Future Evolution
 
-The Reference Design is complete for its defined scope without assuming that every future organizational form or AI capability can already be predicted.
+The Reference Design is complete for its defined scope without predicting every future organizational form or Performer capability.
 
-Future experience may justify extensions such as:
+Future evidence may justify multiple coordinating Executive Agents, partitioned Company Brains, increasingly complex Capability composition, long-running graph evolution, multiple Sandbox Organizations, cross-company capability interaction, or new forms of bounded autonomy.
 
-- collaboration between multiple Executive Agents;
-- interaction models for different forms of human leadership;
-- federation or partitioning of large Company Brains;
-- increasingly complex Capability composition;
-- long-running Execution Graph evolution;
-- qualification transfer between related capabilities;
-- multiple concurrent Sandbox Organizations;
-- cross-company capability interaction; or
-- new forms of bounded AI autonomy.
+These are possible extensions, not unresolved requirements.
 
-These are possible future extensions, **not unresolved requirements of the current Reference Design**.
-
-### 20.1 Layer Discipline
-
-Future development preserves the distinction:
+### 22.1 Layer Discipline
 
 ```text
 Architecture
@@ -1595,18 +1082,10 @@ Reference Design
 Technical Requirements
 ```
 
-A new technology does not automatically require a Reference Design change.
+Technology does not automatically require a Reference change. A new organizational requirement should not be hidden in the Technical Requirements when it reveals an Architecture concern.
 
-A different technical realization does not automatically require an Architecture change.
+### 22.2 Evidence before Expansion
 
-A new organizational requirement should not be hidden inside the Technical Requirements when it reveals a genuine architectural concern.
-
-Changes belong to the layer whose responsibility actually changed.
-
-### 20.2 Evidence before Expansion
-
-The Reference Design should grow when organizational evidence demonstrates that an existing Composition or relationship is insufficient.
-
-A new model, framework, agent pattern, or technical capability is not by itself a reason to expand the organizational design.
+The Reference Design should grow when organizational Evidence demonstrates that an existing Composition or relationship is insufficient.
 
 > **Expand the Reference because the organization requires it, not because technology makes it possible.**

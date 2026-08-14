@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
-  <title id="title">Operating Cycle</title>
-  <desc id="desc">Evidence may contribute to Knowledge. Intent Generation transforms Knowledge into explicit Intent. Authorized and admitted Intent enters Controlled Execution, produces an Outcome, and the Outcome is captured as Evidence.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1120" viewBox="0 0 1200 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Three Connected Organizational Loops</title>
+  <desc id="desc">The Operating Loop connects Work, Controlled Execution, Outcome, Organizational Events, and Decisions. Outcomes create Experience for the Learning Loop and Production Evidence for the Assurance Loop. Learning proceeds through Reflection, a Learning Candidate, Evidence, and governed Adoption. Assurance proceeds through Continuous Assurance, Operational Confidence, and Authority Review. The loops remain distinct.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE.md. Learning does not authorize operation; Assurance does not adopt learning.]]></metadata>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
-    <marker id="arrow-secondary" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
     <style><![CDATA[
-      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:25px;font-weight:700}.node-copy{font-size:16px;fill:#666666}.label{font-size:16px;font-weight:700;text-anchor:middle;fill:#666666}.note-title{font-size:19px;font-weight:700}.note{font-size:16px;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.feedback{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow-secondary)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.note{fill:#666!important}.flow,.feedback{stroke:#383838!important}marker path{fill:#383838!important}
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.node-title-small{font-size:19px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.return{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.label{font-size:15px;font-weight:700;fill:#666;text-anchor:middle}.principle{font-size:19px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
     ]]></style>
   </defs>
-  <rect width="1200" height="780" fill="#fff" stroke-width="1.5"/>
-  <text class="title" x="48" y="54">Operating Cycle</text>
-  <text class="subtitle" x="48" y="84">Individual work completes. Organizational learning continues.</text>
+  <rect width="1200" height="1120" fill="#fff"/>
+  <text class="title" x="48" y="54">Three Connected Organizational Loops</text>
+  <text class="subtitle" x="48" y="84">Distinct responsibilities connected by Outcomes, Experience, Evidence, Events, and Decisions</text>
 
-  <rect x="48" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="76" y="184" fill="#222222">OBSERVE</text><text class="node-title" x="198" y="222" text-anchor="middle">Evidence</text>
-  <text class="node-copy" x="76" y="252">Attributable observed information</text><text class="node-copy" x="76" y="276">May contribute to Knowledge</text>
+  <rect class="region" x="48" y="124" width="1104" height="300" rx="24"/>
+  <text class="kicker" x="76" y="162">OPERATING LOOP</text>
+  <rect class="card" x="80" y="194" width="280" height="120" rx="22"/>
+  <text class="node-title" x="220" y="238">Work</text><text class="copy" x="220" y="274">Bounded organizational need</text>
+  <rect class="card" x="460" y="194" width="280" height="120" rx="22"/>
+  <text class="node-title" x="600" y="238">Controlled Execution</text><text class="copy" x="600" y="274">Admitted and authorized</text>
+  <rect class="card" x="840" y="194" width="280" height="120" rx="22"/>
+  <text class="node-title" x="980" y="238">Outcome</text><text class="copy" x="980" y="274">Observed attributable result</text>
+  <path class="flow" d="M360 254 H460"/><path class="flow" d="M740 254 H840"/>
+  <path class="return" d="M980 314 V338 Q980 350 968 350 H232 Q220 350 220 338 V314"/>
+  <text class="label" x="600" y="392">Organizational Events and Decisions shape governed future Work</text>
 
-  <rect x="450" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="478" y="184" fill="#222222">UNDERSTAND</text><text class="node-title" x="600" y="222" text-anchor="middle">Knowledge</text>
-  <text class="node-copy" x="478" y="255">Understanding relevant to a purpose</text>
+  <rect class="region" x="48" y="488" width="532" height="430" rx="24"/>
+  <text class="kicker" x="314" y="526" text-anchor="middle">LEARNING LOOP</text>
+  <rect class="card" x="80" y="554" width="220" height="118" rx="22"/>
+  <text class="node-title" x="190" y="598">Experience</text><text class="copy" x="190" y="634">From work and Outcomes</text>
+  <rect class="card" x="328" y="554" width="220" height="118" rx="22"/>
+  <text class="node-title" x="438" y="598">Reflection</text><text class="copy" x="438" y="634">Governed examination</text>
+  <rect class="card" x="80" y="734" width="220" height="118" rx="22"/>
+  <text class="node-title-small" x="190" y="778">Learning Candidate</text><text class="copy" x="190" y="814">Evidence + validation</text>
+  <rect class="card" x="328" y="734" width="220" height="118" rx="22"/>
+  <text class="node-title-small" x="438" y="778">Governed Adoption</text><text class="copy" x="438" y="814">Or no adoption</text>
+  <path class="flow" d="M300 613 H328"/>
+  <path class="flow" d="M438 672 V694 Q438 706 426 706 H202 Q190 706 190 716 V734"/>
+  <path class="flow" d="M300 793 H328"/>
 
-  <rect x="852" y="150" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="880" y="184" fill="#222222">DEFINE WORK</text><text class="node-title" x="1002" y="222" text-anchor="middle">Intent</text>
-  <text class="node-copy" x="880" y="255">Explicit organizational work</text>
+  <rect class="region" x="620" y="488" width="532" height="430" rx="24"/>
+  <text class="kicker" x="886" y="526" text-anchor="middle">ASSURANCE LOOP</text>
+  <rect class="card" x="648" y="554" width="220" height="118" rx="22"/>
+  <text class="node-title-small" x="758" y="598">Production Evidence</text><text class="copy" x="758" y="634">Current operational signals</text>
+  <rect class="card" x="896" y="554" width="220" height="118" rx="22"/>
+  <text class="node-title-small" x="1006" y="598">Continuous Assurance</text><text class="copy" x="1006" y="634">Is trust still justified?</text>
+  <rect class="card" x="648" y="734" width="220" height="118" rx="22"/>
+  <text class="node-title-small" x="758" y="778">Operational Confidence</text><text class="copy" x="758" y="814">Current scoped assessment</text>
+  <rect class="card" x="896" y="734" width="220" height="118" rx="22"/>
+  <text class="node-title" x="1006" y="778">Authority Review</text><text class="copy" x="1006" y="814">Governed response</text>
+  <path class="flow" d="M868 613 H896"/>
+  <path class="flow" d="M1006 672 V694 Q1006 706 994 706 H770 Q758 706 758 716 V734"/>
+  <path class="flow" d="M868 793 H896"/>
 
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M348 225 H440"/>
-  <text x="796" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#666666">Intent</text>
-  <text x="796" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#666666">Generation</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M750 225 H842"/>
+  <path class="flow" d="M940 314 V438 Q940 450 928 450 H202 Q190 450 190 468 V554"/>
+  <path class="flow" d="M1020 314 V458 Q1020 470 1008 470 H770 Q758 470 758 488 V554"/>
 
-  <rect x="852" y="400" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="880" y="434" fill="#222222">ACT</text><text class="node-title" x="1002" y="472" text-anchor="middle">Controlled Execution</text>
-  <text class="node-copy" x="880" y="505">Authorized and admitted work</text>
-
-  <rect x="450" y="400" width="300" height="150" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="478" y="434" fill="#222222">RESULT</text><text class="node-title" x="600" y="472" text-anchor="middle">Outcome</text>
-  <text class="node-copy" x="478" y="500">Completed, failed, partial,</text><text class="node-copy" x="478" y="524">or cancelled</text>
-
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M1002 300 V390"/><text class="label" x="1070" y="345">authorization</text><text class="label" x="1070" y="366">+ admission</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M852 475 H760"/><text class="label" x="806" y="458">produces</text>
-  <path class="feedback" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow-secondary)" d="M450 475 H190 Q160 475 160 445 V350 Q160 320 190 320 H200 Q220 320 220 310 V300"/>
-  <text class="label" x="292" y="458" fill="#383838">captured as Evidence</text>
-
-  <rect x="48" y="620" width="1104" height="104" rx="22" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="note-title" x="76" y="658" fill="#222222">Governance remains outside the cycle.</text>
-  <text class="note" x="76" y="689">Intent Generation is not automatic. Intent does not authorize execution. Outcomes do not automatically create new Intent or Company Memory.</text>
-  <text x="1152" y="764" text-anchor="end" font-size="12" fill="#666666">Selective, non-authoritative Derived Representation</text>
+  <rect class="region" x="48" y="968" width="1104" height="112" rx="22"/>
+  <text class="principle" x="600" y="1005">Learning does not authorize operation. Assurance does not adopt learning.</text>
+  <text class="principle-copy" x="600" y="1037">The loops exchange attributable Outcomes and Evidence without silently performing one another’s responsibilities.</text>
+  <text class="principle-copy" x="600" y="1063">Governed future operation reconnects the loops without collapsing them.</text>
 </svg>

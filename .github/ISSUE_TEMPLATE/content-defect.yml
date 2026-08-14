@@ -1,0 +1,52 @@
+name: Content defect
+description: Report a reproducible semantic, traceability, relationship, count, link, or requirement-mapping defect.
+title: "[Content defect]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for contradictory definitions, broken Architecture traces, incorrect counts, invalid relationships, semantic inconsistencies, broken links or anchors, and incorrect requirement mappings.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file and section
+      description: Provide the repository path and the exact heading or location.
+      placeholder: 01-architecture/ARCHITECTURE.md — Controlled Execution
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact problematic statement
+      description: Quote the smallest relevant passage or identify the exact count, relationship, link, or mapping.
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Why it is incorrect
+      description: Explain the contradiction, inconsistency, or failure precisely.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting repository source or external Evidence
+      description: Link to the authoritative repository source or provide attributable external Evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Minimal proposed correction
+      description: Describe the smallest correction that resolves the defect without broadening Scope.
+    validations:
+      required: true
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Existing reports
+      options:
+        - label: I searched existing Issues and any available Discussions for this defect.
+          required: true

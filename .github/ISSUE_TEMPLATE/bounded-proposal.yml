@@ -1,0 +1,80 @@
+name: Improvement proposal
+description: Propose a bounded improvement or request alignment on a substantial change.
+title: "[Proposal]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for bounded, independently reviewable improvements. While GitHub Discussions are unavailable, also use it to request alignment on a substantial Architecture, ontology, Reference Composition, requirement, or repository-structure proposal before implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the specific problem without expanding the proposal beyond its necessary boundary.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: State the intended result rather than prescribing unnecessary implementation detail.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Identify included and excluded files, subjects, and effects.
+    validations:
+      required: true
+  - type: dropdown
+    id: authority_layer
+    attributes:
+      label: Affected authority layer
+      options:
+        - Repository governance
+        - Architecture
+        - Derived Architecture artifact
+        - Reference Design
+        - Technical Requirements
+        - Explanatory or application material
+        - Visual representation
+        - Uncertain and requires routing review
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Identify reasonable alternatives and why this bounded outcome is preferred.
+    validations:
+      required: true
+  - type: textarea
+    id: traceability
+    attributes:
+      label: Traceability impact
+      description: Identify affected upstream, downstream, derived, explanatory, or visual traces.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or practical experience
+      description: Provide attributable Evidence, observations, or implementation experience supporting the proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Expected maintenance burden
+      description: Describe continuing review, synchronization, tooling, or maintenance implications.
+    validations:
+      required: true
+  - type: checkboxes
+    id: bounded
+    attributes:
+      label: Proposal boundary
+      options:
+        - label: I will not begin a substantial change before explicit Issue alignment or, once available, Discussion alignment.
+          required: true

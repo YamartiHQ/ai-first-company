@@ -2,13 +2,27 @@
 
 ## Purpose
 
-This repository defines a vendor-neutral organizational model for organizations in which humans and AI systems operate within one coherent organizational system.
+This repository defines a vendor-neutral organizational model for organizations in which Human and AI Performers operate within one coherent organizational system.
 
 It connects a conceptual Architecture to one Reference Design and to the Technical Requirements needed to realize that design.
 
 The repository concerns organizational design and its required technical capabilities. It does not prescribe particular products, vendors, models, runtimes, programming languages, or infrastructure.
 
 This document governs repository purpose, document roles, authority, and evolution. It does not redefine the organizational meaning established by the Architecture.
+
+## Planned reference implementation and empirical evaluation
+
+AI-First Company v2.0 is a rigorous conceptual and normative proposal, not an empirically established operating model. Conceptual coherence, internal traceability, and repository validation do not establish practical effectiveness, proportionality, technical feasibility, economic viability, or organizational fitness. These remain empirical questions.
+
+The next planned phase is a bounded reference implementation and empirical evaluation of one minimal end to end organizational Capability using the Architecture, Reference Design, and Technical Requirements. Its purpose is not to demonstrate success by construction. Its purpose is to produce Evidence that may support, limit, contradict, or refine assumptions made by the framework.
+
+The evaluation is intended to reveal implementation friction, control limitations, residual Uncertainty, governance and Assurance cost, organizational latency, throughput, failures, deviations from the Reference Design, and observed Outcomes. It is expected to document its Scope, assumptions, implementation profile, scenarios, metrics, Evidence, and limits of generalization.
+
+One reference implementation cannot establish general validity. It may provide initial scoped Evidence and a reproducible basis for subsequent evaluation and governed framework refinement. Worked examples, implementation patterns, and preliminary conformance profiles may later be derived from this Evidence. Regulatory mappings and guidance for human and organizational transformation may be developed as separate non-authoritative companion artifacts.
+
+Until such Evidence exists, v2.0 must not be represented as an empirically established operating model or as proof of general effectiveness, proportionality, or organizational fitness.
+
+This section records planned project evaluation and its limits. It does not create organizational meaning, modify the Architecture, promise an implementation, or establish an update schedule.
 
 ## Document authority
 
@@ -24,8 +38,10 @@ Authority follows document role, not file order, level of detail, or implementat
 | [`02-reference-design/REFERENCE_DESIGN.md`](02-reference-design/REFERENCE_DESIGN.md) | One coherent organizational design derived from the Architecture. It is authoritative for this Reference Design, but not for the Architecture itself. |
 | `02-reference-design/diagrams/` | Non-authoritative visual representations derived from the Reference Design. A diagram cannot override its source text. |
 | [`03-technical-requirements/TECHNICAL_REQUIREMENTS.md`](03-technical-requirements/TECHNICAL_REQUIREMENTS.md) | Technical requirements derived from the Reference Design. It is authoritative for the required technical capabilities, but cannot silently add organizational responsibilities. |
-| [`README.md`](README.md), [`00-introduction/THE-CORE-IDEA.md`](00-introduction/THE-CORE-IDEA.md), [`00-introduction/ORIGIN_AND_RELATED_WORK.md`](00-introduction/ORIGIN_AND_RELATED_WORK.md), and [`00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md`](00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md) | Explanatory entry, context, and application documents. Where they summarize or apply authoritative material, the corresponding authoritative document prevails. |
-| [`CITATION.cff`](CITATION.cff) | Non-authoritative publication metadata for citing a released version. It cannot define, interpret, extend, or modify the Foundation. |
+| `03-technical-requirements/diagrams/` | Non-authoritative visual representations derived from the Technical Requirements. A diagram cannot override its source text. |
+| [`README.md`](README.md), [`00-introduction/WHY_AI_FIRST_COMPANY.md`](00-introduction/WHY_AI_FIRST_COMPANY.md), [`00-introduction/THE-CORE-IDEA.md`](00-introduction/THE-CORE-IDEA.md), [`00-introduction/ORIGIN_AND_RELATED_WORK.md`](00-introduction/ORIGIN_AND_RELATED_WORK.md), and [`00-introduction/USING_AI_FIRST_COMPANY_WITH_AN_LLM.md`](00-introduction/USING_AI_FIRST_COMPANY_WITH_AN_LLM.md) | Explanatory entry, context, and application documents. Where they summarize or apply authoritative material, the corresponding authoritative document prevails. |
+| [`CITATION.cff`](CITATION.cff) | Non-authoritative citation metadata. It cannot define, interpret, extend, or modify the model. |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md), and [`.github/`](.github/) community files | Non-authoritative repository-governance, security-reporting, conduct, and interaction artifacts. They define participation, reporting, submission, and review processes but cannot create or modify model meaning or authority. |
 | `00-introduction/diagrams/` | Non-authoritative visual representations derived from the Core Idea and Architecture. A diagram cannot override its source text or introduce Architecture concepts. |
 | `01-architecture/diagrams/` | Non-authoritative visual derived representations. A diagram cannot override its source text. |
 
@@ -56,6 +72,14 @@ The Reference Design translates the Architecture into an organizational design.
 The Technical Requirements define the technology required to realize that design.
 
 Each layer answers a different question and must stay within its boundary. Greater detail in a downstream layer does not give that layer authority over an upstream one.
+
+## Community participation and acceptance
+
+External participation operates within the existing document authority and change-routing rules. Submission creates neither authority nor a presumption of acceptance, and technical correctness alone does not make a contribution authoritative. Accepted changes must preserve applicable terminology, traceability, No-Orphan rules, synchronization rules, document boundaries, and validation requirements.
+
+The maintainer retains final acceptance and release decisions unless repository governance is explicitly changed. Discussions, Issues, reviews, reactions, repeated requests, and Pull Requests do not constitute an Architecture Decision. Silence is neither acceptance nor rejection. Contributor, triage, reviewer, or maintainer permissions do not automatically create Architecture Authority; responsibilities, permissions, and any decision authority are granted explicitly and remain bounded.
+
+Substantial changes require prior alignment through the process defined in [CONTRIBUTING.md](CONTRIBUTING.md) and may be declined or deferred when that alignment was not obtained. Capacity and maintenance burden are legitimate scheduling and acceptance considerations, but they must not silently redefine Architecture meaning.
 
 ## Change routing
 
@@ -96,7 +120,7 @@ Also inspect downstream consequences in the Reference Design and Technical Requi
 
 When the Reference Design changes, inspect its Architecture traceability, synchronize `02-reference-design/diagrams/`, and synchronize affected Technical Requirements. When Technical Requirements change, verify that their Reference basis and coverage remain explicit.
 
-When authoritative content changes, review `README.md`, `00-introduction/THE-CORE-IDEA.md`, `00-introduction/ORIGIN_AND_RELATED_WORK.md`, and `00-introduction/USING_THE_FOUNDATION_WITH_AN_LLM.md` for stale explanations or application guidance. Derived, explanatory, and application artifacts must never become a competing source of organizational meaning.
+When authoritative content changes, review `README.md`, `00-introduction/WHY_AI_FIRST_COMPANY.md`, `00-introduction/THE-CORE-IDEA.md`, `00-introduction/ORIGIN_AND_RELATED_WORK.md`, and `00-introduction/USING_AI_FIRST_COMPANY_WITH_AN_LLM.md` for stale explanations or application guidance. Derived, explanatory, and application artifacts must never become a competing source of organizational meaning.
 
 ## Change process
 

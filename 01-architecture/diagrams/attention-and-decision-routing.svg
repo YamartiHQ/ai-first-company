@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Attention and Decision Routing</title>
+  <desc id="diagram-desc">An Attention Requirement is routed according to Impact, Urgency, Uncertainty, required Capability, Expertise, Authority, Information Access, and Availability to an appropriate Actor or Organizational Group. Routing grants neither Authority nor Information Access. Governed treatment may use a Decision Mechanism, create additional Work, gather Evidence, clarify, wait, restrict, route, or close. Only an actually made material Decision receives a Decision Record; other governed treatment may result in no Decision.</desc>
+  <metadata><![CDATA[
+    Diagram status: non-authoritative Derived Representation.
+    Architecture source: ARCHITECTURE.md.
+    Treatment groupings are explanatory and do not add Architecture concepts.
+    Routing changes neither Authority nor Information Access.
+    Only an actually made material Decision receives a Decision Record.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}
+      .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+      .subtitle{font-size:19px;fill:#666666}
+      .kicker{font-size:15px;font-weight:700;letter-spacing:1px}
+      .node-title{font-size:25px;font-weight:700;text-anchor:middle}
+      .node-copy{font-size:17px;fill:#666666;text-anchor:middle}
+      .region-title{font-size:23px;font-weight:700;text-anchor:middle}
+      .region-copy{font-size:17px;fill:#666666;text-anchor:middle}
+      .item{font-size:17px;font-weight:600;text-anchor:middle}
+      .label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}
+      .principle{font-size:19px;font-weight:700;text-anchor:middle}
+      .principle-copy{font-size:16px;fill:#666666;text-anchor:middle}
+      .subcard{fill:#ffffff;stroke:#b2b2b2;stroke-width:1.5}
+      .flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+      .branch{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="1040" fill="#ffffff"/>
+  <text class="title" x="72" y="54">Attention and Decision Routing</text>
+  <text class="subtitle" x="48" y="84">Route matters to appropriate governed treatment—not automatically to a Decision</text>
+
+  <rect x="48" y="132" width="320" height="150" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="168">TRIGGER</text>
+  <text class="node-title" x="208" y="211">Attention Requirement</text>
+  <text class="node-copy" x="208" y="246">Timely consideration is needed</text>
+
+  <rect x="424" y="132" width="728" height="150" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="452" y="168">ROUTING BASIS</text>
+  <text class="node-title" x="788" y="207">Organizational criteria</text>
+  <text class="node-copy" x="788" y="239">Impact · Urgency · Uncertainty · required Capability · Expertise</text>
+  <text class="node-copy" x="788" y="264">Authority · Information Access · Availability</text>
+  <path class="flow" d="M368 207 H424"/>
+
+  <rect x="300" y="342" width="600" height="118" rx="24" fill="#ffffff" stroke="#555555" stroke-width="2"/>
+  <text class="kicker" x="328" y="378">RECIPIENT</text>
+  <text class="node-title" x="600" y="411">Appropriate Actor or Organizational Group</text>
+  <text class="node-copy" x="600" y="441">Routing grants neither Authority nor Information Access</text>
+  <path class="flow" d="M788 282 V300 Q788 312 776 312 H612 Q600 312 600 324 V342"/>
+
+  <rect x="48" y="522" width="1104" height="200" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="558">POSSIBLE GOVERNED TREATMENT</text>
+  <line x1="600" y1="578" x2="600" y2="694" stroke="#dddddd" stroke-width="1.5"/>
+
+  <text class="region-title" x="324" y="608">Decision Mechanism</text>
+  <text class="region-copy" x="324" y="640">Used only where a Decision is required</text>
+  <line x1="112" y1="662" x2="536" y2="662" stroke="#dddddd" stroke-width="1.4"/>
+  <text class="item" x="324" y="691">May result in an actually made material Decision</text>
+
+  <text class="region-title" x="876" y="608">Other governed treatment</text>
+  <text class="region-copy" x="876" y="640">Additional Work · Evidence gathering · Clarification</text>
+  <line x1="664" y1="662" x2="1088" y2="662" stroke="#dddddd" stroke-width="1.4"/>
+  <text class="item" x="876" y="691">Wait · restrict · route · close</text>
+
+  <path class="branch" d="M520 460 V480 Q520 492 508 492 H336 Q324 492 324 504 V522"/>
+  <path class="branch" d="M680 460 V480 Q680 492 692 492 H864 Q876 492 876 504 V522"/>
+
+  <rect x="48" y="778" width="670" height="150" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="76" y="812">DECISION PATH</text>
+  <rect class="subcard" x="74" y="826" width="278" height="90" rx="18"/>
+  <text class="region-title" x="213" y="854">Material Decision</text>
+  <text class="region-copy" x="213" y="881">Actually made under an</text>
+  <text class="region-copy" x="213" y="903">applicable mandate</text>
+  <rect class="subcard" x="414" y="826" width="278" height="90" rx="18"/>
+  <text class="region-title" x="553" y="854">Decision Record</text>
+  <text class="region-copy" x="553" y="890">Decision · mandate · basis · review</text>
+  <path class="flow" d="M352 871 H414"/>
+
+  <rect x="770" y="778" width="382" height="150" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="kicker" x="798" y="812">OTHER RESULT</text>
+  <text class="region-title" x="961" y="854">No Decision</text>
+  <text class="region-copy" x="961" y="884">Governed treatment remains attributable</text>
+
+  <path class="flow" d="M324 722 V778"/>
+  <path class="branch" d="M876 722 V736 Q876 748 888 748 H949 Q961 748 961 760 V778"/>
+
+  <rect x="48" y="946" width="1104" height="62" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
+  <text class="principle" x="600" y="973">Attention ≠ hierarchical escalation · Routing ≠ Authority · Participation ≠ Decision Authority</text>
+  <text class="principle-copy" x="600" y="997">Only an actually made material Decision receives a Decision Record.</text>
+
+</svg>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="3430" viewBox="0 0 1200 3430" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Incident, Containment, and Recovery</title>
+  <desc id="diagram-desc">A selective, non-authoritative Architecture diagram of attributable incident response. An observable Incident proceeds through immediate independently enforceable Containment, Blast Radius Analysis, Reconciliation, governed response choices, Recovery or Replacement, Performer Rehydration from governed organizational sources, Evaluation or Requalification where required, applicable governance, and bounded return to operation. An Unknown External Effect is verified and reconciled before retry safety is decided. Incident Experience may separately inform Organizational Reflection and a possible Learning Candidate without automatic adoption. Technical restart and positive technical Evidence restore neither organizational operation nor Authority automatically.</desc>
+  <metadata><![CDATA[
+    Diagram status: selective, non-authoritative Derived Representation.
+    Architecture source: ARCHITECTURE.md, especially Controlled Execution and Organizational Continuity, Incident and Recovery.
+    Reference grounding: REFERENCE_DESIGN.md, especially Organizational Control Plane, Production Organization, Evaluation and Assurance, and Failure Modes.
+    The diagram is not exhaustive, empirically validated, a guaranteed recovery process, or a mandatory implementation.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}
+      .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+      .subtitle{font-size:19px;fill:#666666}
+      .region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}
+      .card{fill:#ffffff;stroke:#b2b2b2;stroke-width:1.5}
+      .focus{fill:#ffffff;stroke:#555555;stroke-width:2}
+      .subordinate{fill:#ffffff;stroke:#c2c2c2;stroke-width:1.3}
+      .kicker{font-size:15px;font-weight:700;letter-spacing:1px}
+      .kicker-center{font-size:15px;font-weight:700;letter-spacing:1px;text-anchor:middle}
+      .node-title{font-size:23px;font-weight:700;text-anchor:middle}
+      .node-title-small{font-size:19px;font-weight:700;text-anchor:middle}
+      .option-title{font-size:17px;font-weight:700;text-anchor:middle}
+      .copy{font-size:16px;fill:#666666;text-anchor:middle}
+      .copy-small{font-size:14px;fill:#666666;text-anchor:middle}
+      .item{font-size:15px;font-weight:600;text-anchor:middle}
+      .label{font-size:14px;font-weight:700;fill:#666666;text-anchor:middle}
+      .principle{font-size:19px;font-weight:700;text-anchor:middle}
+      .principle-copy{font-size:15px;fill:#666666;text-anchor:middle}
+      .flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="3430" fill="#ffffff"/>
+  <text class="title" x="48" y="54">Incident, Containment, and Recovery</text>
+  <text class="subtitle" x="48" y="84">Contain harm, reconcile reality, and restore only justified bounded operation</text>
+
+  <rect class="region" x="48" y="112" width="1104" height="100" rx="22"/>
+  <text class="principle" x="600" y="150">Containment comes first and must not depend solely on the affected Performer.</text>
+  <text class="principle-copy" x="600" y="182">Preserve organizational State, Evidence, attribution, and current governing limits throughout response.</text>
+
+  <rect class="card" x="350" y="260" width="500" height="140" rx="22"/>
+  <text class="kicker-center" x="600" y="296">ATTRIBUTABLE AND OBSERVABLE</text>
+  <text class="node-title" x="600" y="337">Incident</text>
+  <text class="copy" x="600" y="368">Affected Work · systems · effects · participants remain identifiable</text>
+  <text class="copy-small" x="600" y="390">Not hidden as a private Performer failure</text>
+
+  <path class="flow" d="M600 400 V450"/>
+
+  <rect class="focus" x="300" y="450" width="600" height="210" rx="24"/>
+  <text class="kicker-center" x="600" y="488">IMMEDIATE RESPONSE</text>
+  <text class="node-title" x="600" y="530">Containment</text>
+  <text class="copy" x="600" y="565">Stop · restrict · isolate · revoke · suspend as appropriate</text>
+  <text class="copy" x="600" y="591">Preserve State and Evidence · prevent expansion of harm</text>
+  <text class="copy" x="600" y="617">Enforce outside affected Performer willingness where feasible</text>
+  <text class="copy-small" x="600" y="642">Reflection never delays urgent containment</text>
+
+  <rect class="region" x="48" y="740" width="1104" height="620" rx="26"/>
+  <text class="kicker" x="76" y="778">ESTABLISH SCOPE AND RECONCILE REALITY</text>
+
+  <rect class="card" x="80" y="810" width="500" height="240" rx="22"/>
+  <text class="node-title" x="330" y="854">Blast Radius Analysis</text>
+  <text class="copy" x="330" y="890">Affected Capabilities · Work and related Work Items</text>
+  <text class="copy" x="330" y="916">identities · credentials · data · Information Access</text>
+  <text class="copy" x="330" y="942">systems · environments · external interactions and effects</text>
+  <text class="copy" x="330" y="968">participants · dependencies · cumulative consequences</text>
+  <text class="copy-small" x="330" y="1010">Establish organizational and external Scope before restoration</text>
+
+  <rect class="focus" x="620" y="810" width="500" height="240" rx="22"/>
+  <text class="node-title" x="870" y="854">Reconciliation</text>
+  <text class="copy" x="870" y="890">Verify current organizational State</text>
+  <text class="copy" x="870" y="916">Verify external State where relevant</text>
+  <text class="copy" x="870" y="942">Identify completed · failed · partial · unknown effects</text>
+  <text class="copy" x="870" y="968">Preserve Uncertainty where facts remain unresolved</text>
+  <text class="copy-small" x="870" y="1010">Unknown effect is neither automatic success nor automatic failure</text>
+
+  <path class="flow" d="M600 660 V700 Q600 712 588 712 H542 Q530 712 530 724 V810"/>
+  <path class="flow" d="M580 930 H620"/>
+
+  <text class="kicker" x="80" y="1092">UNKNOWN EXTERNAL EFFECT — SUBORDINATE CASE</text>
+
+  <rect class="subordinate" x="80" y="1120" width="280" height="130" rx="20"/>
+  <text class="node-title-small" x="220" y="1160">Unknown External Effect</text>
+  <text class="copy-small" x="220" y="1192">Technical timeout ≠ known Outcome</text>
+  <text class="copy-small" x="220" y="1216">Occurrence or resulting State unresolved</text>
+
+  <rect class="subordinate" x="420" y="1120" width="280" height="130" rx="20"/>
+  <text class="node-title-small" x="560" y="1160">Verify External State</text>
+  <text class="copy-small" x="560" y="1192">Read back and preserve uncertainty</text>
+  <text class="copy-small" x="560" y="1216">where reality remains unavailable</text>
+
+  <rect class="subordinate" x="840" y="1120" width="280" height="130" rx="20"/>
+  <text class="node-title-small" x="980" y="1160">Retry Safety Decision</text>
+  <text class="copy-small" x="980" y="1192">Only after verification and reconciliation</text>
+  <text class="copy-small" x="980" y="1216">Retry is not the default</text>
+
+  <path class="flow" d="M360 1185 H420"/>
+  <path class="flow" d="M560 1120 V1090 Q560 1078 572 1078 H648 Q660 1078 660 1066 V1050"/>
+  <path class="flow" d="M980 1050 V1120"/>
+
+  <rect class="region" x="48" y="1410" width="1104" height="440" rx="26"/>
+  <text class="kicker" x="76" y="1448">GOVERNED RESPONSE CHOICES — ALTERNATIVES, NOT A SEQUENCE</text>
+
+  <rect class="focus" x="350" y="1460" width="500" height="110" rx="22"/>
+  <text class="node-title-small" x="600" y="1502">Response after Reconciliation</text>
+  <text class="copy" x="600" y="1535">One or more governed responses according to consequence</text>
+  <path class="flow" d="M780 1050 V1460"/>
+
+  <rect class="card" x="60" y="1650" width="192" height="125" rx="20"/>
+  <text class="option-title" x="156" y="1690">Recover</text>
+  <text class="copy-small" x="156" y="1722">Restore where justified</text>
+  <text class="copy-small" x="156" y="1746">within current limits</text>
+
+  <rect class="card" x="282" y="1650" width="192" height="125" rx="20"/>
+  <text class="option-title" x="378" y="1690">Replace</text>
+  <text class="copy-small" x="378" y="1722">Transfer realization</text>
+  <text class="copy-small" x="378" y="1746">without transferring Authority</text>
+
+  <rect class="card" x="504" y="1650" width="192" height="125" rx="20"/>
+  <text class="option-title" x="600" y="1684">Degraded</text>
+  <text class="option-title" x="600" y="1706">Operation</text>
+  <text class="copy-small" x="600" y="1734">Reduced Capability</text>
+  <text class="copy-small" x="600" y="1756">within validated bounds</text>
+
+  <rect class="card" x="726" y="1650" width="192" height="125" rx="20"/>
+  <text class="option-title" x="822" y="1684">Controlled</text>
+  <text class="option-title" x="822" y="1706">Pause</text>
+  <text class="copy-small" x="822" y="1734">Preserve State</text>
+  <text class="copy-small" x="822" y="1756">prevent unsafe continuation</text>
+
+  <rect class="card" x="948" y="1650" width="192" height="125" rx="20"/>
+  <text class="option-title" x="1044" y="1684">Safe</text>
+  <text class="option-title" x="1044" y="1706">Shutdown</text>
+  <text class="copy-small" x="1044" y="1734">Terminate safely</text>
+  <text class="copy-small" x="1044" y="1756">without hidden continuation</text>
+
+  <path class="flow" d="M400 1570 V1590 Q400 1602 388 1602 H168 Q156 1602 156 1614 V1650"/>
+  <path class="flow" d="M500 1570 V1610 Q500 1622 488 1622 H390 Q378 1622 378 1634 V1650"/>
+  <path class="flow" d="M600 1570 V1650"/>
+  <path class="flow" d="M700 1570 V1610 Q700 1622 712 1622 H810 Q822 1622 822 1634 V1650"/>
+  <path class="flow" d="M800 1570 V1590 Q800 1602 812 1602 H1032 Q1044 1602 1044 1614 V1650"/>
+
+  <text class="principle-copy" x="600" y="1812">Degraded Operation is explicitly reduced Capability within validated boundaries.</text>
+  <text class="principle-copy" x="600" y="1836">Urgency or unavailability neither creates nor automatically transfers Authority.</text>
+
+  <rect class="focus" x="80" y="1900" width="620" height="190" rx="24"/>
+  <text class="kicker-center" x="390" y="1938">MAIN RECOVERY PATH</text>
+  <text class="node-title" x="390" y="1978">Recovery / Replacement</text>
+  <text class="copy" x="390" y="2012">Restore or replace the affected organizational realization</text>
+  <text class="copy" x="390" y="2038">Performer · provider · runtime · credential · System of Record</text>
+  <text class="copy" x="390" y="2064">Capability Implementation · knowledge or access dependency</text>
+
+  <path class="flow" d="M100 1775 V1900"/>
+  <path class="flow" d="M310 1775 V1782 Q310 1794 298 1794 H262 Q250 1794 250 1806 V1900"/>
+
+  <rect class="card" x="80" y="2140" width="620" height="190" rx="24"/>
+  <text class="node-title" x="390" y="2182">Performer Rehydration</text>
+  <text class="copy" x="390" y="2218">Reconstruct from organization-owned State and governed configuration</text>
+  <text class="copy" x="390" y="2244">Current Working Context where applicable · explicitly permitted memory</text>
+  <text class="copy" x="390" y="2270">Company Brain, Company State, Context, and Performer Memory remain distinct</text>
+  <text class="copy-small" x="390" y="2305">No unrestricted predecessor inheritance</text>
+  <path class="flow" d="M390 2090 V2140"/>
+
+  <rect class="card" x="80" y="2380" width="620" height="180" rx="24"/>
+  <text class="node-title-small" x="390" y="2422">Evaluation / Requalification where required</text>
+  <text class="copy" x="390" y="2458">Material change or consequence may require Evaluation</text>
+  <text class="copy" x="390" y="2484">Capability Qualification remains scoped</text>
+  <text class="copy" x="390" y="2510">Operational Confidence remains current and revisable</text>
+  <text class="copy-small" x="390" y="2538">Technical restart establishes neither Qualification nor confidence</text>
+  <path class="flow" d="M390 2330 V2380"/>
+
+  <rect class="region" x="760" y="1900" width="392" height="660" rx="24"/>
+  <text class="kicker-center" x="956" y="1938">SEPARATE LEARNING HANDOFF</text>
+
+  <rect class="subordinate" x="790" y="1960" width="332" height="130" rx="20"/>
+  <text class="node-title-small" x="956" y="2000">Incident Experience</text>
+  <text class="copy-small" x="956" y="2032">Attributable output from incident response</text>
+  <text class="copy-small" x="956" y="2056">May later inform Reflection</text>
+  <path class="flow" d="M700 2010 H790"/>
+  <text class="label" x="730" y="1978">incident</text>
+  <text class="label" x="730" y="1996">output</text>
+
+  <rect class="subordinate" x="790" y="2140" width="332" height="130" rx="20"/>
+  <text class="node-title-small" x="956" y="2180">Organizational Reflection</text>
+  <text class="copy-small" x="956" y="2212">Governed examination</text>
+  <text class="copy-small" x="956" y="2236">does not delay containment</text>
+  <path class="flow" d="M956 2090 V2140"/>
+
+  <rect class="subordinate" x="790" y="2320" width="332" height="130" rx="20"/>
+  <text class="node-title-small" x="956" y="2360">Possible Learning Candidate</text>
+  <text class="copy-small" x="956" y="2392">No automatic adoption</text>
+  <text class="copy-small" x="956" y="2416">No automatic return to Production</text>
+  <path class="flow" d="M956 2270 V2320"/>
+
+  <text class="principle" x="956" y="2500">Incident handling ≠</text>
+  <text class="principle" x="956" y="2526">Organizational Learning</text>
+
+  <rect class="region" x="48" y="2620" width="1104" height="470" rx="26"/>
+  <text class="kicker" x="76" y="2658">AUTHORITY, ACCESS, AND RESTORATION BOUNDARY</text>
+
+  <rect class="focus" x="300" y="2690" width="600" height="160" rx="24"/>
+  <text class="node-title" x="600" y="2732">Applicable Governance</text>
+  <text class="copy" x="600" y="2768">Decision where required · explicit review of Authority and access</text>
+  <text class="copy" x="600" y="2794">Qualification and Operational Confidence remain distinct</text>
+  <text class="copy-small" x="600" y="2824">Current limited, expired, suspended, restricted, or revoked State remains in force</text>
+  <path class="flow" d="M600 2560 V2690"/>
+
+  <rect class="focus" x="300" y="2910" width="600" height="140" rx="24"/>
+  <text class="node-title" x="600" y="2952">Bounded Return to Operation</text>
+  <text class="copy" x="600" y="2986">Return only within justified current Scope and conditions</text>
+  <text class="copy" x="600" y="3012">Authority · access · Qualification · confidence explicitly reviewed</text>
+  <text class="copy-small" x="600" y="3038">Normal operation is not presumed</text>
+  <path class="flow" d="M600 2850 V2910"/>
+
+  <rect class="region" x="48" y="3140" width="1104" height="250" rx="24"/>
+  <text class="kicker-center" x="600" y="3178">RESTORATION PRINCIPLES</text>
+  <text class="principle" x="600" y="3220">Technical restart ≠ Organizational Recovery</text>
+  <text class="principle" x="600" y="3254">Recovery ≠ automatic restoration of Qualification, Confidence, Access, or Authority</text>
+  <text class="principle-copy" x="600" y="3292">Positive technical Evidence informs review; it does not create Authority.</text>
+  <text class="principle-copy" x="600" y="3320">Where a Decision is required, the current limited Authority State remains until that Decision occurs.</text>
+  <text class="principle-copy" x="600" y="3348">Absence of a new Decision is not implicit restoration, renewal, or approval.</text>
+
+</svg>

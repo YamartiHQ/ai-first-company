@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="3040" viewBox="0 0 1200 3040" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Execution Graph Layer</title>
+  <desc id="diagram-desc">A selective, non-authoritative Reference Design representation of the Execution Graph Layer. Sources of organizational need may create a bounded Work Item, which may use an Execution Graph where useful. The graph represents explicit organizational execution rather than private reasoning, structures work around required Company Capabilities before assigning qualified Performers, preserves bounded Working Context, dependencies, sequence, parallel work, waiting, Decisions, Attention, status, failure, and recovery, and coordinates controlled progress toward an Outcome. The separate Organizational Control Plane independently enforces boundaries and exchanges declared trajectory and current restrictions with execution. Sufficient execution information remains reconstructible without claiming deterministic or identical results.</desc>
+  <metadata><![CDATA[
+    Diagram status: selective, non-authoritative Reference Design representation.
+    Source: REFERENCE_DESIGN.md, especially The Operational Organization, Execution Graph Layer, Organizational Control Plane, Composition Relationships, Operational Flows, and Failure Modes.
+    Architecture grounding: Operating Cycle, Controlled Execution, Decision Authority Accountability and Attention, and Organizational Continuity Incident and Recovery.
+    The Execution Graph Layer represents organizational execution rather than private reasoning and is not a mandatory implementation for every Work Item.
+  ]]></metadata>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#383838"/>
+    </marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}
+      .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+      .subtitle{font-size:19px;fill:#666666}
+      .region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}
+      .card{fill:#ffffff;stroke:#b2b2b2;stroke-width:1.5}
+      .focus{fill:#ffffff;stroke:#555555;stroke-width:2}
+      .subordinate{fill:#ffffff;stroke:#c2c2c2;stroke-width:1.3}
+      .kicker{font-size:15px;font-weight:700;letter-spacing:1px}
+      .kicker-center{font-size:15px;font-weight:700;letter-spacing:1px;text-anchor:middle}
+      .node-title{font-size:23px;font-weight:700;text-anchor:middle}
+      .node-title-small{font-size:19px;font-weight:700;text-anchor:middle}
+      .copy{font-size:16px;fill:#666666;text-anchor:middle}
+      .copy-small{font-size:14px;fill:#666666;text-anchor:middle}
+      .item{font-size:15px;font-weight:600;text-anchor:middle}
+      .label{font-size:14px;font-weight:700;fill:#666666;text-anchor:middle}
+      .parallel-note{font-size:11px;font-weight:700;letter-spacing:.3px;fill:#777777;text-anchor:middle}
+      .principle{font-size:19px;font-weight:700;text-anchor:middle}
+      .principle-copy{font-size:15px;fill:#666666;text-anchor:middle}
+      .flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="3040" fill="#ffffff"/>
+  <text class="title" x="48" y="54">Execution Graph Layer</text>
+  <text class="subtitle" x="48" y="84">Explicit capability-oriented organizational work—from bounded need to observable Outcome</text>
+
+  <rect class="region" x="48" y="112" width="1104" height="92" rx="22"/>
+  <text class="principle" x="600" y="148">The Execution Graph Layer describes organizational execution, not private reasoning.</text>
+  <text class="principle-copy" x="600" y="178">It coordinates explicit work; it owns neither Decision Authority nor independent enforcement.</text>
+
+  <rect class="region" x="48" y="244" width="480" height="220" rx="24"/>
+  <text class="kicker" x="76" y="280">SOURCES OF ORGANIZATIONAL NEED</text>
+  <text class="item" x="288" y="322">Organizational Intent · Organizational Obligation</text>
+  <text class="item" x="288" y="354">Organizational Event · Decision</text>
+  <text class="item" x="288" y="386">Incident · Attention Requirement</text>
+  <line x1="92" y1="408" x2="484" y2="408" stroke="#dddddd" stroke-width="1.4"/>
+  <text class="copy-small" x="288" y="438">A source may create Work; not every Event does.</text>
+
+  <rect class="focus" x="672" y="284" width="480" height="140" rx="22"/>
+  <text class="kicker-center" x="912" y="320">BOUNDED ORGANIZATIONAL NEED</text>
+  <text class="node-title" x="912" y="361">Work Item</text>
+  <text class="copy" x="912" y="394">Capability Need · Work State</text>
+
+  <path class="flow" d="M528 354 H672"/>
+
+  <rect class="region" x="48" y="520" width="1104" height="1360" rx="26"/>
+  <text class="kicker" x="76" y="558">EXECUTION GRAPH — EXPLICIT ORGANIZATIONAL WORK</text>
+
+  <rect class="focus" x="320" y="580" width="560" height="210" rx="22"/>
+  <text class="node-title" x="600" y="632">Execution Graph where useful</text>
+  <text class="copy" x="600" y="665">Purposeful representation of bounded organizational work</text>
+  <text class="copy" x="600" y="690">Dependencies, status, and trajectory remain explicit</text>
+  <text class="copy" x="600" y="722">Not every Work Item requires a graph.</text>
+  <text class="copy" x="600" y="747">“Where useful” is proportional use—</text>
+  <text class="copy" x="600" y="772">not approval or a Decision gateway.</text>
+  <path class="flow" d="M912 424 V488 Q912 500 900 500 H612 Q600 500 600 512 V580"/>
+
+  <rect class="region" x="76" y="820" width="330" height="570" rx="22"/>
+  <text class="kicker-center" x="241" y="858">CAPABILITY-ORIENTED REALIZATION</text>
+
+  <rect class="card" x="100" y="882" width="282" height="104" rx="20"/>
+  <text class="node-title-small" x="241" y="922">Required Company Capability</text>
+  <text class="copy-small" x="241" y="954">Capability before Performer</text>
+
+  <rect class="card" x="100" y="1020" width="282" height="142" rx="20"/>
+  <text class="node-title-small" x="241" y="1059">Performer Assignment</text>
+  <text class="copy-small" x="241" y="1090">Human · AI · software system</text>
+  <text class="copy-small" x="241" y="1114">Organizational Group · combination</text>
+  <text class="copy-small" x="241" y="1139">Assigned where qualified</text>
+
+  <rect class="card" x="100" y="1200" width="282" height="112" rx="20"/>
+  <text class="node-title-small" x="241" y="1240">Working Context</text>
+  <text class="copy-small" x="241" y="1272">Bounded · purpose-specific</text>
+  <text class="copy-small" x="241" y="1295">invalidated when materially stale</text>
+
+  <path class="flow" d="M600 790 V800 Q600 810 590 810 H440 Q430 810 430 820 V924 Q430 934 420 934 H382"/>
+  <path class="flow" d="M241 986 V1020"/>
+  <path class="flow" d="M241 1162 V1200"/>
+  <text class="principle-copy" x="241" y="1350">Replacing a Performer does not redefine</text>
+  <text class="principle-copy" x="241" y="1370">the Capability or organizational work.</text>
+
+  <rect class="region" x="450" y="820" width="674" height="570" rx="22"/>
+  <text class="kicker" x="478" y="858">WORK STRUCTURE, DEPENDENCIES, AND CURRENT STATUS</text>
+
+  <rect class="card" x="470" y="928" width="180" height="100" rx="18"/>
+  <text class="node-title-small" x="560" y="966">Step / State</text>
+  <text class="copy-small" x="560" y="994">dependency-ready</text>
+
+  <rect class="card" x="730" y="888" width="180" height="90" rx="18"/>
+  <text class="node-title-small" x="820" y="924">Parallel branch A</text>
+  <text class="copy-small" x="820" y="952">capability-aligned</text>
+
+  <rect class="card" x="730" y="1058" width="180" height="90" rx="18"/>
+  <text class="node-title-small" x="820" y="1094">Parallel branch B</text>
+  <text class="copy-small" x="820" y="1122">capability-aligned</text>
+
+  <rect class="card" x="970" y="923" width="130" height="110" rx="18"/>
+  <text class="node-title-small" x="1035" y="961">Current</text>
+  <text class="node-title-small" x="1035" y="985">status</text>
+  <text class="copy-small" x="1035" y="1013">join visible</text>
+
+  <path class="flow" d="M382 1256 H430 Q438 1256 438 1248 V986 Q438 978 446 978 H470"/>
+  <path class="flow" d="M650 953 H674 Q682 953 682 945 V941 Q682 933 690 933 H730"/>
+  <path class="flow" d="M650 1003 H678 Q690 1003 690 1015 V1091 Q690 1103 702 1103 H730"/>
+  <path class="flow" d="M910 933 H918 Q930 933 930 945 V946 Q930 958 942 958 H970"/>
+  <path class="flow" d="M910 1103 H918 Q930 1103 930 1091 V1010 Q930 998 942 998 H970"/>
+  <text class="parallel-note" x="810" y="1021">PARALLEL — NO SEQUENCE IMPLIED</text>
+
+  <line x1="470" y1="1168" x2="1084" y2="1168" stroke="#dddddd" stroke-width="1.4"/>
+  <text class="item" x="777" y="1210">Explicit steps or states · dependencies · sequential and parallel work</text>
+  <text class="copy" x="777" y="1244">Current execution status and governed branch/join conditions remain visible.</text>
+  <text class="copy" x="777" y="1276">Related Work Items connect only where the relationship is explicit and governed.</text>
+  <text class="principle-copy" x="777" y="1324">The structure follows required Capabilities—not a named Performer's private process.</text>
+
+  <rect class="region" x="76" y="1410" width="1048" height="288" rx="22"/>
+  <text class="kicker" x="104" y="1448">POSSIBLE EXPLICIT WAITING AND GOVERNANCE STATES</text>
+  <line x1="425" y1="1474" x2="425" y2="1598" stroke="#dddddd" stroke-width="1.4"/>
+  <line x1="775" y1="1474" x2="775" y2="1598" stroke="#dddddd" stroke-width="1.4"/>
+
+  <text class="item" x="250" y="1507">required Decision</text>
+  <text class="item" x="250" y="1539">required Approval</text>
+  <text class="item" x="250" y="1571">Attention Requirement</text>
+
+  <text class="item" x="600" y="1507">additional Evidence</text>
+  <text class="item" x="600" y="1539">external response · precondition</text>
+  <text class="item" x="600" y="1571">uncertainty resolution</text>
+
+  <text class="item" x="950" y="1507">dependent work completion</text>
+  <text class="item" x="950" y="1539">defined time</text>
+  <text class="item" x="950" y="1571">wait without manufacturing progress</text>
+
+  <text class="principle-copy" x="600" y="1634">Possible explicit states—not a mandatory sequence and not universal Human approval.</text>
+  <text class="principle" x="600" y="1668">A Decision point grants no Decision Authority · Attention routing grants no Authority</text>
+
+  <rect class="subordinate" x="76" y="1724" width="1048" height="126" rx="22"/>
+  <text class="kicker-center" x="600" y="1762">OBSERVABLE EXECUTION STATUS</text>
+  <text class="node-title-small" x="600" y="1800">Progress · wait · route Attention · restrict · pause · fail · recover · terminate safely</text>
+  <text class="copy" x="600" y="1832">Dependencies, conditions, failure, and recovery remain attributable rather than hidden.</text>
+
+  <rect class="region" x="48" y="1928" width="1104" height="446" rx="26"/>
+  <text class="kicker" x="76" y="1966">TRAJECTORY INTEGRITY AND INDEPENDENT CONTROL</text>
+
+  <rect class="focus" x="80" y="2000" width="380" height="240" rx="22"/>
+  <text class="node-title" x="270" y="2045">Execution Graph Layer</text>
+  <text class="copy" x="270" y="2078">Explicit work · declared trajectory</text>
+  <text class="copy" x="270" y="2104">participants · status · combined effects</text>
+  <text class="copy-small" x="270" y="2128">Coordinates work; does not enforce its own boundaries</text>
+
+  <rect class="focus" x="740" y="2000" width="380" height="240" rx="22"/>
+  <text class="node-title" x="930" y="2045">Organizational Control Plane</text>
+  <text class="copy" x="930" y="2078">Authority · Policy · Scope · conditions</text>
+  <text class="copy" x="930" y="2104">capacity · effect and trajectory constraints</text>
+  <text class="copy-small" x="930" y="2128">Enforces independently of Performer willingness</text>
+
+  <text class="label" x="600" y="2082">explicit work &amp; trajectory</text>
+  <path class="flow" d="M460 2100 H740"/>
+  <path class="flow" d="M740 2140 H460"/>
+  <text class="label" x="600" y="2168">current conditions &amp; restrictions</text>
+
+  <text class="principle" x="600" y="2272">Individual action validity ≠ trajectory validity</text>
+  <text class="principle-copy" x="600" y="2302">Integrity spans sequence and parallel work · Human, AI, and Group Performers · delegation and nested execution</text>
+  <text class="principle-copy" x="600" y="2326">retries and repeated calls · tools and external systems · cumulative financial, resource, egress, access, and effect thresholds</text>
+  <text class="principle-copy" x="600" y="2350">The applicable horizon follows governed Work, relationships, risk, Policy, or declared trajectory—not one universal time window.</text>
+
+  <rect class="region" x="48" y="2412" width="1104" height="260" rx="24"/>
+  <text class="kicker" x="76" y="2450">CONTROLLED PROGRESS TO AN OUTCOME</text>
+
+  <rect class="card" x="76" y="2490" width="280" height="124" rx="22"/>
+  <text class="node-title-small" x="216" y="2532">Decision where required</text>
+  <text class="copy-small" x="216" y="2565">A graph may contain the point;</text>
+  <text class="copy-small" x="216" y="2587">applicable Authority makes the Decision.</text>
+
+  <rect class="focus" x="460" y="2490" width="280" height="124" rx="22"/>
+  <text class="node-title-small" x="600" y="2532">Controlled Execution</text>
+  <text class="copy-small" x="600" y="2565">Admitted authorized work</text>
+  <text class="copy-small" x="600" y="2587">under independent enforcement</text>
+
+  <rect class="card" x="844" y="2490" width="280" height="124" rx="22"/>
+  <text class="node-title" x="984" y="2532">Outcome</text>
+  <text class="copy-small" x="984" y="2565">Observed attributable</text>
+  <text class="copy-small" x="984" y="2587">organizational result</text>
+
+  <path class="flow" d="M356 2552 H460"/>
+  <path class="flow" d="M740 2552 H844"/>
+
+  <rect class="region" x="48" y="2730" width="1104" height="260" rx="24"/>
+  <text class="kicker-center" x="600" y="2770">RECONSTRUCTIBLE EXECUTION RECORD</text>
+  <text class="node-title-small" x="600" y="2810">Sufficient information preserves attributable execution history</text>
+  <text class="copy" x="600" y="2844">Work structure · versions · conditions · Context · participants · Decisions</text>
+  <text class="copy" x="600" y="2872">external interactions · failures · recovery actions · Outcomes</text>
+  <line x1="120" y1="2900" x2="1080" y2="2900" stroke="#dddddd" stroke-width="1.4"/>
+  <text class="principle" x="600" y="2934">Reconstructability, not identical results</text>
+  <text class="principle-copy" x="600" y="2964">An Outcome does not automatically become State, Evidence, Memory, or adopted learning.</text>
+
+</svg>

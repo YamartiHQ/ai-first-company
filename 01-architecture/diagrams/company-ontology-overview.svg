@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
-  <title id="title">Company Ontology Overview</title>
-  <desc id="desc">A selective overview of four concept families in the AI-First Company Architecture: identity and execution foundations, knowledge and context, capabilities and operation, and governance and evolution.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Selected Architecture Concept Families</title>
+  <desc id="desc">Eight selected Architecture concept families provide orientation: Identity, Organizational Intelligence, Actors and Capabilities, Context and Information, Operation and Autonomy, Learning, Assurance, and Continuity. The complete Knowledge Graph contains 82 Concept Nodes, 135 Relationships, and 42 Relationship Types.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE_KNOWLEDGE_GRAPH.md. Families are explanatory groupings, not concepts, products, hierarchy, or sequence.]]></metadata>
   <style><![CDATA[
-    text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.center-title{font-size:26px;font-weight:700;text-anchor:middle}.center-copy{font-size:16px;text-anchor:middle;fill:#666666}.family{font-size:15px;font-weight:700;letter-spacing:1px}.family-title{font-size:25px;font-weight:700}.concept{font-size:17px;font-weight:600}.copy{font-size:16px;fill:#666666}.footer{font-size:16px;font-weight:600;text-anchor:middle;fill:#222222}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.center-copy,.copy{fill:#666!important}line{stroke:#ddd!important}
+    text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.family{font-size:23px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.count{font-size:22px;font-weight:700;text-anchor:middle}.note{font-size:16px;fill:#666;text-anchor:middle}
   ]]></style>
-  <rect width="1200" height="850" fill="#fff" stroke-width="1.5"/>
-  <text class="title" x="48" y="54">Company Ontology</text>
-  <text class="subtitle" x="48" y="84">Concept families that keep organizational meaning coherent across people, AI systems, and implementations.</text>
-  <rect x="410" y="120" width="380" height="96" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="center-title" x="600" y="154">AI-First Company</text><text class="center-copy" x="600" y="181">Durable human–AI collaboration</text><text class="center-copy" x="600" y="202">within explicit boundaries</text>
+  <rect width="1200" height="820" fill="#fff"/>
+  <text class="title" x="48" y="54">Selected Architecture Concept Families</text>
+  <text class="subtitle" x="48" y="84">Orientation into the model—the Knowledge Graph remains the complete semantic catalog</text>
 
-  <rect x="48" y="260" width="520" height="220" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="family" x="76" y="296" fill="#222222">FOUNDATION</text><text class="family-title" x="308" y="334" text-anchor="middle">Identity &amp; Execution</text>
-  <text class="copy" x="76" y="364">What the company is and where controlled work occurs</text>
-  <line x1="76" y1="390" x2="540" y2="390" stroke="#dddddd"/>
-  <text class="concept" x="76" y="422">Company Identity · Company Execution Environment</text><text class="concept" x="76" y="452">Trust Domain · System of Record · Recoverability</text>
+  <rect class="region" x="48" y="130" width="532" height="214" rx="24"/>
+  <text class="kicker" x="76" y="166">ORIENTATION &amp; ORGANIZATION-OWNED INTELLIGENCE</text>
+  <text class="family" x="314" y="212">Identity</text><text class="copy" x="314" y="242">Purpose · Principles</text>
+  <line x1="76" y1="268" x2="552" y2="268" stroke="#ddd" stroke-width="1.4"/>
+  <text class="family" x="314" y="302">Organizational Intelligence</text><text class="copy" x="314" y="330">Company Brain · Claims · Evidence · State</text>
 
-  <rect x="632" y="260" width="520" height="220" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="family" x="660" y="296" fill="#222222">UNDERSTANDING</text><text class="family-title" x="892" y="334" text-anchor="middle">Knowledge &amp; Context</text>
-  <text class="copy" x="660" y="364">How organizational meaning is retained and made relevant</text>
-  <line x1="660" y1="390" x2="1124" y2="390" stroke="#dddddd"/>
-  <text class="concept" x="660" y="422">Evidence · Company Memory · Knowledge Representation</text><text class="concept" x="660" y="452">Knowledge Access · Working Context · Company State</text>
+  <rect class="region" x="620" y="130" width="532" height="214" rx="24"/>
+  <text class="kicker" x="648" y="166">CONTRIBUTION &amp; INFORMATION</text>
+  <text class="family" x="886" y="212">Actors &amp; Capabilities</text><text class="copy" x="886" y="242">Actor · Performer · Group · Company Capability</text>
+  <line x1="648" y1="268" x2="1124" y2="268" stroke="#ddd" stroke-width="1.4"/>
+  <text class="family" x="886" y="302">Context &amp; Information</text><text class="copy" x="886" y="330">Working Context · Memory Policy</text>
 
-  <rect x="48" y="520" width="520" height="220" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="family" x="76" y="556" fill="#222222">OPERATION</text><text class="family-title" x="308" y="594" text-anchor="middle">Capabilities &amp; Execution</text>
-  <text class="copy" x="76" y="624">How explicit organizational work becomes observable results</text>
-  <line x1="76" y1="650" x2="540" y2="650" stroke="#dddddd"/>
-  <text class="concept" x="76" y="682">Company Capability · Operating Cycle · Intent</text><text class="concept" x="76" y="712">Controlled Execution · Organizational Event · Outcome</text>
+  <rect class="region" x="48" y="382" width="532" height="214" rx="24"/>
+  <text class="kicker" x="76" y="418">OPERATION &amp; EVOLUTION</text>
+  <text class="family" x="314" y="464">Operation &amp; Autonomy</text><text class="copy" x="314" y="494">Work · Effects · Authority · Controlled Autonomy</text>
+  <line x1="76" y1="520" x2="552" y2="520" stroke="#ddd" stroke-width="1.4"/>
+  <text class="family" x="314" y="554">Learning</text><text class="copy" x="314" y="582">Experience · Reflection · Adoption</text>
 
-  <rect x="632" y="520" width="520" height="220" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="family" x="660" y="556" fill="#222222">ACCOUNTABILITY</text><text class="family-title" x="892" y="594" text-anchor="middle">Governance &amp; Evolution</text>
-  <text class="copy" x="660" y="620">How authority, confidence, information, and change</text><text class="copy" x="660" y="642">remain bounded</text>
-  <line x1="660" y1="655" x2="1124" y2="655" stroke="#dddddd"/>
-  <text class="concept" x="660" y="674">Decision Mandates · Information Classification</text><text class="concept" x="660" y="699">Operational Confidence · Standing Authorization</text><text class="concept" x="660" y="724">Capability Improvement · Founder Continuity</text>
+  <rect class="region" x="620" y="382" width="532" height="214" rx="24"/>
+  <text class="kicker" x="648" y="418">TRUST &amp; DURABILITY</text>
+  <text class="family" x="886" y="458">Assurance</text><text class="copy" x="886" y="488">Continuous Assurance · Operational Confidence</text>
+  <line x1="648" y1="520" x2="1124" y2="520" stroke="#ddd" stroke-width="1.4"/>
+  <text class="family" x="886" y="554">Continuity</text><text class="copy" x="886" y="582">Dependencies · Incident · Recovery</text>
 
-  <rect x="48" y="774" width="1104" height="42" rx="16" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="footer" x="600" y="801">Selected concepts only · the Knowledge Graph remains the complete semantic catalog</text>
-  <text x="1152" y="838" text-anchor="end" font-size="12" fill="#666666">61 Concept Nodes · 82 Relationships · non-authoritative overview</text>
+  <rect class="region" x="48" y="650" width="1104" height="130" rx="22"/>
+  <text class="count" x="600" y="692">82 Concept Nodes · 135 Relationships · 42 Relationship Types</text>
+  <text class="note" x="600" y="729">Selected families are explanatory groupings—not a sequence, hierarchy, product map, or complete inventory.</text>
+  <text class="note" x="600" y="757">The Knowledge Graph remains the complete semantic catalog.</text>
 </svg>

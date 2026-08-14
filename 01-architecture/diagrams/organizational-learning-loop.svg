@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1020" viewBox="0 0 1200 1020" role="img" aria-labelledby="title desc">
+  <title id="title">Organizational Learning Loop</title>
+  <desc id="desc">Experience becomes an Organizational Learning Candidate through governed Organizational Reflection, then proceeds through Evidence and Validation to applicable Adoption Authority. Possible outcomes include adopted organizational intelligence for the Company Brain, other governed destinations, or no adoption. Company Brain may inform Reflection and receives only appropriately adopted organizational intelligence from its explicit destination; no adoption has no return path. As a separate later use, Company Brain supplies organization-owned intelligence as one input to Performer Rehydration, which also requires sufficient authorized configuration and Working Context to reconstruct a fresh or replacement Performer.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: ARCHITECTURE.md. Performer learning is not automatically Organizational Learning.]]></metadata>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <style><![CDATA[
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.region{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.focus{fill:#fff;stroke:#555;stroke-width:2}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:23px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.item{font-size:17px;font-weight:600;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.governed{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.principle{font-size:18px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
+    ]]></style>
+  </defs>
+  <rect width="1200" height="1020" fill="#fff"/>
+  <text class="title" x="48" y="54">Organizational Learning Loop</text>
+  <text class="subtitle" x="48" y="84">Experience becomes reusable organizational intelligence only through governed adoption</text>
+
+  <text class="kicker" x="48" y="126">THE LEARNING LOOP BEGINS WITH EXPERIENCE</text>
+  <rect class="focus" x="48" y="146" width="300" height="130" rx="24"/>
+  <text class="node-title" x="198" y="194">Experience</text><text class="copy" x="198" y="230">Work · interaction · observation</text><text class="copy" x="198" y="254">Outcomes</text>
+  <rect class="focus" x="450" y="146" width="300" height="130" rx="24"/>
+  <text class="node-title" x="600" y="194">Organizational Reflection</text><text class="copy" x="600" y="230">Governed examination</text><text class="copy" x="600" y="254">of Experience and Evidence</text>
+  <rect class="focus" x="852" y="146" width="300" height="130" rx="24"/>
+  <text class="node-title" x="1002" y="194">Learning Candidate</text><text class="copy" x="1002" y="230">Proposed reusable insight</text><text class="copy" x="1002" y="254">not adopted learning</text>
+  <path class="flow" d="M348 211 H450"/><path class="flow" d="M750 211 H852"/>
+
+  <rect class="card" x="48" y="354" width="320" height="146" rx="22"/>
+  <text class="kicker" x="76" y="390">GOVERNED INPUT</text><text class="node-title" x="208" y="430">Company Brain</text><text class="copy" x="208" y="464">May inform Reflection</text><text class="copy" x="208" y="488">but is not the loop’s start</text>
+  <rect class="focus" x="450" y="354" width="300" height="146" rx="24"/>
+  <text class="node-title" x="600" y="408">Evidence &amp; Validation</text><text class="copy" x="600" y="446">Support · challenge · reject</text><text class="copy" x="600" y="474">the candidate</text>
+  <rect class="focus" x="852" y="354" width="300" height="146" rx="24"/>
+  <text class="node-title" x="1002" y="408">Adoption Authority</text><text class="copy" x="1002" y="446">Applicable governed Decision</text><text class="copy" x="1002" y="474">for destination or no adoption</text>
+  <path class="flow" d="M1002 276 V304 Q1002 316 990 316 H612 Q600 316 600 334 V354"/>
+  <path class="flow" d="M750 427 H852"/>
+  <path class="governed" d="M368 427 H402 Q414 427 414 415 V322 Q414 310 426 310 H504 Q516 310 516 298 V276"/>
+
+  <rect class="card" x="48" y="604" width="320" height="170" rx="22"/>
+  <text class="kicker" x="76" y="640">LATER USE — NOT A LOOP STEP</text>
+  <text class="node-title" x="208" y="680">Performer Rehydration</text><text class="copy" x="208" y="704">Reconstructs a fresh or replacement</text><text class="copy" x="208" y="723">Performer from sufficient authorized</text><text class="copy" x="208" y="742">configuration, organization-owned</text><text class="copy" x="208" y="761">intelligence, and Working Context</text>
+  <path class="governed" d="M166 500 V604"/>
+  <text class="copy" x="278" y="558">organization-owned</text><text class="copy" x="278" y="582">intelligence</text>
+
+  <rect class="region" x="420" y="570" width="732" height="238" rx="24"/>
+  <text class="kicker" x="448" y="608">POSSIBLE ADOPTION DESTINATIONS — ONE OR MORE, OR NONE</text>
+  <rect class="card" x="448" y="626" width="440" height="88" rx="16"/>
+  <text class="kicker" x="668" y="648" text-anchor="middle">COMPANY BRAIN DESTINATION</text>
+  <text class="item" x="668" y="674">Adopted Organizational Intelligence</text>
+  <text class="copy" x="668" y="699">Validated Knowledge · Organizational Practice</text>
+  <rect class="card" x="448" y="722" width="440" height="66" rx="16"/>
+  <text class="kicker" x="668" y="746" text-anchor="middle">OTHER GOVERNED DESTINATIONS</text>
+  <text class="copy" x="668" y="773">Capability Improvement · Policy Review · Identity Review</text>
+  <rect class="card" x="920" y="626" width="204" height="162" rx="16"/>
+  <text class="node-title" x="1022" y="684">No Adoption</text><text class="copy" x="1022" y="724">Reject or retain</text><text class="copy" x="1022" y="748">the candidate</text>
+  <path class="flow" d="M1002 500 V528 Q1002 540 990 540 H798 Q786 540 786 552 V570"/>
+  <path class="governed" d="M448 670 H422 Q410 670 410 658 V544 Q410 532 398 532 H262 Q250 532 250 520 V500"/>
+
+  <rect class="region" x="48" y="850" width="1104" height="126" rx="22"/>
+  <text class="principle" x="600" y="885">Performer learning ≠ Organizational Learning · Candidate ≠ adopted learning</text>
+  <text class="principle-copy" x="600" y="919">Company Brain receives only appropriately adopted organizational intelligence.</text>
+  <text class="principle-copy" x="600" y="949">Memory consolidation and Performer Rehydration do not bypass governed adoption.</text>
+</svg>

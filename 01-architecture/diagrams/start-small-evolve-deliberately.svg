@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
   <title id="title">Start Small and Evolve Deliberately</title>
-  <desc id="desc">New organizations may begin with one founder and a compact realization. Existing organizations may establish the target architecture in parallel and adopt it capability by capability without creating conflicting organizational truth or authority.</desc>
+  <desc id="desc">A new organization may begin with a minimal performer-neutral realization, explicit governance, and real operation, with deliberate specialization only where Evidence and organizational need justify it. An existing organization preserves current organizational truth while developing a target composition in parallel, evaluating and qualifying it, and completing a controlled transition before retiring old structures.</desc>
+  <metadata><![CDATA[Non-authoritative Derived Representation. Architecture source: THE-CORE-IDEA.md and ARCHITECTURE.md. The lanes are application narratives, not prescribed migration procedures.]]></metadata>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#383838"/></marker>
     <style><![CDATA[
-      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666666}.lane-title{font-size:22px;font-weight:700}.kicker{font-size:14px;font-weight:700;letter-spacing:.8px}.node-title{font-size:20px;font-weight:700}.node-copy{font-size:15px;fill:#666666}.label{font-size:15px;font-weight:700;text-anchor:middle;fill:#666666}.principle{font-size:18px;font-weight:700;text-anchor:middle;fill:#222222}.principle-copy{font-size:15px;text-anchor:middle;fill:#222222}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}rect{fill:#f7f7f7!important;stroke:#b2b2b2!important}rect[fill="#fff"],rect[fill="#ffffff"]{fill:#fff!important}svg>rect:first-of-type{fill:#fff!important;stroke:none!important}text{fill:#222!important}.subtitle,.node-copy,.principle-copy{fill:#666!important}.flow{stroke:#383838!important}marker path{fill:#383838!important}
+      text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#222}.title{font-size:34px;font-weight:700;letter-spacing:-.6px}.subtitle{font-size:19px;fill:#666}.lane{fill:#f7f7f7;stroke:#b2b2b2;stroke-width:1.5}.card{fill:#fff;stroke:#b2b2b2;stroke-width:1.5}.lane-title{font-size:23px;font-weight:700}.kicker{font-size:15px;font-weight:700;letter-spacing:1px}.node-title{font-size:21px;font-weight:700;text-anchor:middle}.node-title-small{font-size:18px;font-weight:700;text-anchor:middle}.copy{font-size:16px;fill:#666;text-anchor:middle}.flow{fill:none;stroke:#383838;stroke-width:2.7;marker-end:url(#arrow)}.guard{font-size:17px;font-weight:600;text-anchor:middle}.principle{font-size:19px;font-weight:700;text-anchor:middle}.principle-copy{font-size:16px;fill:#666;text-anchor:middle}
     ]]></style>
   </defs>
-  <rect width="1200" height="850" fill="#fff" stroke-width="1.5"/>
+  <rect width="1200" height="940" fill="#fff"/>
   <text class="title" x="48" y="54">Start Small. Evolve Deliberately.</text>
-  <text class="subtitle" x="48" y="84">Architectural completeness does not require organizational or technical complexity.</text>
+  <text class="subtitle" x="48" y="84">Architectural completeness does not require organizational or technical complexity</text>
 
-  <rect x="48" y="125" width="1104" height="280" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="lane-title" x="76" y="164" fill="#222222">New organization</text>
-  <rect x="76" y="195" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="100" y="226" fill="#222222">DAY ONE</text><text class="node-title" x="191" y="260" text-anchor="middle">Solo Founder</text><text class="node-copy" x="100" y="291">One person may hold many</text><text class="node-copy" x="100" y="313">Decision Mandates</text>
-  <rect x="350" y="195" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="374" y="226" fill="#222222">COMPACT</text><text class="node-title" x="465" y="260" text-anchor="middle">Shared Realization</text><text class="node-copy" x="374" y="291">Shared people, artifacts,</text><text class="node-copy" x="374" y="313">and systems</text>
-  <rect x="624" y="195" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="648" y="226" fill="#222222">EVIDENCE-LED</text><text class="node-title" x="739" y="260" text-anchor="middle">Capability Growth</text><text class="node-copy" x="648" y="291">Separate only where risk</text><text class="node-copy" x="648" y="313">and operation require it</text>
-  <rect x="898" y="195" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="922" y="226" fill="#222222">DURABLE</text><text class="node-title" x="1013" y="260" text-anchor="middle">Target Architecture</text><text class="node-copy" x="922" y="289">Complete responsibilities</text><text class="node-copy" x="922" y="311">without unnecessary</text><text class="node-copy" x="922" y="333">complexity</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M306 270 H340"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M580 270 H614"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M854 270 H888"/>
+  <rect class="lane" x="48" y="124" width="1104" height="310" rx="24"/>
+  <text class="lane-title" x="76" y="164">A · New organization</text>
+  <text class="kicker" x="1124" y="164" text-anchor="end">PERFORMER-NEUTRAL FROM THE FIRST REALIZATION</text>
+  <rect class="card" x="76" y="194" width="230" height="160" rx="22"/>
+  <text class="kicker" x="100" y="226">MINIMAL</text><text class="node-title" x="191" y="264">Minimal Realization</text><text class="copy" x="191" y="296">Few Performers · shared</text><text class="copy" x="191" y="320">implementations · compact</text><text class="copy" x="191" y="342">artifacts</text>
+  <rect class="card" x="350" y="194" width="230" height="160" rx="22"/>
+  <text class="kicker" x="374" y="226">EXPLICIT</text><text class="node-title" x="465" y="264">Governance</text><text class="copy" x="465" y="296">Responsibility · Authority</text><text class="copy" x="465" y="320">Accountability · Provenance</text>
+  <rect class="card" x="624" y="194" width="230" height="160" rx="22"/>
+  <text class="kicker" x="648" y="226">OBSERVE</text><text class="node-title" x="739" y="264">Real Operation</text><text class="copy" x="739" y="296">Outcomes · Evidence</text><text class="copy" x="739" y="320">risk · scale · operational need</text>
+  <rect class="card" x="898" y="194" width="230" height="160" rx="22"/>
+  <text class="kicker" x="922" y="226">DELIBERATE</text><text class="node-title-small" x="1013" y="264">Specialize When Justified</text><text class="copy" x="1013" y="296">Consequence · uncertainty</text><text class="copy" x="1013" y="320">continuity · evidence-led growth</text>
+  <path class="flow" d="M306 274 H350"/><path class="flow" d="M580 274 H624"/><path class="flow" d="M854 274 H898"/>
+  <text class="guard" x="600" y="401">Stable capabilities and explicit boundaries survive every implementation change.</text>
 
-  <rect x="48" y="445" width="1104" height="280" rx="24" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="lane-title" x="76" y="484" fill="#222222">Existing organization</text>
-  <rect x="76" y="515" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="100" y="546" fill="#222222">CURRENT</text><text class="node-title" x="191" y="580" text-anchor="middle">Existing Structures</text><text class="node-copy" x="100" y="607">Systems · obligations</text><text class="node-copy" x="100" y="628">knowledge · authority</text><text class="node-copy" x="100" y="649">open work</text>
-  <rect x="350" y="515" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="374" y="546" fill="#222222">PARALLEL</text><text class="node-title" x="465" y="580" text-anchor="middle">Target Composition</text><text class="node-copy" x="374" y="611">Build capabilities alongside</text><text class="node-copy" x="374" y="633">current operation</text>
-  <rect x="624" y="515" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="648" y="546" fill="#222222">VALIDATED</text><text class="node-title" x="739" y="580" text-anchor="middle">Capability Adoption</text><text class="node-copy" x="648" y="611">Evaluate and cut over</text><text class="node-copy" x="648" y="633">one capability at a time</text>
-  <rect x="898" y="515" width="230" height="150" rx="20" fill="#fff" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="kicker" x="922" y="546" fill="#222222">CONTROLLED</text><text class="node-title" x="1013" y="580" text-anchor="middle">Legacy Retirement</text><text class="node-copy" x="922" y="611">Retire after reconciliation</text><text class="node-copy" x="922" y="633">and proven recoverability</text>
-  <path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M306 590 H340"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M580 590 H614"/><path class="flow" fill="none" stroke="#383838" stroke-width="2.7" marker-end="url(#arrow)" d="M854 590 H888"/>
+  <rect class="lane" x="48" y="470" width="1104" height="344" rx="24"/>
+  <text class="lane-title" x="76" y="510">B · Existing organization</text>
+  <text class="kicker" x="1124" y="510" text-anchor="end">TRANSITION WITHOUT CONFLICTING ORGANIZATIONAL TRUTH</text>
+  <rect class="card" x="76" y="540" width="230" height="166" rx="22"/>
+  <text class="kicker" x="100" y="572">CURRENT</text><text class="node-title" x="191" y="610">Organizational Truth</text><text class="copy" x="191" y="638">State · Authority</text><text class="copy" x="191" y="662">Accountability</text><text class="copy" x="191" y="686">remain in force</text>
+  <rect class="card" x="350" y="540" width="230" height="166" rx="22"/>
+  <text class="kicker" x="374" y="572">PARALLEL</text><text class="node-title" x="465" y="610">Target Composition</text><text class="copy" x="465" y="642">Develop capability alongside</text><text class="copy" x="465" y="666">current operation</text>
+  <rect class="card" x="624" y="540" width="230" height="166" rx="22"/>
+  <text class="kicker" x="648" y="572">EVIDENCED</text><text class="node-title" x="739" y="610">Evaluate &amp; Qualify</text><text class="copy" x="739" y="642">Scope · boundaries</text><text class="copy" x="739" y="666">conditions · recoverability</text>
+  <rect class="card" x="898" y="540" width="230" height="166" rx="22"/>
+  <text class="kicker" x="922" y="572">CONTROLLED</text><text class="node-title-small" x="1013" y="610">Transition &amp; Retirement</text><text class="copy" x="1013" y="642">Adopt · reconcile · validate</text><text class="copy" x="1013" y="666">then retire old structures</text>
+  <path class="flow" d="M306 623 H350"/><path class="flow" d="M580 623 H624"/><path class="flow" d="M854 623 H898"/>
+  <rect class="card" x="76" y="738" width="1052" height="52" rx="18"/>
+  <text class="guard" x="602" y="770">Current State, Authority, and Accountability remain effective until explicit governed adoption.</text>
 
-  <rect x="48" y="760" width="1104" height="54" rx="18" fill="#f7f7f7" stroke="#b2b2b2" stroke-width="1.5"/>
-  <text class="principle" x="600" y="786">No conflicting organizational truth, authority, or accountability during transition.</text>
-  <text class="principle-copy" x="600" y="806">Existing sources and boundaries remain in force until an explicit, validated adoption.</text>
-  <text x="1152" y="838" text-anchor="end" font-size="12" fill="#666666">Application path · not a prescribed migration procedure</text>
+  <rect class="lane" x="48" y="850" width="1104" height="62" rx="20"/>
+  <text class="principle" x="600" y="878">Complete distinctions can be realized simply.</text>
+  <text class="principle-copy" x="600" y="902">Growth follows Evidence and organizational need—not performer type or automatic complexity.</text>
 </svg>
