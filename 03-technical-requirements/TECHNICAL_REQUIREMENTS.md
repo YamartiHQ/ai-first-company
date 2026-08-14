@@ -689,7 +689,7 @@ Applicable Cross-Technology Requirements
 Concrete Technology Selection and System-Level Verification
 ```
 
-![Reference Design responsibilities trace through the technical inventory, stable Technology Requirements, applicable Cross-Technology Requirements, and concrete system-level verification.](diagrams/technical-realization-traceability.png)
+<img src="diagrams/technical-realization-traceability.png" alt="Reference Design responsibilities trace through the technical inventory, stable Technology Requirements, applicable Cross-Technology Requirements, and concrete system-level verification." width="1200" height="2860">
 
 *Ten Reference Compositions trace through 25 component types and 25 stable TR IDs; the 21 XTRs apply across concrete components, interfaces, workflows, and enforcement boundaries where applicable.*
 

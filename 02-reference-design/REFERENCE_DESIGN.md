@@ -169,7 +169,7 @@ ENVIRONMENTS                 ASSURANCE
 └── Production Organization
 ```
 
-![The ten Reference Design Compositions grouped by organizational responsibility.](diagrams/reference-design-composition.png)
+<img src="diagrams/reference-design-composition.png" alt="The ten Reference Design Compositions grouped by organizational responsibility." width="1200" height="1220">
 
 *The Compositions define distinct organizational responsibilities rather than required products, teams, or technical services.*
 
@@ -206,7 +206,7 @@ The Executive Agent provides the primary actor-specific organizational command c
 
 Responsibility, Authority, and Accountability do not collapse into the performer that happens to coordinate an activity.
 
-![The operational organization connects all ten Reference Design Compositions across Production, learning, assurance, Sandbox, and the External World.](diagrams/operational-organization.png)
+<img src="diagrams/operational-organization.png" alt="The operational organization connects all ten Reference Design Compositions across Production, learning, assurance, Sandbox, and the External World." width="1200" height="1840">
 
 *The Compositions connect without collapsing organizational intelligence, coordination, control, environments, learning, assurance, Authority, or Accountability.*
 
@@ -220,7 +220,7 @@ It is the principal Human–AI and Human–Organization interface and the primar
 
 The Executive Agent is primary but neither mandatory nor exclusive. Organizational activity need not originate in or transit through it; other authorized specialist and machine-oriented interfaces remain valid. It is not the Company Brain, an organizational-intelligence owner, a System of Record, an Authority or Accountability owner, the Organizational Control Plane, the Company Interface Layer, a mandatory universal router, or a universal execution choke point.
 
-![The Executive Agent provides an actor-specific command center for governed organizational observation, coordination, review, and action initiation.](diagrams/executive-agent-command-center.png)
+<img src="diagrams/executive-agent-command-center.png" alt="The Executive Agent provides an actor-specific command center for governed organizational observation, coordination, review, and action initiation." width="1200" height="2920">
 
 *The command surface provides authorized views and action initiation without owning organization-owned intelligence, source authority, Accountability, or enforcement.*
 
@@ -382,7 +382,7 @@ Decision / Controlled Execution
 Outcome
 ```
 
-![The Execution Graph Layer makes bounded organizational work, capability needs, dependencies, waiting states, trajectory, controlled execution, and Outcomes explicit.](diagrams/execution-graph-layer.png)
+<img src="diagrams/execution-graph-layer.png" alt="The Execution Graph Layer makes bounded organizational work, capability needs, dependencies, waiting states, trajectory, controlled execution, and Outcomes explicit." width="1200" height="3040">
 
 *Execution Graphs describe observable organizational execution where useful; they do not model private reasoning or independently grant Authority or enforcement.*
 
@@ -963,7 +963,7 @@ governed Adoption
 Production Organization
 ```
 
-![Organizational Learning and Implementation Evolution remain distinct governed paths.](diagrams/organizational-evolution.png)
+<img src="diagrams/organizational-evolution.png" alt="Organizational Learning and Implementation Evolution remain distinct governed paths." width="1200" height="1280">
 
 Production may provide controlled derived information to Sandbox, operational Experience to Organizational Learning, and Evidence to Evaluation & Assurance.
 

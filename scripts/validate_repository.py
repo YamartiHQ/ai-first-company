@@ -69,6 +69,9 @@ def validate_markdown() -> None:
     markdown_files = sorted(ROOT.rglob("*.md"))
     anchor_cache = {path: github_anchors(path) for path in markdown_files}
     link_pattern = re.compile(r"!?\[[^]]*]\(([^)]+)\)")
+    image_pattern = re.compile(r"<img\b([^>]*)>", re.I | re.S)
+    attribute_pattern = re.compile(r"([:\w-]+)\s*=\s*([\"'])(.*?)\2", re.S)
+    local_html_images = 0
 
     for path in markdown_files:
         text = path.read_text(encoding="utf-8")
@@ -76,7 +79,8 @@ def validate_markdown() -> None:
         if len(fences) % 2:
             fail(f"Unbalanced Markdown fence: {path.relative_to(ROOT)}")
 
-        for raw_target in link_pattern.findall(text):
+        for link_match in link_pattern.finditer(text):
+            raw_target = link_match.group(1)
             target = raw_target.strip().strip("<>")
             if not target or re.match(r"^(?:https?://|mailto:|chatgpt-conversation:)", target):
                 continue
@@ -92,12 +96,63 @@ def validate_markdown() -> None:
             if not resolved.exists():
                 fail(f"Missing local target: {path.relative_to(ROOT)} -> {target}")
                 continue
+            if link_match.group(0).startswith("!") and resolved.suffix.lower() == ".png":
+                fail(f"Local PNG must use an HTML img element with intrinsic dimensions: {path.relative_to(ROOT)} -> {target}")
             if separator and anchor and resolved.suffix.lower() == ".md":
                 if resolved not in anchor_cache:
                     anchor_cache[resolved] = github_anchors(resolved)
                 decoded_anchor = urllib.parse.unquote(anchor)
                 if decoded_anchor not in anchor_cache[resolved]:
                     fail(f"Missing anchor: {path.relative_to(ROOT)} -> {target}")
+
+        for image_match in image_pattern.finditer(text):
+            attributes = {
+                name.lower(): value.strip()
+                for name, _quote, value in attribute_pattern.findall(image_match.group(1))
+            }
+            source = attributes.get("src", "")
+            if not source:
+                fail(f"HTML image without src: {path.relative_to(ROOT)}")
+                continue
+            if re.match(r"^(?:https?://|data:)", source):
+                continue
+
+            decoded = urllib.parse.unquote(source.split("#", 1)[0].split("?", 1)[0])
+            resolved = (path.parent / decoded).resolve()
+            try:
+                resolved.relative_to(ROOT.resolve())
+            except ValueError:
+                fail(f"HTML image escapes repository: {path.relative_to(ROOT)} -> {source}")
+                continue
+            if not resolved.exists():
+                fail(f"Missing local HTML image: {path.relative_to(ROOT)} -> {source}")
+                continue
+
+            local_html_images += 1
+            if not attributes.get("alt", "").strip():
+                fail(f"Local HTML image without alt text: {path.relative_to(ROOT)} -> {source}")
+
+            width = attributes.get("width", "")
+            height = attributes.get("height", "")
+            if not width.isdigit() or int(width) <= 0 or not height.isdigit() or int(height) <= 0:
+                fail(f"Local HTML image requires positive numeric width and height: {path.relative_to(ROOT)} -> {source}")
+                continue
+
+            if resolved.suffix.lower() == ".png":
+                header = resolved.read_bytes()[:24]
+                if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n" or header[12:16] != b"IHDR":
+                    fail(f"Invalid PNG header: {resolved.relative_to(ROOT)}")
+                    continue
+                actual_width = int.from_bytes(header[16:20], "big")
+                actual_height = int.from_bytes(header[20:24], "big")
+                if (int(width), int(height)) != (actual_width, actual_height):
+                    fail(
+                        f"HTML image dimensions differ from PNG: {path.relative_to(ROOT)} -> {source} "
+                        f"({width}x{height} declared, {actual_width}x{actual_height} actual)"
+                    )
+
+    if local_html_images != 19:
+        fail(f"Local HTML content images: expected 19, found {local_html_images}")
 
 
 def validate_model_counts() -> None:
@@ -199,7 +254,7 @@ def validate_model_counts() -> None:
     if invalid_traces:
         fail(f"Knowledge Graph YAML traces do not resolve: {', '.join(invalid_traces)}")
 
-    composition_block = section(reference, "The Reference Design contains ten top-level Compositions:", "![The ten Reference Design Compositions")
+    composition_block = section(reference, "The Reference Design contains ten top-level Compositions:", "## 6. The Operational Organization")
     compositions = [
         "Executive Agent", "Execution Graph Layer", "Company Brain", "Organizational Learning",
         "Capability Agent", "Organizational Control Plane", "Company Interface Layer",

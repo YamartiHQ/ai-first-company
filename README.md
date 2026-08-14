@@ -1,4 +1,4 @@
-![Illustration of Human and AI contribution connected through shared organizational intelligence, capabilities, controlled operation, learning, and other organizational functions.](00-introduction/diagrams/ai-first-company-hero.png)
+<img src="00-introduction/diagrams/ai-first-company-hero.png" alt="Illustration of Human and AI contribution connected through shared organizational intelligence, capabilities, controlled operation, learning, and other organizational functions." width="1774" height="887">
 
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-2b6cb0.svg)](LICENSE)
 
@@ -62,7 +62,7 @@ This progressive approach keeps Scope, gaps, and assumptions explicit. It suppor
 
 ## Framework at a glance
 
-![AI-First Company overview connecting Organizational Identity, Company Brain and organizational intelligence, Company Capabilities, Human, AI, and Group Performers, Work, Decisions and Controlled Execution, Outcomes, Learning, Assurance, future operation, and cross-cutting governance.](00-introduction/diagrams/ai-first-company-framework-overview.png)
+<img src="00-introduction/diagrams/ai-first-company-framework-overview.png" alt="AI-First Company overview connecting Organizational Identity, Company Brain and organizational intelligence, Company Capabilities, Human, AI, and Group Performers, Work, Decisions and Controlled Execution, Outcomes, Learning, Assurance, future operation, and cross-cutting governance." width="1200" height="1080">
 
 ## Status and use
 

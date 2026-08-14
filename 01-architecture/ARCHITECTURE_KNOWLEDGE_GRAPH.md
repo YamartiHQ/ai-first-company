@@ -18,7 +18,7 @@ The graph contains Concept Nodes, directional Relationship Edges, and validated 
 
 Current validated inventory: **82 Concept Nodes**, **130 Explicit relationships**, **5 Derived relationships**, and **42 controlled relationship types**.
 
-![Selected Architecture concept families.](diagrams/company-ontology-overview.png)
+<img src="diagrams/company-ontology-overview.png" alt="Selected Architecture concept families." width="1200" height="820">
 
 *This navigation view groups selected concepts for orientation; the catalogs below remain the complete semantic representation.*
 

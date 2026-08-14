@@ -8,7 +8,7 @@ The Architecture is industry-agnostic and internationally applicable. Concrete o
 
 The following diagram is a non-authoritative Derived Representation of selected Architecture concepts and relationships.
 
-![Selective overview of the AI-First Company Architecture.](diagrams/ai-first-company-architecture-overview.png)
+<img src="diagrams/ai-first-company-architecture-overview.png" alt="Selective overview of the AI-First Company Architecture." width="1200" height="1040">
 
 *Identity and organization-owned intelligence orient capabilities, coordination, work, decisions, execution, learning, assurance, and continuity.*
 
@@ -134,7 +134,7 @@ Performer Memory must remain replaceable, inspectable where required, and subord
 
 A retained change that materially influences later Performer behavior must be governed according to its actual function as Performer Memory or Performer Configuration, regardless of whether an implementation labels it a cache, index, retrieval optimization, selected example, personalization, or another technical mechanism. Temporary performance caches that retain no behavior-affecting information may remain ordinary implementation state. Retained content, selection rules, retrieval weighting, examples, personalization, and comparable mechanisms that materially influence later behavior remain subject to applicable Memory Policy, Provenance, Information Access, lifecycle, configuration, Evaluation, and traceability requirements. Reuse across Performers, Work, or organizational Scope does not automatically become Organizational Learning, Validated Knowledge, an Organizational Practice, or a Production Skill; organizational reuse or Production behavior change follows applicable Reflection, Learning Candidate, governed Adoption, Evaluation, Capability Qualification, authorization, configuration, and deployment paths. A material behavior-affecting change may invalidate prior Capability Qualification or Operational Confidence.
 
-![Performer-local memory remains separate from governed organizational intelligence and rehydration.](diagrams/performer-memory-and-organizational-intelligence.png)
+<img src="diagrams/performer-memory-and-organizational-intelligence.png" alt="Performer-local memory remains separate from governed organizational intelligence and rehydration." width="1200" height="1160">
 
 *Working Memory, Performer Memory, organizational learning, and organization-owned intelligence follow distinct governed paths.*
 
@@ -297,7 +297,7 @@ Different collaborating Performers may require different contexts. A handoff tra
 
 External content may inform work but does not create organizational Authority. Performer Memory may contribute only under current Purpose, Scope, access, and Memory Policy.
 
-![Separate governed sources converge through Context Construction into a temporary Working Context.](diagrams/context-sources-working-context.png)
+<img src="diagrams/context-sources-working-context.png" alt="Separate governed sources converge through Context Construction into a temporary Working Context." width="1200" height="1100">
 
 *State or Authority change may update or invalidate context, while handoff reconstructs an appropriate context for the next Performer.*
 
@@ -326,7 +326,7 @@ Experience
 
 Destinations may include Validated Knowledge, an Organizational Practice, Capability improvement, Policy review, Identity review, or no adoption.
 
-![Experience becomes reusable organizational intelligence only through governed reflection, validation, and adoption.](diagrams/organizational-learning-loop.png)
+<img src="diagrams/organizational-learning-loop.png" alt="Experience becomes reusable organizational intelligence only through governed reflection, validation, and adoption." width="1200" height="1020">
 
 *The Company Brain can inform Reflection and receive adopted intelligence without becoming the start or universal endpoint of every learning path.*
 
@@ -360,7 +360,7 @@ The **Operating Cycle** is the connected operation of three distinct loops:
 
 The loops exchange Evidence and Outcomes but must not be collapsed. Learning does not authorize operation, and assurance does not adopt learning.
 
-![Three connected organizational loops.](diagrams/operating-cycle.png)
+<img src="diagrams/operating-cycle.png" alt="Three connected organizational loops." width="1200" height="1120">
 
 ### Sources and work formation
 
@@ -449,7 +449,7 @@ Unknown Effect
 
 Idempotency is one implementation mechanism, not the Architecture concept. Containment must not rely solely on the affected Performer voluntarily stopping itself.
 
-![Controlled execution and external effects.](diagrams/controlled-execution-and-external-effects.png)
+<img src="diagrams/controlled-execution-and-external-effects.png" alt="Controlled execution and external effects." width="1200" height="1320">
 
 <sub>**See one realization:** [Organizational Control Plane](../02-reference-design/REFERENCE_DESIGN.md#12-organizational-control-plane) · [Company Interface Layer](../02-reference-design/REFERENCE_DESIGN.md#13-company-interface-layer)</sub>
 
@@ -499,7 +499,7 @@ Positive Evidence may justify gradual bounded expansion. Material Negative Evide
 
 Authority review does not itself grant, expand, restore, renew, contract, suspend, or revoke Authority. If no authorized Decision changes Authority State, the current Authority State remains in force, including any already-defined expiry, suspension, restriction, revocation, or other governing condition. Positive Evidence does not restore or expand Authority automatically, and absence of a new Decision is not implicit approval.
 
-![Capability Qualification and Continuous Assurance inform a governed Authority Review through separate evidence paths.](diagrams/capability-confidence-authorization.png)
+<img src="diagrams/capability-confidence-authorization.png" alt="Capability Qualification and Continuous Assurance inform a governed Authority Review through separate evidence paths." width="1200" height="1040">
 
 *Only an authorized Decision following governed Authority Review may maintain, expand, contract, suspend, or revoke Authority; positive Evidence never expands it automatically.*
 
@@ -553,7 +553,7 @@ Attention ≠ human escalation ≠ upward hierarchical escalation. Routing Atten
 
 Attention that cannot be routed to an appropriately authorized, qualified, informed, and available recipient remains unresolved, attributable, observable, and reviewable. Routing failure manufactures neither Authority, Information Access, availability, Qualification, nor expertise; Urgency alone creates no Authority. The applicable Safe Failure response may wait, restrict, pause, gather further information, retain the unresolved Attention Requirement, or use an authorized alternative path.
 
-![Attention routes by organizational need to an appropriate Actor or Group and may lead to several governed treatments.](diagrams/attention-and-decision-routing.png)
+<img src="diagrams/attention-and-decision-routing.png" alt="Attention routes by organizational need to an appropriate Actor or Group and may lead to several governed treatments." width="1200" height="1040">
 
 *A Decision Record follows only when a material Decision is actually made; routing itself grants neither Authority nor Information Access.*
 
@@ -643,7 +643,7 @@ Incident
   → bounded return to operation
 ```
 
-![Incident response separates immediate containment, reconciliation, governed response choices, recovery, rehydration, requalification, and bounded return to operation.](diagrams/incident-containment-and-recovery.png)
+<img src="diagrams/incident-containment-and-recovery.png" alt="Incident response separates immediate containment, reconciliation, governed response choices, recovery, rehydration, requalification, and bounded return to operation." width="1200" height="3430">
 
 *Containment, response choice, recovery, learning handoff, and bounded restoration remain distinct governed responsibilities.*
 

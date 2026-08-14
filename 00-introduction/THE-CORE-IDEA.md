@@ -173,7 +173,7 @@ A minimal realization may use few Performers, shared Capability Implementations,
 
 An existing organization may establish the target architecture progressively, including Capability by Capability alongside current structures. Current organizational truth, Authority, and Accountability remain in force until each transition is governed, qualified, reconciled, and adopted.
 
-![A minimal organizational realization evolving deliberately as risk, scale, specialization, and operational need justify change.](../01-architecture/diagrams/start-small-evolve-deliberately.png)
+<img src="../01-architecture/diagrams/start-small-evolve-deliberately.png" alt="A minimal organizational realization evolving deliberately as risk, scale, specialization, and operational need justify change." width="1200" height="940">
 
 *A compact realization can preserve complete architectural distinctions without unnecessary organizational or technical complexity.*
 
