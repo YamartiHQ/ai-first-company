@@ -1,6 +1,6 @@
 <img src="00-introduction/diagrams/ai-first-company-hero.png" alt="Illustration of Human and AI contribution connected through shared organizational intelligence, capabilities, controlled operation, learning, and other organizational functions." width="1774" height="887">
 
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-2b6cb0.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-2b6cb0.svg)](LICENSE) [![DOI](https://zenodo.org/badge/1325778564.svg)](https://doi.org/10.5281/zenodo.21942413)
 
 # AI-First Company
 

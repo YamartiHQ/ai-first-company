@@ -4,16 +4,19 @@ title: "AI-First Company"
 authors:
   - family-names: "Nöthen"
     given-names: "Andreas"
-version: 2.0.1
-date-released: 2026-08-14
+version: 2.0.3
+date-released: 2026-08-15
 license: CC-BY-4.0
+doi: "10.5281/zenodo.21942413"
+repository-code: "https://github.com/YamartiHQ/ai-first-company"
 url: "https://github.com/YamartiHQ/ai-first-company"
 preferred-citation:
-  type: report
+  type: software
   title: "AI-First Company"
   authors:
     - family-names: "Nöthen"
       given-names: "Andreas"
-  version: 2.0.1
+  version: 2.0.3
   year: 2026
-  url: "https://github.com/YamartiHQ/ai-first-company"
+  doi: "10.5281/zenodo.21942413"
+  url: "https://doi.org/10.5281/zenodo.21942413"
