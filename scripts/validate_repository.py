@@ -270,9 +270,13 @@ def validate_model_counts() -> None:
         fail(f"Technical component types: expected 25 unique, found {len(component_types)} / {len(set(component_types))} unique")
 
     tr_ids = re.findall(r"^\| \*\*(TR-[A-Z0-9]+)\*\* \|", requirements, re.M)
+    tr_anchors = re.findall(r'<a name="(tr-[a-z0-9]+)"></a>', requirements)
     xtr_ids = re.findall(r"^\*\*Requirement ID:\*\* (XTR-[A-Z0-9]+)$", requirements, re.M)
     if len(tr_ids) != 25 or len(set(tr_ids)) != 25:
         fail(f"TR IDs: expected 25 unique, found {len(tr_ids)} / {len(set(tr_ids))} unique")
+    expected_tr_anchors = {identifier.lower() for identifier in tr_ids}
+    if len(tr_anchors) != 25 or set(tr_anchors) != expected_tr_anchors:
+        fail("Every stable TR ID must have one matching custom Markdown anchor")
     if len(xtr_ids) != 21 or len(set(xtr_ids)) != 21:
         fail(f"XTR IDs: expected 21 unique, found {len(xtr_ids)} / {len(set(xtr_ids))} unique")
     tr_suffixes = {identifier.removeprefix("TR-") for identifier in tr_ids}
@@ -298,7 +302,11 @@ def validate_model_counts() -> None:
     if matrix_components != set(component_types):
         fail("Technical component inventory and Matrix columns differ")
 
-    tr_rows = re.findall(r"^\| \*\*(TR-[A-Z0-9]+)\*\* \| \*\*(.+?)\*\* \|", requirements, re.M)
+    tr_rows = re.findall(
+        r'^\| \*\*(TR-[A-Z0-9]+)\*\* \| (?:<a name="tr-[a-z0-9]+"></a>)?\*\*(.+?)\*\* \|',
+        requirements,
+        re.M,
+    )
     tr_technology_by_id = dict(tr_rows)
     if set(tr_technology_by_id.values()) != set(component_types):
         fail("Technical component inventory and TR technology names differ")
